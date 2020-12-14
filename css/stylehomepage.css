@@ -1,0 +1,480 @@
+/*---------------------------Home Page--------------------*/
+.menu {
+  position: relative;
+  margin: auto;
+  /*juste en dessous modifier le width pour modifier la largeur de la bar*/
+  width: 950px;
+  height: 250px;
+  background-image: url("../images/baudimont.png");
+  background-size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+
+.information-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 65px;
+  background-color: #151728;
+}
+
+.profile {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 20px;
+  left: 25px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #151728;
+}
+
+.name {
+  color: white;
+  margin-left: 0.1em;
+  font-size: 1.4em;
+}
+
+ul {
+  position: relative;
+  width: 100%;
+  display: flex;
+  padding-left: 200px;
+  height: 100%;
+  margin: 0;
+}
+
+.a {
+  margin: 0;
+}
+li {
+  list-style: none;
+  cursor: pointer;
+  color: #5c5e6e;
+  font-size: 1.1em;
+  padding: 1.5em 1em;
+  transition: all 0.1s;
+}
+
+li:hover,
+.active {
+  color: white;
+  border-bottom: 3px solid #1488fa;
+}
+
+/*--------------image avec info dynamique pour architecture 3 tiers ----------*/
+
+.cardarch {
+  border-radius: 16px;
+  margin-left: 2%;
+  float: left;
+  width: 450px;
+  height: 490px;
+  max-width: 100%;
+  min-height: 470px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-image: url("../images/arch3tiers.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.infoarch {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: #ffff;
+  transform: translateY(100%) translateY(-88px) translateZ(0);
+  transition: transform 0.3s ease-out;
+}
+
+.infoarch:before {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url("../images/arch3tiers.png");
+  filter: blur(10px);
+  background-size: cover;
+  opacity: 0.25;
+  transform: translateY(-100%) translateY(88px) translateZ(0);
+  transition: transform 0.3s ease-out;
+}
+
+/*----Commun---a----tous----les-----cadres*/
+.title {
+  margin: 0;
+  padding: 24px;
+  font-size: 35px;
+  line-height: 1;
+  color: rgba(00 0 0 0.87);
+}
+
+.description {
+  margin: 0;
+  padding: 0 24px 24px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+}
+/*------------------*/
+
+.cardarch:hover .infoarch,
+.cardarch:hover .infoarch:before {
+  transform: translateY(0) translateZ(0);
+}
+
+/*--------------image avec info dynamique pour eon ----------*/
+.cardeon {
+  border-radius: 16px;
+  margin-left: 2%;
+  float: right;
+  width: 500px;
+  height: 490px;
+  max-width: 100%;
+  min-height: 200px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-image: url("../images/eon.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.infoeon {
+  width: 100%;
+  height: 500px;
+  background-color: #ffff;
+  transform: translateY(100%) translateY(-88px) translateZ(0);
+  transition: transform 0.3s ease-out;
+  background-image: url("../images/descriptioneon.PNG");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.infoeon:before {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  filter: blur(10px);
+  opacity: 0.25;
+  transform: translateY(-100%) translateY(88px) translateZ(0);
+  transition: transform 0.3s ease-out;
+}
+.cardeon:hover .infoeon,
+.cardeon:hover .infoeon:before {
+  transform: translateY(0) translateZ(0);
+}
+
+/*-------------Pour---mettre--un--espace--------------*/
+.espace {
+  margin-top: 8%;
+  margin-bottom: 8%;
+  width: 100%;
+  float: left;
+}
+
+.page {
+  background-color: white;
+  position: center;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  height: 5000px;
+  border: 3px solid #ffc6d0;
+}
+
+/*--------------image avec info dynamique pour NLB ----------*/
+.cardnlb {
+  border-radius: 16px;
+  margin-left: 2%;
+  float: left;
+  width: 500px;
+  height: 490px;
+  max-width: 100%;
+  min-height: 200px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-image: url("../images/nlb.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.infonlb {
+  width: 100%;
+  height: 500px;
+  background-color: #ffff;
+  transform: translateY(100%) translateY(-88px) translateZ(0);
+  transition: transform 0.3s ease-out;
+  background-image: url("../images/nlbcluster.PNG");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.infonlb:before {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url("../images/nlb.png");
+  filter: blur(10px);
+  background-size: cover;
+  opacity: 0.25;
+  transform: translateY(-100%) translateY(88px) translateZ(0);
+  transition: transform 0.3s ease-out;
+}
+.cardnlb:hover .infonlb,
+.cardnlb:hover .infonlb:before {
+  transform: translateY(0) translateZ(0);
+}
+
+.messagedroite {
+  float: left;
+  margin-top: 3%;
+  margin-left: 5%;
+  width: 50%;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.messagegauche {
+  float: right;
+  margin-top: 3%;
+  margin-right: 3%;
+  width: 58%;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.coeur {
+  float: left;
+  margin-left: 20%;
+  margin-top: 10%;
+  background-color: #ff9234;
+  color: white;
+  border: 0;
+  padding: 0.5em 1em;
+  font-size: 1.5em;
+  border-radius: 1em;
+  outline: 0;
+  cursor: pointer;
+  transition: all 0.1s;
+  box-shadow: 0 0 0 0 rgba(255, 71, 84, 0.7);
+  animation: battement 2s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+.coeur:hover {
+  background: #35d0ba;
+}
+
+.coeur2 {
+  float: left;
+  margin-left: 20%;
+  margin-top: 5%;
+  float: left;
+  background-color: #ff9234;
+  color: white;
+  border: 0;
+  padding: 0.5em 1em;
+  font-size: 1.5em;
+  border-radius: 1em;
+  outline: 0;
+  cursor: pointer;
+  transition: all 0.1s;
+  box-shadow: 0 0 0 0 rgba(255, 71, 84, 0.7);
+  animation: battement 2s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+.coeur2:hover {
+  background: #35d0ba;
+}
+/*BOUTON AVEC SECTION-------------------------*/
+
+div a {
+  display: block;
+}
+
+.boutonbio {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
+}
+
+.boutonbio a {
+  display: inline-block;
+  float: left;
+  margin-top: 2%;
+  margin-left: 44%;
+  padding: 25px;
+  width: 32px;
+  height: 32px;
+  border: 2px solid black;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.boutonbio a span:before {
+  position: relative;
+  top: calc(50% - 8px);
+  left: calc(50% - 7px);
+  transform: rotate(-45deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 2px solid black;
+  border-width: 0px 0 2px 2px;
+}
+
+.bouton {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
+}
+
+.bouton a {
+  float: left;
+  margin-top: 2%;
+  margin-left: 26%;
+  padding: 25px;
+  width: 32px;
+  height: 32px;
+  border: 2px solid black;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.bouton a span:before {
+  position: relative;
+  top: calc(50% - 8px);
+  left: calc(50% - 7px);
+  transform: rotate(-45deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 2px solid black;
+  border-width: 0px 0 2px 2px;
+}
+
+.boutong {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
+}
+
+.boutong a {
+  float: right;
+  margin-top: 1%;
+  margin-right: 32%;
+  padding: 25px;
+  width: 32px;
+  height: 32px;
+  border: 2px solid black;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.boutong a span:before {
+  position: relative;
+  top: calc(50% - 8px);
+  left: calc(50% - 7px);
+  transform: rotate(-45deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 2px solid black;
+  border-width: 0px 0 2px 2px;
+}
+
+.boutonhaut {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
+}
+
+.boutonhaut a {
+  float: right;
+  margin-top: 1%;
+  margin-right: 32%;
+  padding: 25px;
+  width: 32px;
+  height: 32px;
+  border: 2px solid black;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.boutonhaut a span:before {
+  position: relative;
+  top: calc(50% - 8px);
+  left: calc(50% - 7px);
+  transform: rotate(135deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 2px solid black;
+  border-width: 0px 0 2px 2px;
+}
+.bio {
+  margin-top: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: justify;
+  font-family: Arial;
+}
+
+.visio {
+  margin-top: 2%;
+  padding-left: 1%;
+  width: 98%;
+  height: 550px;
+  background-image: url("../images/Visio\ infra\ bts\ 2e\ année.png");
+  background-size: cover;
+  position: relative;
+}

@@ -1,0 +1,232 @@
+/*styliser le bouton menu*/
+.espace {
+  height: 20px;
+}
+.centrer {
+  display: flex;
+  justify-content: center;
+  border: 0;
+}
+.coeur {
+  text-align: center;
+  background-color: #ff9234;
+  color: white;
+  border: 0;
+  padding: 0.5em 1em;
+  font-size: 25px;
+  border-radius: 1em;
+  outline: 0;
+  cursor: pointer;
+  transition: all 0.1s;
+  box-shadow: 0 0 0 0 rgba(255, 71, 84, 0.7);
+  animation: battement 2s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+.coeur:hover {
+  background: #35d0ba;
+}
+
+/*styliser le menu*/
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  z-index: 2;
+}
+ul li {
+  text-align: center;
+  animation: 0.3s print;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: arial;
+  color: white;
+}
+
+ul li a:hover {
+  color: #ff9234;
+}
+
+/*on align les elements du menu avec flex notamment*/
+.open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+  animation: fade 0.1s;
+}
+
+/*@keyframe pourr les animations */
+
+@keyframes print {
+  from {
+    margin-top: -50px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes battement {
+  to {
+    box-shadow: 0 0 0 30px rgba(255, 71, 84, 0);
+  }
+}
+
+/*---------la-----flèche---------*/
+
+.container {
+  background-image: url("../JeTestDesTrucs/index3.PNG");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 430px;
+  width: 100%;
+  border: thick double black;
+}
+
+.menu {
+  background-color: white;
+  height: 60px;
+}
+.menu h1 {
+  font-family: cursive;
+  margin-left: 15%;
+  
+}
+
+.cascade {
+  font-family: arial, sans-serif;
+  display: flex; align-items: center;
+  position: center;
+  font-size: 25px;
+  flex-direction: column;
+  font-size: 36px; font-weight: bold;
+  text-transform: uppercase;
+ /* border: solid;*/
+  margin-bottom: 1%;
+}
+
+#flip {
+  height: 50px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#flip > div > div {
+  padding: 4px 12px;
+  height: 50px;
+  margin-bottom: 45px;
+  display: inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background: #42c58a;
+}
+#flip div:first-child div {
+  background: #4ec7f3;
+}
+#flip div:last-child div {
+  background: #DC143C;
+}
+
+@keyframes show {
+  0% {margin-top: -270px;}
+  5% {margin-top: -180px;}
+  33% {margin-top: -180px;}
+  38% {margin-top: -90px;}
+  66% {margin-top: -90px;}
+  71% {margin-top: 0px;}
+  99.99% {margin-top: 0px;}
+  100% {margin-top: -270px;}
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+}
+
+.titre { 
+  margin-top: 4%;
+  text-align: center;
+}
+
+.logos {
+  display: inline;
+  margin-top: 2%;
+}
+.bac {
+  background-image: url("../JeTestDesTrucs/bac2.png");
+  width: 19%;
+  margin-left: 5%;
+  height: 150px;
+  float: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.motivation {
+  background-image: url("../JeTestDesTrucs/motivation.jpg");
+  width: 19%;
+  margin-left: 5%;
+  height: 170px;
+  float: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hardworker {
+  background-image: url("../JeTestDesTrucs/hardworker.png");
+  width: 19%;
+  margin-left: 5%;
+  height: 150px;
+  float: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.réseau {
+  background-image: url("../JeTestDesTrucs/réseau.png");
+  width: 19%;
+  margin-left: 5%;
+  height: 150px;
+  float: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

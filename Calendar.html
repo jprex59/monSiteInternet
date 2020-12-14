@@ -1,0 +1,172 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calendar</title>
+    <link
+      rel="stylesheet"
+      href="../testmonSiteInternet/css/styleCalendrier.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/stylehomepage.css" type="text/css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="menu">
+        <div class="information-bar">
+          <ul>
+            <p class="name">Jean Paris BTS SIO 2</p>
+            <a href="pdfreader/web/viewer.html">
+              <li class="active">CV</li>
+            </a>
+            <a
+              href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:0c870d7f-b65d-48c7-b6f8-35ea910810de"
+            >
+              <li>test CV</li>
+            </a>
+            <li>Veil : Technologique</li>
+            <a href="index.php">
+              <li>Menu</li>
+            </a>
+            <a href="Calendar.html">
+              <li>stage</li>
+            </a>
+          </ul>
+          <div class="profile">
+            <img src="images/jean.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="bioo">
+        décrire l'entreprise et remplacer le texte....<br />
+        appelé aussi BTS SIO (service informatique aux organisations), au pôle
+        supérieur Baudimont Saint Charles à Arras avec une spécialité SISR
+        (solutions d’infrastructure, systèmes et réseaux).<br />Durant cette
+        année de BTS j’apprends les différents types d’architectures des réseaux
+        informatiques et notamment comment les installer, les administrer, les
+        protéger et gérer la maintenance des équipements. De manière concrète
+        lors de la formation j’apprends par exemple comment installer les
+        différents services DHCP, IIS (serveur web), AD (annuaire), DNS, pfsens
+        et autres pour répondre aux demandes lors des projets pratiques encadrés
+        visant à reproduire des contextes d’entreprises . Durant la 1ère année
+        j’ai également appris lors des cours de programmation à coder un site
+        internet simple avec la mise en place d’un CRUD connecté à une base de
+        données mais aussi le langage C et Python. <br />Au cours de ma 2e année
+        de BTS en réseau nous avons mit en place progressivement en équipe de 2
+        une architecture avec 3 réseaux distinct :<br />- Une DMZ en 10.0.3.0
+        /24 avec comme passerelle par défault 10.0.3.254 /24 <br />- Un Lan en
+        172.16.3.0 /24 avec comme passerelle par défault 172.16.3.254 /24<br />-
+        Un Wan en 192.168 avec comme passerelle par défault 192.168.3.243 /24<br />
+        le tout connecté à un routeur Zyxel à 3 pattes faisant aussi firewall.
+        le tout est sécurisé par des Vlans que nous n'avons pas configuré mais
+        qu'on pus tester par nous même en ligne de commande avec des Switch
+        Cisco et avec l'interface graphique d'un Switch HP.
+      </div>
+
+      <!-- Calendrier-->
+      <div class="container" id="calendrier">
+        <div class="calendar">
+          <h2>Janvier</h2>
+          <a class="btn-prev fontawesome-angle-left" href="#"></a>
+          <a class="btn-next fontawesome-angle-right" href="#"></a>
+          <table>
+            <thead>
+              <tr>
+                <td>Lundi</td>
+                <td>Mardi</td>
+                <td>Mercredi</td>
+                <td>Jeudi</td>
+                <td>Vendredi</td>
+                <td>Samedi</td>
+                <td>Dimanche</td>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="prev-month">26</td>
+                <td class="prev-month">27</td>
+                <td class="prev-month">28</td>
+                <td class="prev-month">29</td>
+                <td class="prev-month">30</td>
+                <td class="prev-month">31</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>3</td>
+                <td class="current-day event"><a href="#4" id="to4">4</a></td>
+                <td><a href="#5" id="to5">5</a></td>
+                <td><a href="#6" id="to6">6</a></td>
+                <td><a href="#7" id="to7">7</a></td>
+                <td><a href="#8" id="to8">8</a></td>
+              </tr>
+              <tr>
+                <td><a href="#9" id="to9">9</a></td>
+                <td class="event"><a href="#10" id="to10">10</a></td>
+                <td><a href="#11" id="to11">11</a></td>
+                <td><a href="#12" id="to12">12</a></td>
+                <td><a href="#13" id="to13">13</a></td>
+                <td><a href="#14" id="to14">14</a></td>
+                <td><a href="#15" id="to15">15</a></td>
+              </tr>
+              <tr>
+                <td><a href="#16" id="to16">16</a></td>
+                <td><a href="#17" id="to17">17</a></td>
+                <td><a href="#18" id="to18">18</a></td>
+                <td><a href="#19" id="to19">19</a></td>
+                <td><a href="#20" id="to20">20</a></td>
+                <td><a href="#21" id="to21">21</a></td>
+                <td><a href="#22" id="to22">22</a></td>
+              </tr>
+
+              <tr>
+                <td><a href="#23" id="to23">23</a></td>
+                <td><a href="#24" id="to24">24</a></td>
+                <td><a href="#25" id="to25">25</a></td>
+                <td><a href="#26" id="to26">26</a></td>
+                <td><a href="#27" id="to27">27</a></td>
+                <td><a href="#28" id="to28">28</a></td>
+                <td><a href="#29" id="to29">29</a></td>
+              </tr>
+              <tr>
+                <td><a href="#30" id="to30">30</a></td>
+                <td><a href="#31" id="to31">31</a></td>
+                <td class="next-month">1</td>
+                <td class="next-month">2</td>
+                <td class="next-month">3</td>
+                <td class="next-month">4</td>
+                <td class="next-month">5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- end calendar -->
+      </div>
+      <div id="4"></div>
+      <div class="jour">
+        <h2>04/01/21</h2>
+        <div class="infojour">
+          qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqaqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+          qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+          qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+          qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+          qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+        </div>
+      </div>
+
+      <div class="jour" id="5">
+        <h2>05/01/21...</h2>
+        <div class="infojour">
+          qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+          qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+          qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+          qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+          qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+          qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+        </div>
+      </div>
+      <!-- end container -->
+    </div>
+  </body>
+</html>

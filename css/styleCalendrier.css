@@ -1,0 +1,244 @@
+HTML CSSResult Skip Results Iframe
+EDIT ON
+/* CSS Document */
+
+/* ---------- FONTAWESOME ---------- */
+/* ---------- https://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+*[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+} 
+
+/* ---------- GENERAL ---------- */
+
+body {
+  background: #f9f9f9;
+  color: #0e171c;
+  font: 300 100%/1.5em 'Lato', sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 1.25em;
+  margin: .25em 0;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin: .33em 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  height: 538px;
+  margin: 0 auto;
+  align-content: center;
+  display: block;
+  top: 50%;
+  width: 510px;
+}
+
+/* ---------- CALENDAR ---------- */
+
+.calendar {
+  text-align: center;
+}
+
+.calendar header {
+  position: relative;
+}
+
+.calendar h2 {
+  text-transform: uppercase;
+  margin-top: 2%;
+}
+
+.calendar thead {
+  font-weight: 600;
+}
+
+.calendar tbody {
+  color: #7c8a95;
+}
+
+.calendar tbody td:hover {
+  border: 2px solid #00addf;
+}
+
+.calendar td {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  display: inline-block;
+  height: 4em;
+  line-height: 4em;
+  text-align: center;
+  width: 4em;
+}
+
+.calendar .prev-month,
+.calendar .next-month {
+  color: #cbd1d2;
+}
+
+.calendar .prev-month:hover,
+.calendar .next-month:hover {
+  border: 2px solid #cbd1d2;
+}
+
+.current-day {
+  background: #00addf;
+  color: #f9f9f9;
+}
+
+.event {
+  cursor: pointer;
+  position: relative;
+}
+
+.event:after {
+  background: #00addf;
+  border-radius: 50%;
+  bottom: .5em;
+  display: block;
+  content: '';
+  height: .5em;
+  left: 50%;
+  margin: -.25em 0 0 -.25em;
+  position: absolute;
+  width: .5em;
+}
+
+.event.current-day:after {
+  background: #f9f9f9;
+}
+
+.btn-prev,
+.btn-next {
+  border: 2px solid #cbd1d2;
+  border-radius: 50%;
+  color: #cbd1d2;
+  height: 2em;
+  font-size: .75em;
+  line-height: 2em;
+  margin: -1em;
+  position: absolute;
+  width: 2em;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+  background: #cbd1d2;
+  color: #f9f9f9;
+}
+
+.btn-prev {
+  left: 6em;
+}
+
+.btn-next {
+  right: 6em;
+}
+
+
+.boutonbioo {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
+}
+
+.boutonbioo a {
+  float: left;
+  display: contents;
+  margin-top: 2%;
+  margin-left: 44%;
+  padding: 25px;
+  width: 32px;
+  height: 32px;
+  border: 2px solid black;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.boutonbioo a span:before {
+  position: relative;
+  top: calc(50% - 8px);
+  left: calc(50% - 7px);
+  transform: rotate(-45deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 2px solid black;
+  border-width: 0px 0 2px 2px;
+}
+
+
+/* description journalière*/
+.jour {
+  margin-left: 2%;
+  margin-top: 2%;
+}
+.jour h2 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-family: Arvo;
+  font-size: 50px;
+  text-decoration: underline overline #FF3028;
+}
+
+.infojour {
+  float: left;
+  margin-bottom: 2%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.jourd {
+  margin-right: 2%;
+  float: none;
+}
+
+.infojourd {
+  float: right;
+}
+
+.jourd h2 {
+  float: right;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-family: Arvo;
+  font-size: 50px;
+  text-decoration: underline overline #FF3028;
+}
+
+.bioo {
+  margin-top: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: justify;
+  font-family: Arial;
+}
+
+
+Resources1×0.5×0.25×Rerun
+
+
