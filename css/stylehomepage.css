@@ -76,10 +76,10 @@ li:hover,
   border-radius: 16px;
   margin-left: 2%;
   float: left;
-  width: 450px;
-  height: 490px;
+  width: 37%;
+  height: 30%;
   max-width: 100%;
-  min-height: 470px;
+  min-height: 30%;
   box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   background-image: url("../images/arch3tiers.PNG");
@@ -135,14 +135,62 @@ li:hover,
 .cardarch:hover .infoarch:before {
   transform: translateY(0) translateZ(0);
 }
+/*-------------------CobianBackup-----------*/
+
+.cardcobian {
+  border-radius: 16px;
+  margin-left: 2%;
+  float: left;
+  width: 30%;
+  height: 7%;
+  max-width: 100%;
+  min-height: 470px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-image: url("../images/cobian.JPG");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.infocobian {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: #ffff;
+  transform: translateY(100%) translateY(-88px) translateZ(0);
+  transition: transform 0.3s ease-out;
+}
+
+.infocobian:before {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url("../images/cobian.JPG");
+  filter: blur(10px);
+  background-size: cover;
+  opacity: 0.25;
+  transform: translateY(-100%) translateY(88px) translateZ(0);
+  transition: transform 0.3s ease-out;
+}
+
+
+.cardcobian:hover .infocobian,
+.cardcobian:hover .infocobian:before {
+  transform: translateY(0) translateZ(0);
+}
 
 /*--------------image avec info dynamique pour eon ----------*/
 .cardeon {
   border-radius: 16px;
-  margin-left: 2%;
+  margin-right: 2%;
   float: right;
-  width: 500px;
-  height: 490px;
+  width: 37%;
+  height: 30%;
   max-width: 100%;
   min-height: 200px;
   box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2);
@@ -207,8 +255,8 @@ li:hover,
   border-radius: 16px;
   margin-left: 2%;
   float: left;
-  width: 500px;
-  height: 490px;
+  width: 37%;
+  height: 30%;
   max-width: 100%;
   min-height: 200px;
   box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2);
@@ -263,8 +311,8 @@ li:hover,
 .messagegauche {
   float: right;
   margin-top: 3%;
-  margin-right: 3%;
-  width: 58%;
+  margin-right: 5%;
+  width: 50%;
   font-size: 20px;
   text-align: justify;
 }
@@ -292,9 +340,8 @@ li:hover,
 
 .coeur2 {
   float: left;
-  margin-left: 20%;
-  margin-top: 5%;
-  float: left;
+  margin-left: 41%;
+  margin-top: 10%;
   background-color: #ff9234;
   color: white;
   border: 0;
@@ -397,9 +444,9 @@ div a {
 }
 
 .boutong a {
-  float: right;
+  float: left;
   margin-top: 1%;
-  margin-right: 32%;
+  margin-left: 48%;
   padding: 25px;
   width: 32px;
   height: 32px;
@@ -435,7 +482,7 @@ div a {
 .boutonhaut a {
   float: right;
   margin-top: 1%;
-  margin-right: 32%;
+  margin-right: 47%;
   padding: 25px;
   width: 32px;
   height: 32px;
@@ -475,6 +522,7 @@ div a {
   width: 98%;
   height: 550px;
   background-image: url("../images/Visio\ infra\ bts\ 2e\ année.png");
-  background-size: cover;
-  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
 }

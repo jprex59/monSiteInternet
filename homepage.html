@@ -4,7 +4,7 @@
 <head>
 	<title>index.html</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="../monSiteInternet/css/stylehomepage.css" type="text/css" />
+	<link rel="stylesheet" href="../testmonsiteinternet/css/stylehomepage.css" type="text/css" />
 </head>
 
 <body>
@@ -76,7 +76,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="messagedroite">
+				<span class="messagedroite">
 					Nous avons mis en place une architecture 3 tiers (avec une machine
 					cliente et 2 serveurs) afin de comprendre comment héberger un site internet en
 					dédiant un service pour chaque serveur. Concernant les services nous avons la
@@ -85,7 +85,7 @@
 					pour que l’infrastructure puisse marcher nous avons défini au site internet ou aller
 					chercher sa Base De Donnée via le fichier config en indiquant l’@ip du SGBD, et
 					au serveur APP vers qui pointer dans le fichier utilisateur.
-				</div>
+				</span>
 				<div class="centrer">
 					<a href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:f8d9bdda-c852-46a7-b061-a0567c127eaa" class="coeur">
 						Voir la Documentation
@@ -105,7 +105,7 @@
 						Voici le résultat obtenu après installation :
 					</div>
 				</div>
-				<div class="messagegauche">
+				<span class="messagegauche">
 					Nous avons installés EON comme solution pour
 					mettre en place de la SuperVision. Cette solution est installé
 					sur une base Linux dans une machine virtuel. On lui a prédéfini
@@ -121,19 +121,53 @@
 					compréhension du parc informatique . Un autre atout est qu’elle est une solution logiciel basé sur un hôte
 					mais ou on peut y accéder depuis n’importe quel machine du même réseau via un navigateur internet en tapant
 					son @ip. 
-				</div>
+				</span>
 				<div class="centrer">
 					<a href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:417c3288-42ea-4ee4-94c7-8ef89dc458ca" class="coeur2">
 						Voir la Documentation
 					</a>
 				</div>
 
-				<div class="boutong"> <a href="#nlb" id="toNlb"><span></span></a></div>
+				<div class="boutong"> <a href="#cobian" id="toCobian"><span></span></a></div>
+
+				<!-------------------------------------------------------------------- mettre un espace  --------------------------------------------------------->
+				<div class='espace' id="cobian">
+				</div>
+				<!-------------------------------------------------------------------- Architecture 3 Tiers------------------------------------------------------->
+
+				<div class='cardcobian'>
+					<div class='infocobian'>
+						<h1 class='title'>Cobian Backup</h1>
+						<p class=description>
+							Prérequis : <br><br>- Un Windows serveur (web) avec IIS + PHP (même version que le
+							site) installé avec webplateform installer <br>@IP : 10.0.3.101<br><br>- Un Windows serveur (SGBD) avec MYSQL installé
+							avec webplateform installer + PHPMYADMIN ou NAVICAT (payant)<br>@IP : 10.0.3.100<br><br>- une machine cliente Windows 10<br>@IP : 10.0.3.50
+						</p>
+					</div>
+				</div>
+				<span class="messagedroite">
+					Nous avons mis en place une architecture 3 tiers (avec une machine
+					cliente et 2 serveurs) afin de comprendre comment héberger un site internet en
+					dédiant un service pour chaque serveur. Concernant les services nous avons la
+					BDD installée sur un serveur (APP) en 10.0.0.100, le IIS sur le serveur web en
+					10.0.0.99, les serveurs communiquent entre eux étant donné qu'ils sont dans le même réseau. Mais
+					pour que l’infrastructure puisse marcher nous avons défini au site internet ou aller
+					chercher sa Base De Donnée via le fichier config en indiquant l’@ip du SGBD, et
+					au serveur APP vers qui pointer dans le fichier utilisateur.
+				</span>
+				<div class="centrer">
+					<a href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:f8d9bdda-c852-46a7-b061-a0567c127eaa" class="coeur">
+						Voir la Documentation
+					</a>
+				</div>
+
+				<div class="bouton"> <a href="#nlb" id="toNlb"><span></span></a></div>
 
 				<!-------------------------------------------------------------------- mettre un espace  --------------------------------------------------------->
 				<div class='espace' id="nlb">
 				</div>
-				<!-------------------------------------------------------------------- NLB------------------------------------------------------->
+
+				<!-------------------------------------------------------------------- mettre un espace  --------------------------------------------------------->
 				<div class='cardnlb'>
 					<div class='infonlb'>
 						<h1 class='title'>NLB</h1>
@@ -141,7 +175,7 @@
 					</div>
 				</div>
 
-				<div class="messagedroite">
+				<span class="messagedroite">
 					Afin de mettre en place de la tolérance de panne sur nos serveurs web et ainsi augmenter la QOS nous les avons redondés, de tel façon que si l'un des 2 serveurs tombe ne panne, l'autre
 					prenne le relai. Mettre en place de la redondance nous as poussé a installer la solution NLB (Network Load Balancing) afin de clusteriser nos serveurs WEBs. En plus de mettre en place de la tolérance de panne, l'intêret comme son 
 					nom l'indique est de répartir la charge sur les différents serveurs qui sont dans le cluster pour alleger la charge globale et qu'un serveur ne se retrouve pas surchargé. La solution est donc est scalable, pour rajouter un serveur au 
