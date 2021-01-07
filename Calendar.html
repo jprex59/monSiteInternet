@@ -2,6 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Calendar</title>
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css”>
     <link
       rel="stylesheet"
       href="../monSiteInternet/css/styleCalendrier.css"
@@ -39,31 +40,30 @@
       </div>
 
       <div class="bioo">
-        décrire l'entreprise et remplacer le texte....<br />
-        appelé aussi BTS SIO (service informatique aux organisations), au pôle
-        supérieur Baudimont Saint Charles à Arras avec une spécialité SISR
-        (solutions d’infrastructure, systèmes et réseaux).<br />Durant cette
-        année de BTS j’apprends les différents types d’architectures des réseaux
-        informatiques et notamment comment les installer, les administrer, les
-        protéger et gérer la maintenance des équipements. De manière concrète
-        lors de la formation j’apprends par exemple comment installer les
-        différents services DHCP, IIS (serveur web), AD (annuaire), DNS, pfsens
-        et autres pour répondre aux demandes lors des projets pratiques encadrés
-        visant à reproduire des contextes d’entreprises . Durant la 1ère année
-        j’ai également appris lors des cours de programmation à coder un site
-        internet simple avec la mise en place d’un CRUD connecté à une base de
-        données mais aussi le langage C et Python. <br />Au cours de ma 2e année
-        de BTS en réseau nous avons mit en place progressivement en équipe de 2
-        une architecture avec 3 réseaux distinct :<br />- Une DMZ en 10.0.3.0
-        /24 avec comme passerelle par défault 10.0.3.254 /24 <br />- Un Lan en
-        172.16.3.0 /24 avec comme passerelle par défault 172.16.3.254 /24<br />-
-        Un Wan en 192.168 avec comme passerelle par défault 192.168.3.243 /24<br />
-        le tout connecté à un routeur Zyxel à 3 pattes faisant aussi firewall.
-        le tout est sécurisé par des Vlans que nous n'avons pas configuré mais
-        qu'on pus tester par nous même en ligne de commande avec des Switch
-        Cisco et avec l'interface graphique d'un Switch HP.
-      </div>
+        
+      <!-----<i class="far fa-caret-square-right"></i>--->
+      <a class="pharmagest" href="https://pharmagest.com/qui-sommes-nous/groupe-pharmagest/">Pharmagest (cliquez pour voir le site)</a>
 
+  <a class="pharmagest" href="https://www.lacooperativewelcoop.com/">Groupe : La cooperative Welcoop</a>Stage de 2e année (2020)
+     </br>Durée : 7 semaines du 4 Janvier au 19 Février <br/> Pharmagest est une entreprise du domaine informatique spécialisé dans les pharmacies, les officines ...
+     </br>Pharmagest est divisé en 20 sites dans la France avec les Antilles. J'effectue mon stage à l'agence Pharmagest Cuincy qui se charge de la région nord.
+     </br>Localisation : Zac de la Haute Rive,
+     59553 Cuincy
+     </br><B>Elle dispose de plusieurs services :</B>
+     </br>-L'atelier divisé en 2 parties : SAV et Préparation de serveurs neuf
+     </br>-Les techniciens qui se chargent d'aller sur site pour les installations et la maintenance
+     </br>-ATR qui se charge du Helpdesk qui centralise les appels des pharmacies et agie avec la prise à distance ou si il est dans l'incapacité 
+     de répondre au problème de les transferer au service technique ou au CELT (niveau2) [Répond à la norme ISO]
+     </br><B>En relation avec les services externe à l'agence :</B>
+     </br>-Seisam services chargé pour les problèmes de connections internet et téléphonie
+     </br>-Le centralise
+     </br>-Orange : Pharmagest loue des lignes à Orange dans le cadre d'un partenariat pour fournir aux pharmacies leur propre connection internet (FAI) afin de mettre leur propre sécurité
+      Offisecure. 
+        
+      </div>
+      <div style="text-align: center; margin-top: 2%;"><b>Cliquez sur un jour du calendrier pour accéder à l'emplacement du rapport journalier correspondant</b></div>
+
+      <div style="margin-top: 2%;"></div>
       <!-- Calendrier-->
       <div class="container" id="calendrier">
         <div class="calendar">
@@ -96,11 +96,11 @@
               <tr>
                 <td>2</td>
                 <td>3</td>
-                <td class="current-day event"><a href="#4" id="to4">4</a></td>
+                <td><a href="#4" id="to4">4</a></td>
                 <td><a href="#5" id="to5">5</a></td>
                 <td><a href="#6" id="to6">6</a></td>
                 <td><a href="#7" id="to7">7</a></td>
-                <td><a href="#8" id="to8">8</a></td>
+                <td class="current-day event"><a href="#8" id="to8">8</a></td>
               </tr>
               <tr>
                 <td><a href="#9" id="to9">9</a></td>
@@ -148,23 +148,50 @@
       <div class="jour">
         <h2>04/01/21</h2>
         <div class="infojour">
-          qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqaqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
-          qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
-          qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
-          qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
-          qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+          La première moitié de journée était consacré à l'inventaire, Le midi à la découverte des employés du site :
+          j'ai pu mangé sur site avec tous les employés pour faire connaissance et découvrir les différents services, chacun se sont présentés.
+          Pendant l'après midi un employé de l'atelier m'a éxpliqué le matériel qu'utilisé l'entreprise pour les pharmacies :</br>Serveurs || Ordinateurs
+         ||Routeurs || Switch || Lecteur de carte vitale || imprimantes || Scanners
+        et m'ont expliqué leur choix.
         </div>
       </div>
 
       <div class="jour" id="5">
-        <h2>05/01/21...</h2>
+        <h2>05/01/21</h2>
         <div class="infojour">
-          qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
-          qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
-          qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
-          qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
-          qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
-          qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+          Ce Mardi 5 Janvier des employés de l'atelier m'on fait une démonstration de la configuration d’un serveur sous linux CENTOS et mon expliqué
+          les différents services ainsi que les différents types de serveurs (productions(renouvellement), suivis, SAV, robot). Suite à sa
+          je me suis entrainé sur un serveur test dans le but de me former aux commandes de base Linux avec leur documentation et aussi pour me 
+          familisariser de manière générale à Linux.
+        </div>
+      </div>
+
+      <div class="jour" id="6">
+        <h2>06/01/21</h2>
+        <div class="infojour">
+          Lors de ma 3e journée de stage j'ai assité à une formation présenté par un technicien qui à simulé une installation dans une pharmacies
+          afin de nous expliquer comment installer la solution de pharmagest. Lors de celle-ci j'ai pu découvrir comment installer les différents 
+          appareils : scanners (AVISION 225), imprimantes (TMH6000IV (EPSON) / (fictive) Brother5100 et une Brother pour le logiciel  Posonet), lecteur
+          de carte vitale sur le logiciel LGPI mais également découvrir les outils comme Clonezilla, ackronys et WPI qui permettent de cloner une image 
+          et de configurer un nouvel équipement rapidemment avec des automatisations. j'ai découvert également le protocole de partage SAMBA dans le cadre 
+          du partage d'une imprimante qui n'est pas en réseau mais aussi le gestionnaire de sauvegarde RMAN ainsi que leur configuration
+
+          Formation
+        </div>
+      </div>
+
+      <div class="jour" id="7">
+        <h2>07/01/21</h2>
+        <div class="infojour">
+          Helpdesk
+        </div>
+      </div>
+
+      <div class="jour" id="8">
+        <h2>08/01/21</h2>
+        <div class="infojour">
+          <b>Date du jour</b>, le rapport journalier de ce jour sera affiché demain ou fin de semaine au plus tard 
+           || <b>dernière modififcation sur le site internet : 07/01/20201</b>
         </div>
       </div>
       <!-- end container -->

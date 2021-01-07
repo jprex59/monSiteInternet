@@ -44,15 +44,16 @@ table {
   height: 538px;
   margin: 0 auto;
   align-content: center;
-  display: block;
   top: 50%;
   width: 510px;
 }
 
 /* ---------- CALENDAR ---------- */
 
+
 .calendar {
   text-align: center;
+  display: block;
 }
 
 .calendar header {
@@ -150,7 +151,6 @@ table {
   right: 6em;
 }
 
-
 .boutonbioo {
   opacity: 1;
   -webkit-transition: all 0.5s ease-in 3s;
@@ -203,8 +203,10 @@ table {
 }
 
 .infojour {
+  width: 97%;
   float: left;
   margin-bottom: 2%;
+  text-align: justify;
 }
 a {
   text-decoration: none;
@@ -236,6 +238,13 @@ a {
   font-family: Arial;
 }
 
+.pharmagest{
+  color: blue;
+}
+.pharmagest:hover{
+  color: darkblue;
+  border-radius: 15px;
+}
 
 Resources1×0.5×0.25×Rerun
 
