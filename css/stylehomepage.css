@@ -6,7 +6,8 @@
   width: 98%;
   height: 250px;
   background-image: url("../images/baudimont.PNG");
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   border-radius: 5px;
   overflow: hidden;
 }
