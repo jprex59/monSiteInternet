@@ -226,7 +226,6 @@ li:hover,
   opacity: 0.25;
   transform: translateY(-100%) translateY(88px) translateZ(0);
   transition: transform 0.3s ease-out;
-  filter: blur(10px);
   background-size: cover;
 }
 
