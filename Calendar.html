@@ -1,10 +1,14 @@
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <title>Calendar</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css”>
     <link rel="stylesheet" href="./css/styleCalendrier.css"type="text/css"/>
     <link rel="stylesheet" href="./css/stylehomepage.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
   </head>
   <body>
     <div class="page">
@@ -12,66 +16,85 @@
         <div class="information-bar">
           <ul>
             <p class="name">Jean Paris BTS SIO 2</p>
-            <a
-              href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:0c870d7f-b65d-48c7-b6f8-35ea910810de"
-            >
+            <a href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:0c870d7f-b65d-48c7-b6f8-35ea910810de">
               <li>CV</li>
             </a>
             <a href="techno.html">
-              <li>Veille : Technologique</li>
+            <li>Veille : Technologique</li>
             </a>
             <a href="droit.html">
-              <li>Veille : Juridique</li>
+            <li>Veille : Juridique</li>
             </a>
             <a href="Calendar.html">
               <li>stage</li>
             </a>
-            <a href="index.html">
-              <li>Menu</li>
-            </a>
             <a href="homepage.html">
-              <li>Home</li>
+              <li>SIO</li>
             </a>
             <a href="info.html">
               <li>A propos</li>
             </a>
+            <a href="index.html">
+              <li>Home</li>
+            </a>
           </ul>
           <div class="profile">
-            <img src="images/jean.JPG" />
+            <img src="images/jean.JPG">
           </div>
-        </div>
+        </div> 
       </div>
-
+      <span class="slidespharmagest">
       <div class="bioo">
-        
-      <!-----<i class="far fa-caret-square-right"></i>--->
-      <a class="pharmagest" href="https://pharmagest.com/qui-sommes-nous/groupe-pharmagest/">Pharmagest (cliquez pour voir le site)</a>
+        <a class="pharmagest" href="https://pharmagest.com/qui-sommes-nous/groupe-pharmagest/">Pharmagest (cliquez pour voir le site)</a>
 
-  <a class="pharmagest" href="https://www.lacooperativewelcoop.com/">Groupe : La cooperative Welcoop</a>Stage de 2e année (2020)
-     </br>Durée : 7 semaines du 4 Janvier au 19 Février 2021 <br/> Pharmagest est une entreprise du domaine informatique spécialisée dans les pharmacies/ les officines ...
-     </br>Pharmagest est divisée en 20 sites dans la France avec les Antilles. J'effectue mon stage à l'agence Pharmagest Cuincy qui se charge de la région nord.
-     </br>Localisation : Zac de la Haute Rive,
-     59553 Cuincy
-     </br><B>Elle dispose de plusieurs services :</B>
-     </br>-L'atelier divisé en 2 parties : SAV et Préparation de serveurs neufs
-     </br>-Les techniciens qui se chargent d'aller sur site pour les installations et la maintenance
-     </br>-ATR qui se charge du Helpdesk qui centralise les appels des pharmacies et agit avec la prise à distance ou s'il est dans l'incapacité 
-     de répondre au problème de les transferer au service technique ou au CELT (niveau2) [Répond à la norme ISO]
-     </br><B>En relation avec les services externes à l'agence :</B>
-     </br>-Seisam : service chargé pour les problèmes de connections internet et téléphonique
-     </br>-Orange : Pharmagest loue des lignes à Orange dans le cadre d'un partenariat pour fournir aux pharmacies leur propre connection internet (FAI) afin de mettre leur propre sécurité
-      Offisecure. 
-        
-      </div>
+        <a class="pharmagest" href="https://www.lacooperativewelcoop.com/">Groupe : La cooperative Welcoop</a>Stage de 2e année (2020)
+           </br>Durée : 7 semaines du 4 Janvier au 19 Février 2021 <br/> Pharmagest est une entreprise du domaine informatique spécialisée dans les pharmacies/ les officines ...
+           </br>Pharmagest est divisée en 20 sites dans la France avec les Antilles. J'effectue mon stage à l'agence Pharmagest Cuincy qui est en charge de la  région Haut de France
+           </br>Localisation : Zac de la Haute Rive,
+           59553 Cuincy 
+            </div>
+      <!-----<i class="far fa-caret-square-right"></i>--->
+     
+        </span>
+
+        <span class="slidespharmagest">
+        <div class="slidespharmagest2">
+        </br><B>Elle dispose de plusieurs services :</B>
+      </br>- L'atelier divisé en 2 parties : SAV et Préparation de serveurs neufs
+     </br>- Les techniciens itinérants qui sont en  charge des installations du matériels neuf  et la maintenance des produits installés.
+      </br>- Le Service d'Assistance Technique Régional, A.T.R., qui se charge du Helpdesk qui centralise les appels des pharmacies et agit 
+      avec la prise à distance ou s'il est dans l'incapacité de répondre au problème doit se rapprocher de l'ESEC (Répond à la norme ISO), European Service Expert Center, ou de déclencher
+       une intervention sur site au près des techniciens itinérants.
+        </div>
+        </span>
+
+        <span class="slidespharmagest">
+          <div class="slidespharmagest3">
+          </br><B>En relation avec les services externes à l'agence :</B>
+        </br>- Seisam : service chargé de résoudre les problèmes de solution interne, ex : Pb de connections internet et téléphonique
+        </br>- Oléane : Pharmagest loue des lignes à Oléane dans le cadre d'un partenariat pour fournir aux pharmacies leur propre connexion internet (FAI) afin de mettre leur propre sécurité Offisecure.
+          
+          </div>
+          </span>
+
+
+      <a class="prevpharmagest" onclick="plusSlidess(-1)">&#10094;</a>
+      <a class="nextpharmagest" onclick="plusSlidess(1)">&#10095;</a>
+    </div>
+    <div style="text-align: center">
+      <span class="dotpharmagest" onclick="currentSlides(1)"></span>
+      <span class="dotpharmagest" onclick="currentSlides(2)"></span>
+      <span class="dotpharmagest" onclick="currentSlides(3)"></span>
+    </div>
+  
       <div style="text-align: center; margin-top: 2%;"><b>Cliquez sur un jour du calendrier pour accéder à l'emplacement du rapport journalier correspondant</b></div>
 
       <div style="margin-top: 2%;"></div>
       <!-- Calendrier-->
-      <div class="container" id="calendrier">
+      <div class="containerstage" id="calendrier">
+        <span class="slides">
         <div class="calendar">
           <h2>Janvier</h2>
-          <a class="btn-prev fontawesome-angle-left" href="#"></a>
-          <a class="btn-next fontawesome-angle-right" href="#"></a>
           <table>
             <thead>
               <tr>
@@ -82,6 +105,8 @@
                 <td>Vendredi</td>
                 <td>Samedi</td>
                 <td>Dimanche</td>
+                <td></td>
+                <td>Légende</td>
               </tr>
             </thead>
 
@@ -94,33 +119,42 @@
                 <td>1</td>
                 <td>2</td>
                 <td>3</td>
+                <td></td>
+                <td class="atelier">Atelier</td>
               </tr>
               <tr>
-                <td class="event"><a href="#4" id="to4">4</a></td>
-                <td><a href="#5" id="to5">5</a></td>
-                <td><a href="#6" id="to6">6</a></td>
-                <td><a href="#7" id="to7">7</a></td>
-                <td><a href="#8" id="to8">8</a></td>
+                <td class="atelier"><a href="#4" id="to4">4</a></td>
+                <td class="atelier"><a href="#5" id="to5">5</a></td>
+                <td class="tech"><a href="#6" id="to6">6</a></td>
+                <td class="hotline"><a href="#7" id="to7">7</a></td>
+                <td class="hotline"><a href="#8" id="to8">8</a></td>
                 <td><a href="#9" id="to9">9</a></td>
                 <td><a href="#10" id="to10">10</a></td>
+                <td></td>
+                <td class="hotline">Hotline</td>
               </tr>
               <tr>
-                <td><a href="#11" id="to11">11</a></td>
-                <td><a href="#12" id="to12">12</a></td>
-                <td><a href="#13" id="to13">13</a></td>
-                <td><a href="#14" id="to14">14</a></td>
-                <td><a href="#15" id="to15">15</a></td>
+                <td class="tech"><a href="#11" id="to11">11</a></td>
+                <td class="tech"><a href="#12" id="to12">12</a></td>
+                <td class="hotline"><a href="#13" id="to13">13</a></td>
+                <td class="tech"><a href="#14" id="to14">14</a></td>
+                <td class="tech"><a href="#15" id="to15">15</a></td>
                 <td><a href="#16" id="to16">16</a></td>
                 <td><a href="#17" id="to17">17</a></td>
+                <td></td>
+                <td class="tech">tech</td>
+                   
               </tr>
               <tr>
-                <td class="current-day event"><a href="#18" id="to18">18</a></td>
-                <td><a href="#19" id="to19">19</a></td>
-                <td><a href="#20" id="to20">20</a></td>
-                <td><a href="#21" id="to21">21</a></td>
+                <td class="hotline2"><a href="#18" id="to18">18</a></td>
+                <td class="tech"><a href="#19" id="to19">19</a></td>
+                <td class="tech" ><a href="#20" id="to20">20</a></td>
+                <td class="current-day event"><a href="#21" id="to21">21</a></td>
                 <td><a href="#22" id="to22">22</a></td>
                 <td><a href="#23" id="to23">23</a></td>
                 <td><a href="#24" id="to24">24</a></td>
+                <td></td>
+                <td class="hotline2">niv 2</td>
               </tr>
 
               <tr>
@@ -131,6 +165,8 @@
                 <td><a href="#29" id="to29">29</a></td>
                 <td><a href="#30" id="to30">30</a></td>
                 <td><a href="#31" id="to31">31</a></td>
+                <td></td>
+                <td class="current-day">jour</td>
               </tr>
               <tr>
                 <td class="next-month">1</a></td>
@@ -140,11 +176,115 @@
                 <td class="next-month">5</td>
                 <td class="next-month">6</td>
                 <td class="next-month">7</td>
+                <td></td>
+                <td></td>
               </tr>
             </tbody>
           </table>
         </div>
+        </span>
+
+
+        <!--------------------------------------------2e slide------------------------------------------------------------------------>
+        <span class="slides">
+          <div class="calendar">
+            <h2>Février</h2>
+            <table>
+              <thead>
+                <tr>
+                  <td>Lundi</td>
+                  <td>Mardi</td>
+                  <td>Mercredi</td>
+                  <td>Jeudi</td>
+                  <td>Vendredi</td>
+                  <td>Samedi</td>
+                  <td>Dimanche</td>
+                  <td></td>
+                <td>Légende</td>
+                </tr>
+              </thead>
+  
+              <tbody>
+                <tr>
+                  <td><a href="#1f" id="to1f">1</a></td>
+                  <td><a href="#2f" id="to2f">2</a></td>
+                  <td><a href="#3f" id="to3f">3</a></td>
+                  <td><a href="#4f" id="to4f">4</a></td>
+                  <td><a href="#5f" id="to5f">5</a></td>
+                  <td><a href="#6f" id="to6f">6</a></td>
+                  <td><a href="#7f" id="to7f">7</a></td>
+                  <td></td>
+                  <td class="atelier">Atelier</td>
+                </tr>
+                <tr>
+                  <td><a href="#8f" id="to8f">8</a></td>
+                  <td><a href="#9f" id="to9f">9</a></td>
+                  <td><a href="#10f" id="to10f">10</a></td>
+                  <td><a href="#11f" id="to11f">11</a></td>
+                  <td><a href="#12f" id="to12f">12</a></td>
+                  <td><a href="#13f" id="to13f">13</a></td>
+                  <td><a href="#14f" id="to14f">14</a></td>
+                  <td></td>
+                  <td class="hotline">Hotline</td>
+                </tr>
+                <tr>
+                  <td><a href="#15f" id="to15f">15</a></td>
+                  <td><a href="#16f" id="to16f">16</a></td>
+                  <td><a href="#17f" id="to17f">17</a></td>
+                  <td><a href="#18f" id="to18f">18</a></td>
+                  <td><a href="#19f" id="to19f">19</a></td>
+                  <td>20</td>
+                  <td>21</td>
+                  <td></td>
+                 <td class="tech">Tech</td>
+                </tr>
+                <tr>
+                  <td>22</td>
+                  <td>23</td>
+                  <td>24</td>
+                  <td>25</td>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                  <td></td>
+                  <td class="hotline2">niv 2</td>
+                </tr>
+  
+                <tr>
+                  <td class="next-month">1</a></td>
+                  <td class="next-month">2</a></td>
+                  <td class="next-month">3</td>
+                  <td class="next-month">4</td>
+                  <td class="next-month">5</td>
+                  <td class="next-month">6</td>
+                  <td class="next-month">7</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td class="next-month">8</a></td>
+                  <td class="next-month">9</a></td>
+                  <td class="next-month">10</td>
+                  <td class="next-month">11</td>
+                  <td class="next-month">12</td>
+                  <td class="next-month">13</td>
+                  <td class="next-month">14</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+          </span>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
         <!-- end calendar -->
+      </div>
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
       </div>
       <div id="4"></div>
       <div class="jour">
@@ -157,6 +297,7 @@
         et m'ont expliqué leur choix.
         </div>
       </div>
+    </div>
 
       <div class="jour" id="5">
         <h2>05/01/21</h2>
@@ -234,12 +375,64 @@
       <div class="jour" id="14">
         <h2>14/01/21</h2>
         <div class="infojour">
-          <b>Date du jour</b>, le rapport journalier de ce jour sera affiché demain ou fin de semaine au plus tard 
-           || <b>dernière modification sur le site internet : 13/01/20201</b>
+          Nous avons remplacé tout le parc informatique par du nouveau matériel, soit 6 pcs complet, en passant par un transfert serveur pour changer 
+          celui-ci, nous avons aussi vérifié la sauvegarde RMAN du NAS et la sécurité de celui-ci.
         </div>
       </div>
+      <div class="jour" id="15">
+        <h2>15/01/21</h2>
+        <div class="infojour">
+          Dépannage d’une imprimante sur le Portel et prise de contact avec une cliente afin d'organiser l'intervention du lundi 18 au matin.
+        </div>
+      </div>
+      <div class="jour" id="18">
+        <h2>18/01/21</h2>
+        <div class="infojour">
+          J’ai été à l’atelier au matin, j’ai continué de m’entrainer à l’environnement linux et effectué des tests consistant à effectuer des
+           Visios des pharmacies dépannés auparavant. L'après midi j’ai été avec le technicien de niveau 2. Un dépannage qui m'a marqué à été de
+            trouver pourquoi un des serveurs sous linux d’une pharmacie ne chargeait pas la couche graphique.
+        </div>
+      </div>
+      <div class="jour" id="19">
+        <h2>19/01/21</h2>
+        <div class="infojour">
+          Lors de ce Mardi 19 Janvier nous sommes allés dépanner avec un technicien itinérant 2 imprimante et 2 scanners sur Avelin pour ensuite 
+          revenir à l’agence et terminer notre journée par de la hotline. 
+        </div>
+      </div>
+      <div class="jour" id="20">
+        <h2>20/01/21</h2>
+        <div class="infojour">
+          Ce mercredi 20 Janvier j’ai effectué de la Hotline, un exemple de problème que j’ai pus traiter à été un problème DHCP,
+          la plage d’adresse de celle-ci était pleine, les nouveaux appareils obtenaient donc une @IP en 169 (APIPA). Lors du midi 
+          nous nous sommes occupés d’un transfert sur Lambres, nous avons dû vérifier l’état de celui-ci au préalable à l’atelier pour 
+          ensuite effectuer le transfert lors des horaires de fermeture de la pharmacie au midi.
+        </div>
+      </div>
+      <div class="jour" id="21">
+        <h2>21/01/21</h2>
+        <div class="infojour">
+          <b>Date du jour</b>, le rapport journalier de ce jour sera affiché demain ou fin de semaine au plus tard 
+           || <b>dernière modification sur le site internet : 21/01/20201</b>
+        </div>
+      </div>
+<!--
+      <div class="jour" id="1f">
+        <h2>01/02/21</h2>
+        <div class="infojour">
+         test 1 fevrier
+        </div>
+      </div>
+      <div class="jour" id="2f">
+        <h2>02/02/21</h2>
+        <div class="infojour">
+         test 2 fevrier
+        </div>
+      </div>-->
 
-
+      <script src="./javascript/index.js"></script>
+      <script src="./javascript/pharmagest.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <!-- end container -->
     </div>
   </body>

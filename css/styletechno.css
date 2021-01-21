@@ -1,112 +1,131 @@
-body{
-    background-image: url("../images/smartcities.PNG");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;  
-  }
-  h5{
-    color: white;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-  h5:hover{
-    color: black;
-  }
-  
-  .haut{
-    height: 720px;
-  }
-  
-  .menu{
-    height: 50px;
-    width: 100%;
-    border: double;
-  }
-  
-  
-  /*--------------------------------------*/
-  ul {
-    position: relative;
-    display: flex;
-    padding-left: 200px;
-    height: 100%;
-    margin: 0;
-    margin-left: 5%;
-    text-decoration: none;
-  }
-  
-  .a {
-    margin: 0;
-  }
-  li {
-    list-style: none;
-    cursor: pointer;
-    color:white;
-    font-size: 1.1em;
-    padding: 1em 1.5em;
-    transition: all 0.1s;
-    text-decoration: none;
-    display: inline-table;
-  }
-  
-  li:hover,
-  .active {
-    color: white;
-  }
-  /*------------------------------------------------*/
-  .img {
-    float: left;
-    width: 51%;
-    overflow: hidden;
-  }
-  .gauche{
-    float: left;
-    height: 200px;
-    margin-left: 20%;
-    width: 20%;
-    border: solid;
-    background-color: cornflowerblue;
-  
-  }
-  .droite{
-    float: right;
-    height: 200px;
-    margin-right: 20%;
-    width: 20%;
-    border: solid;
-    overflow: hidden;
-    background-color: darkblue;
-  }
-  
-  .messg{
-    border: solid;
-    width: 30%;
-    float: right;
-    height: 200px;
-    margin-right: 10%;
-  }
-  
-  .messd{
-    border: solid;
-    width: 30%;
-    float: left;
-    height: 200px;
-    margin-left: 10%;
-  }
-  .centrer{
-    margin-top: 20%;
-  }
-  @media all and (max-width: 1100px) {
-    #body{
-        background-size: cover;  
-      }    
-    
-      #centrer{
-        margin-top: 100%;
-      }
-      #haut{
-          height: 2100px;
-      }
+body {
+  background-image: url("../images/smartcities.PNG");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+h5 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+h5:hover {
+  color: black;
+}
 
+.haut {
+  height: 720px;
+}
+
+.menu {
+  height: 4em;
+  width: 100%;
+  border: double;
+}
+
+/*--------------------------------------*/
+ul {
+  position: relative;
+  display: flex;
+  padding-left: 200px;
+  height: 100%;
+  margin: 0;
+  margin-left: 5%;
+  text-decoration: none;
+}
+
+.a {
+  margin: 0;
+}
+li {
+  list-style: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.1em;
+  padding: 1em 1.5em;
+  transition: all 0.1s;
+  text-decoration: none;
+  display: inline-table;
+}
+
+li:hover,
+.active {
+  color: white;
+}
+/*------------------------------------------------*/
+.img {
+  float: left;
+  width: 51%;
+  overflow: hidden;
+}
+.gauche {
+  float: left;
+  height: 200px;
+  margin-left: 20%;
+  width: 20%;
+  border: solid;
+  background-color: cornflowerblue;
+}
+.droite {
+  float: right;
+  height: 200px;
+  margin-right: 20%;
+  width: 20%;
+  border: solid;
+  overflow: hidden;
+  background-color: darkblue;
+}
+
+.messg {
+  border: solid;
+  width: 30%;
+  float: right;
+  height: 200px;
+  margin-right: 10%;
+}
+
+.messd {
+  border: solid;
+  width: 30%;
+  float: left;
+  height: 200px;
+  margin-left: 10%;
+}
+.centrer {
+  margin-top: 20%;
+}
+@media all and (max-width: 1100px) {
+  #centrer {
+    margin-top: 100%;
+  }
+  #haut {
+    height: 2100px;
+  }
+
+  .menu ul {
+    margin-left: 5%;
+    padding-left: 0%;
+  }
+
+  .menu li {
+    padding: 0.7em 0.7em;
+  }
+}
+
+@media all and (max-width:480px)
+{
+
+body:before {
+    display: block;
+    position: fixed;
+    z-index: -10;
+    background: url(../images/smartcities.PNG) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 }

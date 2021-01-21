@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
   padding: 0;
 }
@@ -6,6 +6,51 @@ body{
   background-color: rgb(11, 111, 141);
   width: 100%;
   height: 11vh;
+}
+
+.menuresponsive1 {
+  display: none;
+  height: 6em;
+  border: solid black;
+  background-color: rgb(8, 72, 92);
+  width: 100%;
+}
+
+.menuresponsive2 ul {
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  margin-left: 20%;
+}
+.menuuresponsive2 li {
+  position: relative;
+  display: flex;
+  margin: 0;
+  margin-left: 35%;
+  text-decoration: none;
+}
+.menuresponsive2 a {
+  margin: 0;
+  color: white;
+  text-decoration: none;
+}
+.menuresponsive2 li {
+  border: solid double white;
+  list-style: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5em;
+  padding: 0.5em 1.5em;
+  transition: all 0.1s;
+  text-decoration: none;
+  display: inline-table;
+}
+.menuresponsive2 {
+  display: none;
+  height: 8em;
+  border: solid black;
+  background-color: rgb(11, 111, 141);
+  width: 100%;
 }
 
 /*----------------------------------------------------*/
@@ -71,11 +116,10 @@ body{
   padding-top: 5%;
 }
 
-
 /*----------------------------------------------------------------------------------------------------------------------*/
 
 .coeur {
-  margin-left:5%;
+  margin-left: 5%;
   text-align: center;
   background-color: #ff9234;
   color: white;
@@ -99,7 +143,7 @@ body{
   text-decoration: none;
 }
 
-.slide11{
+.slide11 {
   /*background-image: url("../images/réseau.png");
   width: 100%;
   height: 480px;
@@ -110,81 +154,78 @@ body{
   /*border: solid;*/
   width: 33.4%;
   float: left;
-  height:39vw;
-  background-image: url("../images/testt.jpg");
+  height: 38em;
+  background-image: url("../images/test.JPG");
   background-size: cover;
   background-position: left;
 }
 
-button{
-  margin-top:1%;
+button {
+  margin-top: 1%;
   margin-left: 10px;
 }
 
-.buton{
+.buton {
   background-color: rgba(19, 150, 190, 0.315);
   border-radius: 1em;
 }
 
-.buton:hover{
+.buton:hover {
   background-color: rgba(13, 99, 126, 0.527);
   border-radius: 1em;
   transition-duration: 0.5s;
 }
 
-.buttoninfo{
+.buttoninfo {
   background-color: rgba(19, 150, 190, 0.315);
   border-radius: 1em;
 }
 
-.buttoninfo:hover{
+.buttoninfo:hover {
   background-color: rgba(19, 150, 190, 0.034);
   border-radius: 1em;
   transition-duration: 0.5s;
   transform: rotate(360deg);
 }
 
-
-
-.buttonSIO2{
+.buttonSIO2 {
   background-color: rgba(13, 99, 126, 0.527);
   border-radius: 1em;
 }
 
-.buttonSIO2:hover{
+.buttonSIO2:hover {
   background-color: rgba(19, 150, 190, 0.034);
   border-radius: 1em;
 }
 
-.slide12{
- /* border: solid;*/
+.slide12 {
+  /* border: solid;*/
   width: 33.3%;
   float: left;
-  height:39vw;
+  height: 38em;
   background: url("../images/code.PNG");
   background-size: cover;
   background-position: center;
 }
 
-.slide13{
+.slide13 {
   /*border: solid;*/
   width: 33.3%;
   float: left;
-  height:39vw;
+  height: 38em;
   background-image: url("../images/cybersec.PNG");
   background-size: cover;
   background-position: center;
 }
 
-
-.infoslide1{
+.infoslide1 {
   color: white;
   text-align: center;
   text-transform: uppercase;
   margin-top: 50%;
   font-family: sans-serif;
 }
-.infoslide11{
+.infoslide11 {
   margin-top: 6%;
   font-family: sans-serif;
   color: white;
@@ -193,7 +234,7 @@ button{
 }
 
 .coeurslide1 {
-  margin-left:28%;
+  margin-left: 28%;
   text-align: center;
   background-color: rgba(19, 150, 190, 0.315);
   color: white;
@@ -296,7 +337,7 @@ ul li a:hover {
 }
 
 /*--------------------------------------*/
-.menuu{
+.menuu {
   color: white;
   height: 9%;
   width: 100%;
@@ -328,23 +369,65 @@ ul li a:hover {
   display: inline-table;
 }
 
-.objectif{
+.objectif {
   margin-left: 5%;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
   text-align: justify;
   color: white;
   width: 40%;
   margin-top: 2%;
+  float: right;
 }
 
-.prenom{
+.prenom {
   margin-left: 5%;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
   text-align: center;
   margin-top: 1.8%;
   color: white;
   float: left;
 }
+
 /*------------------------------------------------*/
+@media all and (max-width: 1100px) {
+  .slide11 {
+    height: 60em;
+  }
+  .slide12 {
+    height: 60em;
+  }
+  .slide13 {
+    height: 60em;
+  }
+  .prev,
+  .next {
+    top: 30em;
+  }
+
+  .infoslide1 {
+    margin-top: 12em;
+  }
+  .backdrop {
+    height: 60em;
+  }
+  .menu {
+    display: none;
+  }
+  .menuresponsive1 {
+    display: flex;
+  }
+  .menuresponsive2 {
+    display: flex;
+  }
+  .coeurslide1 {
+    margin-left: 20%;
+  }
+  .prenom {
+    margin-top: 3%;
+  }
+  .objectif {
+    margin-top: 3%;
+  }
+}
