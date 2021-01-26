@@ -399,7 +399,7 @@ ul.tl li .item-detail{
     font-size:0.8em;
     text-align: justify;
     font-weight: normal;
-    font-family: cursive;
+    font-family: monospace;
 }
 ul.tl li .timestamp{
     color: #000000;
