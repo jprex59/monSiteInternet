@@ -6,7 +6,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css”>
-    <link rel="stylesheet" href="./css/styleCalendrier.css"type="text/css"/>
+    <link rel="stylesheet" href="./css/styleCalendrier.css" type="text/css"/>
     <link rel="stylesheet" href="./css/stylehomepage.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=0.5" />
   </head>
@@ -204,7 +204,7 @@
                 <td class="hotline2"><a href="#18" id="to18">18</a></td>
                 <td class="tech"><a href="#19" id="to19">19</a></td>
                 <td class="tech" ><a href="#20" id="to20">20</a></td>
-                <td class="current-day event"><a href="#21" id="to21">21</a></td>
+                <td class="hotline"><a href="#21" id="to21">21</a></td>
                 <td class="tech"><a href="#22" id="to22">22</a></td>
                 <td><a href="#23" id="to23">23</a></td>
                 <td><a href="#24" id="to24">24</a></td>
@@ -214,8 +214,8 @@
 
               <tr>
                 <td class="atelier"><a href="#25" id="to25">25</a></td>
-                <td class="current-day event"><a href="#26" id="to26">26</a></td>
-                <td><a href="#27" id="to27">27</a></td>
+                <td class="hotline"><a href="#26" id="to26">26</a></td>
+                <td class="current-day event"><a href="#27" id="to27">27</a></td>
                 <td><a href="#28" id="to28">28</a></td>
                 <td><a href="#29" id="to29">29</a></td>
                 <td><a href="#30" id="to30">30</a></td>
@@ -341,135 +341,205 @@
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
       </div>
-      <div id="4"></div>
-      <div class="jour">
-        <h2>04/01/21</h2>
-        <div class="infojour">
-          La première moitié de journée était consacrée à l'inventaire, Le midi à la découverte des employés du site :
-          j'ai pu manger sur site avec tous les employés pour faire connaissance et découvrir les différents services, chacun s'est présenté.
-          Pendant l'après midi un employé de l'atelier m'a éxpliqué le matériel qu'utilise l'entreprise pour les pharmacies :</br>Serveur || Ordinateurs
-         ||Routeur || Switch || Lecteur de carte vitale || imprimantes || Scanners
-        et m'ont expliqué leur choix.
-        </div>
-      </div>
-    </div>
 
-      <div class="jour" id="5">
-        <h2>05/01/21</h2>
-        <div class="infojour">
-          Ce Mardi 5 Janvier des employés de l'atelier m'ont fait une démonstration de la configuration d’un serveur sous linux CENTOS et m'ont expliqué
-          les différents services ainsi que les différents types de serveurs (productions(renouvellement), suivis, SAV, robot). Suite à ça
-          je me suis entrainé sur un serveur test dans le but de me former aux commandes de base Linux avec leur documentation et aussi pour me 
-          familisariser de manière générale à Linux.
-        </div>
-      </div>
 
-      <div class="jour" id="6">
-        <h2>06/01/21</h2>
-        <div class="infojour">
-          Lors de ma 3e journée de stage j'ai assité à une formation présentée par un technicien qui a simulé une installation dans une pharmacie
-          afin de nous expliquer comment installer la solution de pharmagest. Lors de celle-ci j'ai pu découvrir comment installer les différents 
-          appareils : scanners (AVISION 225), imprimantes (TMH6000IV (EPSON) / (fictive) Brother5100 et une Brother (pour le logiciel  Posonet), lecteur
-          de carte vitale sur le logiciel LGPI mais également découvrir les outils comme Clonezilla, ackronys et WPI qui permettent de cloner une image 
-          et de configurer un nouvel équipement rapidemment avec des automatismes. J'ai découvert également le protocole de partage SAMBA dans le cadre 
-          du partage d'une imprimante qui n'est pas en réseau mais aussi le gestionnaire de sauvegarde RMAN ainsi que leurs configurations.
-        </div>
-      </div>
 
-      <div class="jour" id="7">
-        <h2>07/01/21</h2>
-        <div class="infojour">
-          Lors de cette journée j'ai été dans le service Helpdesk dans lequel j'ai pu partager avec un technicien de niveau 1, j'ai pu écouter les 
-          discussions avec le client, dialoguer avec lui sur certaines interrogations et problèmes rencontrés. Il m'a fait part de sa méthodologie 
-          lui permettant de comprendre au mieux le problème du client par des tests qu'il effectuait et un discours precis avec le client formé
-          en amont à la compréhenssion du vocabulaire lié au matériel. Nous avons discuté des solutions que Pharmagest met en place, des types de pannes qu'il rencontre
-          et des outils/ moyens qu'il dispose afin d'y répondre au mieux : Prise à distance, logiciel de ticket, hotline, technicien ...  
-        </div>
-      </div>
 
-      <div class="jour" id="8">
-        <h2>08/01/21</h2>
-        <div class="infojour">
-          journée similaire à celle de la veille : prise de contact avec les clients, assistance et dialogue sur l'informatique.
-          A ce jour un problème lié au DHCP m'a marqué, le problème était que les produits venant de APPLE prenaient une @IP en 169
-          (donc une addresse apipa) contrairement aux autres appareils venant de chez lenovo qui prenaient automatiquement une configuration 
-          ip en 192.168.0.X . La finalité étant que le réseau wifi avait une clef de sécurité trop forte pour les appareils provenant de chez
-          la marque Apple. On a donc crée un 2e WAN avec une sécurité moindre spécialement pour ces appareils.
-        </div>
-      </div>
+      <link href='//fonts.googleapis.com/css?family=Roboto:200,400,600' rel='stylesheet' type='text/css'>
+      <div class="history-tl-container">
+        <ul class="tl">
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="4">
+              04/01/21
+            </div>
+            <div class="item-title">Atelier</div>
+            <div class="item-detail">La première moitié de journée était consacrée à l'inventaire, Le midi à la découverte des employés du site :
+              j'ai pu manger sur site avec tous les employés pour faire connaissance et découvrir les différents services, chacun s'est présenté.
+              Pendant l'après midi un employé de l'atelier m'a éxpliqué le matériel qu'utilise l'entreprise pour les pharmacies :</br>Serveur || Ordinateurs
+             ||Routeur || Switch || Lecteur de carte vitale || imprimantes || Scanners
+            et m'ont expliqué leur choix.</div>
+          </li>
 
-      <div class="jour" id="11">
-        <h2>11/01/21</h2>
-        <div class="infojour">
-           Lors de ce lundi 11 janvier j'ai été placé dans le service des techniciens itinérants,
-           nous sommes allés sur Lens à la pharmacie du Cantin, Béthune à la pharmacie du Perroy 
-           et Ecourt Saint Quentin à la pharmacie Brandicourt afin d'intervenir sur un changement de routeur, 
-           un problème lié à une mauvaise configuration dans le BIOS et à un changement d'imprimante
-        </div>
-      </div>
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="5">
+              05/01/21
+            </div>
+            <div class="item-title" id="5">Atelier</div>
+            <div class="item-detail">Ce Mardi 5 Janvier des employés de l'atelier m'ont fait une démonstration de la configuration d’un serveur 
+              sous linux CENTOS et m'ont expliqué les différents services ainsi que les différents types de serveurs (productions(renouvellement), suivis, SAV, robot). 
+              Suite à ça je me suis entrainé sur un serveur test dans le but de me former aux commandes de base Linux avec leur documentation et aussi pour me 
+              familisariser de manière générale à Linux.
 
-      <div class="jour" id="12">
-        <h2>12/01/21</h2>
-        <div class="infojour">
-          Lors de ce Mardi 12 Janvier j'ai passé ma journée avec un technicien itinérant à la pharmacie Martin à Ferin 
-          pour un renouvellement d'une bonne partie du parc informatique : Imprimante/ un scanner/ une TMH/ 2 switchs 8 ports/ 
-          4 Pcs et carte lecteur de carte vitale. Le changement à durée la journée, de 8H30 au matin à 17H le soir, nous avons du faire 
-          les sauvegardes, changer le matériel, restaurer les sauvegardes, effectuer les configurations sur le nouveau matériel déjà prêt
-          à l'emploi,  préparé par les hommes de l'atelier en amont. 
-        </div>
-      </div>
+            </div>
+          </li>
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="6">
+              06/01/21
+            </div>
+            <div class="item-title">Technicien</div>
+            <div class="item-detail">Lors de ma 3e journée de stage j'ai assité à une formation présentée par un technicien qui a simulé une installation dans une 
+              pharmacie afin de nous expliquer comment installer la solution de pharmagest. Lors de celle-ci j'ai pu découvrir comment installer les différents appareils
+               : scanners (AVISION 225), imprimantes (TMH6000IV (EPSON) / (fictive) Brother5100 et une Brother (pour le logiciel Posonet), lecteur de carte vitale sur le 
+               logiciel LGPI mais également découvrir les outils comme Clonezilla, ackronys et WPI qui permettent de cloner une image et de configurer un nouvel équipement
+                rapidemment avec des automatismes. J'ai découvert également le protocole de partage SAMBA dans le cadre du partage d'une imprimante qui n'est pas en réseau 
+                mais aussi le gestionnaire de sauvegarde RMAN ainsi que leurs configurations.</div>
+          </li>
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="7">
+              07/01/21
+            </div>
+            <div class="item-title">Technicien</div>
+            <div class="item-detail">Lors de cette journée j'ai été dans le service Helpdesk dans lequel j'ai pu partager avec un technicien de niveau 1, j'ai pu écouter 
+              les discussions avec le client, dialoguer avec lui sur certaines interrogations et problèmes rencontrés. Il m'a fait part de sa méthodologie lui permettant 
+              de comprendre au mieux le problème du client par des tests qu'il effectuait et un discours precis avec le client formé en amont à la compréhenssion du vocabulaire
+               lié au matériel. Nous avons discuté des solutions que Pharmagest met en place, des types de pannes qu'il rencontre et des outils/ moyens qu'il dispose afin d'y répondre 
+               au mieux : Prise à distance, logiciel de ticket, hotline, technicien ...</div>
+          </li>
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="8">
+              08/01/21
+            </div>
+            <div class="item-title">Hotline</div>
+            <div class="item-detail">
+              journée similaire à celle de la veille : prise de contact avec les clients, assistance et dialogue sur l'informatique. A ce jour un problème lié au DHCP m'a marqué, 
+              le problème était que les produits venant de APPLE prenaient une @IP en 169 (donc une addresse apipa) contrairement aux autres appareils venant de chez lenovo qui 
+              prenaient automatiquement une configuration ip en 192.168.0.X . La finalité étant que le réseau wifi avait une clef de sécurité trop forte pour les appareils provenant
+               de chez la marque Apple. On a donc crée un 2e WAN avec une sécurité moindre spécialement pour ces appareils.
+            </div>
+          </li>
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="11">
+              11/01/21
+            </div>
+            <div class="item-title">Technicien</div>
+            <div class="item-detail">
+              Lors de ce lundi 11 janvier j'ai été placé dans le service des techniciens itinérants, nous sommes allés sur Lens à la pharmacie du Cantin, Béthune à la pharmacie 
+              du Perroy et Ecourt Saint Quentin à la pharmacie Brandicourt afin d'intervenir sur un changement de routeur, un problème lié à une mauvaise configuration dans le BIOS
+               et à un changement d'imprimante
+            </div>
+          </li>
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="12">
+              12/01/21
+            </div>
+            <div class="item-title" id="5">Technicien</div>
+            <div class="item-detail">
+              Lors de ce Mardi 12 Janvier j'ai passé ma journée avec un technicien itinérant à la pharmacie Martin à Ferin pour un renouvellement d'une bonne partie du parc informatique :
+               Imprimante/ un scanner/ une TMH/ 2 switchs 8 ports/ 4 Pcs et carte lecteur de carte vitale. Le changement à durée la journée, de 8H30 au matin à 17H le soir, nous avons du 
+               faire les sauvegardes, changer le matériel, restaurer les sauvegardes, effectuer les configurations sur le nouveau matériel déjà prêt à l'emploi, préparé par les hommes de 
+               l'atelier en amont.
+            </div>
+          </li>
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="13">
+              13/01/21
+            </div>
+            <div class="item-title" id="5">Hotline</div>
+            <div class="item-detail">Lors de cette journée j'ai été dans le service helpdesk avec les hotliners, une intervention qui m'a bien plu a été la configuration à distance d'une box 
+              Orange : configuration du DHCP</div>
+          </li>
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="14">
+              14/01/21
+            </div>
+            <div class="item-title">Technicien</div>
+            <div class="item-detail">
+              Nous avons remplacé tout le parc informatique par du nouveau matériel, soit 6 pcs complet, en passant par un transfert serveur pour changer celui-ci, nous avons aussi vérifié 
+              la sauvegarde RMAN du NAS et la sécurité de celui-ci.
+            </div>
+          </li>
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="15">
+              15/01/21
+            </div>
+            <div class="item-title">Technicien</div>
+            <div class="item-detail">
+              Dépannage d’une imprimante sur le Portel et prise de contact avec une cliente afin d'organiser l'intervention du lundi 18 au matin.
+            </div>
+          </li>
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="18">
+              18/01/21
+            </div>
+            <div class="item-title">Technicien de niveau 2</div>
+            <div class="item-detail">
+              J’ai été à l’atelier au matin, j’ai continué de m’entrainer à l’environnement linux et effectué des tests consistant à effectuer
+               des Visios des pharmacies dépannés auparavant. L'après midi j’ai été avec le technicien de niveau 2. Un dépannage qui m'a marqué à été de trouver pourquoi un des serveurs 
+               sous linux d’une pharmacie ne chargeait pas la couche graphique.
+            </div>
+          </li>
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="19">
+              19/01/21
+            </div>
+            <div class="item-title">Technicien</div>
+            <div class="item-detail">Lors de ce Mardi 19 Janvier nous sommes allés dépanner avec un technicien itinérant 2 imprimante et 2 scanners sur Avelin pour ensuite revenir à
+               l’agence et terminer notre journée par de la hotline.</div>
+          </li>
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="20">
+              20/01/21
+            </div>
+            <div class="item-title">Technicien</div>
+            <div class="item-detail">Ce mercredi 20 Janvier j’ai effectué de la Hotline, un exemple de problème que j’ai pus traiter à été un problème DHCP, la plage d’adresse de 
+              celle-ci était pleine, les nouveaux appareils obtenaient donc une @IP en 169 (APIPA). Lors du midi nous nous sommes occupés d’un transfert sur Lambres, nous avons dû 
+              vérifier l’état de celui-ci au préalable à l’atelier pour ensuite effectuer le transfert lors des horaires de fermeture de la pharmacie au midi.</div>
+          </li>
 
-      <div class="jour" id="13">
-        <h2>13/01/21</h2>
-        <div class="infojour">
-          Lors de cette journée j'ai été dans le service helpdesk avec les hotliners, une intervention qui m'a bien plu a été la configuration à distance 
-          d'une box Orange : configuration du DHCP 
-        </div>
-      </div>
+          <!--
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="21">
+              21/01/21
+            </div>
+            <div class="item-title">Kill some Orcs</div>
+            <div class="item-detail">Don't enter the caves!!</div>
+          </li>
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="22">
+              22/01/21
+            </div>
+            <div class="item-title">Kill some Orcs</div>
+            <div class="item-detail">Don't enter the caves!!</div>
+          </li>
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="25">
+              25/01/21
+            </div>
+            <div class="item-title">Kill some Orcs</div>
+            <div class="item-detail">Don't enter the caves!!</div>
+          </li>
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="26">
+              26/01/21
+            </div>
+            <div class="item-title">Kill some Orcs</div>
+            <div class="item-detail">Don't enter the caves!!</div>
+          </li>
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="27">
+              27/01/21
+            </div>
+            <div class="item-title">Kill some Orcs</div>
+            <div class="item-detail">Don't enter the caves!!</div>
+          </li>
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="28">
+              28/01/21
+            </div>
+            <div class="item-title">Kill some Orcs</div>
+            <div class="item-detail">Don't enter the caves!!</div>
+          </li>
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="29">
+              29/01/21
+            </div>
+            <div class="item-title">Kill some Orcs</div>
+            <div class="item-detail">Don't enter the caves!!</div>
+          </li>      
+        </ul>
 
-      <div class="jour" id="14">
-        <h2>14/01/21</h2>
-        <div class="infojour">
-          Nous avons remplacé tout le parc informatique par du nouveau matériel, soit 6 pcs complet, en passant par un transfert serveur pour changer 
-          celui-ci, nous avons aussi vérifié la sauvegarde RMAN du NAS et la sécurité de celui-ci.
-        </div>
-      </div>
-      <div class="jour" id="15">
-        <h2>15/01/21</h2>
-        <div class="infojour">
-          Dépannage d’une imprimante sur le Portel et prise de contact avec une cliente afin d'organiser l'intervention du lundi 18 au matin.
-        </div>
-      </div>
-      <div class="jour" id="18">
-        <h2>18/01/21</h2>
-        <div class="infojour">
-          J’ai été à l’atelier au matin, j’ai continué de m’entrainer à l’environnement linux et effectué des tests consistant à effectuer des
-           Visios des pharmacies dépannés auparavant. L'après midi j’ai été avec le technicien de niveau 2. Un dépannage qui m'a marqué à été de
-            trouver pourquoi un des serveurs sous linux d’une pharmacie ne chargeait pas la couche graphique.
-        </div>
-      </div>
-      <div class="jour" id="19">
-        <h2>19/01/21</h2>
-        <div class="infojour">
-          Lors de ce Mardi 19 Janvier nous sommes allés dépanner avec un technicien itinérant 2 imprimante et 2 scanners sur Avelin pour ensuite 
-          revenir à l’agence et terminer notre journée par de la hotline. 
-        </div>
-      </div>
-      <div class="jour" id="20">
-        <h2>20/01/21</h2>
-        <div class="infojour">
-          Ce mercredi 20 Janvier j’ai effectué de la Hotline, un exemple de problème que j’ai pus traiter à été un problème DHCP,
-          la plage d’adresse de celle-ci était pleine, les nouveaux appareils obtenaient donc une @IP en 169 (APIPA). Lors du midi 
-          nous nous sommes occupés d’un transfert sur Lambres, nous avons dû vérifier l’état de celui-ci au préalable à l’atelier pour 
-          ensuite effectuer le transfert lors des horaires de fermeture de la pharmacie au midi.
-        </div>
-      </div>
-      <div class="jour" id="21">
-        <h2>21/01/21</h2>
-        <div class="infojour">
-          <b>Date du jour</b>, le rapport journalier de ce jour sera affiché demain ou fin de semaine au plus tard 
-           || <b>dernière modification sur le site internet : 21/01/20201</b>
-        </div>
+        --->
+      
       </div>
 <!--
       <div class="jour" id="1f">
