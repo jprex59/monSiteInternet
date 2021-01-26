@@ -398,6 +398,8 @@ ul.tl li .item-detail{
     color:rgb(0, 0, 0);
     font-size:0.8em;
     text-align: justify;
+    font-weight: normal;
+    font-family: cursive;
 }
 ul.tl li .timestamp{
     color: #000000;
@@ -420,6 +422,15 @@ ul.tl li .timestamp{
 .history-tl-container {
   margin-left: 5%;
   width: 90%;
+}
+
+.responsiveli li{
+  padding-top: 1.5em;
+  padding-left: 0.8em;
+  color: white;
+  margin-top: 2em;
+  font-weight: bold;
+  font-size: x-large;
 }
 
 .history-tl-container ul.tl li {

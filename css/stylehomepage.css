@@ -64,7 +64,7 @@ ul {
 .a {
   margin: 0;
 }
-li {
+li{
   list-style: none;
   cursor: pointer;
   color: #d5d5d8;
@@ -607,15 +607,16 @@ div a {
   .boutong a {
     display: none;
   }
+ 
 
-  .menu li{
+    li {
     padding-top: 1.5em;
     padding-left: 0.8em;
     color: white;
     margin-top: 2em;
     font-weight: bold;
     font-size: x-large;
-  } 
+  }
 
   .sidebar{
     width: 280px;
@@ -632,6 +633,7 @@ div a {
   .information-bar ul {
     display: none;
    }
+   
 }
 
 
