@@ -24,6 +24,11 @@ a {
   background-color: #151728;
 }
 
+.information-bar ul {
+ display: flex;
+}
+
+
 .profile {
   position: absolute;
   display: flex;
@@ -62,7 +67,7 @@ ul {
 li {
   list-style: none;
   cursor: pointer;
-  color: #5c5e6e;
+  color: #d5d5d8;
   font-size: 1.1em;
   padding-top: 1.5em;
   padding-left: 1em;
@@ -524,6 +529,71 @@ div a {
   background-position: center;
 }
 
+.hamburger {
+  position: absolute;
+  top: 13em;
+  right: 35px;
+  cursor: pointer;
+  display: block;
+}
+
+.closehamburger2{
+  position: absolute;
+  top: 13em;
+  right: 35px;
+  cursor: pointer;
+  display: none;
+}
+
+.closehamburger2 span{
+  display: block;
+  width: 30px;
+  height: 0.3rem;
+  margin: 0.3rem 0;
+  background-color: #fffdfd;
+  border-radius: 5px;
+}
+.closehamburger1{
+  font-size: -webkit-xxx-large;
+  position: absolute;
+  top: 0.5em;
+  left: 5em;
+  cursor: pointer;
+  transform: translateX(-20em);
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 0.3rem;
+  margin: 0.3rem 0;
+  background-color: #fffdfd;
+  border-radius: 5px;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 210px;
+  height: 100vh;
+  background-color:#151728;;
+  transform: translateX(-218px);
+  transition: all .2s;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.closehamburger1.open {
+  transform: translateX(0);
+}
+
+
 @media all and (max-width: 1100px) {
   
   .bio{
@@ -546,19 +616,30 @@ div a {
     padding-top: 1.5em;
     padding-left: 0.8em;
     color: white;
+    margin-top: 2em;
+    font-weight: bold;
+    font-size: x-large;
+  } 
+
+  .sidebar{
+    width: 280px;
+    transform: translateX(-290px);
   }
 
+  .closehamburger1{
+    left: 6em;
+  }
   li:hover{
     color: teal;
   }
 
-  /*
-  .information-bar ul a{
+  .information-bar ul {
     display: none;
-  }
-  .menuderoulant{
-    display: block;
-  }*/
-
- /* .information-bar nav */
+   }
 }
+
+
+
+
+
+

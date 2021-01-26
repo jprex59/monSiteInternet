@@ -180,7 +180,7 @@ table {
 
 .event {
   cursor: pointer;
-  position: relative;
+  /*position: relative;*/
 }
 
 .event:after {
