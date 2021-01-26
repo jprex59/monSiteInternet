@@ -7,6 +7,7 @@ const prevpharmagest = document.querySelector('.prevpharmagest');
 const nextpharmagest = document.querySelector('.nextpharmagest');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
+const timeline = document.querySelector('.history-tl-container');
 
 
 let touchStart, touchEnd;
@@ -23,6 +24,7 @@ icon.addEventListener('click', () => {
   next.style.display = 'none';
   prevpharmagest.style.display = 'none';
   nextpharmagest.style.display = 'none';
+  timeline.style.display = 'none';
 });
 
 closesidebar.addEventListener('click', () => {
@@ -34,6 +36,7 @@ closesidebar.addEventListener('click', () => {
   next.style.display = 'block';
   prevpharmagest.style.display = 'block';
   nextpharmagest.style.display = 'block';
+  timeline.style.display = 'block';
 });
 
 closesidebar2.addEventListener('click', () => {
@@ -46,6 +49,7 @@ closesidebar2.addEventListener('click', () => {
   next.style.display = 'block';
   prevpharmagest.style.display = 'block';
   nextpharmagest.style.display = 'block';
+  timeline.style.display = 'block';
 });
 
 sidebar.addEventListener('touchstart', e => {
@@ -69,6 +73,7 @@ sidebar.addEventListener('touchend', e => {
     next.style.display = 'block';
     prevpharmagest.style.display = 'block';
     nextpharmagest.style.display = 'block';
+    timeline.style.display = 'block';
   }
 });
 

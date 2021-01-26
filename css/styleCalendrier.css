@@ -381,14 +381,14 @@ table {
     content: " ";
     border: 8px solid rgba(255, 255, 255, 0.74);
     border-radius: 500%;
-    background: #258CC7;
+    background: #151728;
     height: 20px;
     width: 20px;
     transition: all 500ms ease-in-out;
 
 }
 .history-tl-container ul.tl li:hover::before{
-    border-color:  #258CC7;
+    border-color:  #1517287e;
     transition: all 1000ms ease-in-out;
 }
 ul.tl li .item-title{
@@ -399,7 +399,7 @@ ul.tl li .item-detail{
     font-size:0.8em;
     text-align: justify;
     font-weight: normal;
-    font-family: monospace;
+    font-family: sans-serif;
 }
 ul.tl li .timestamp{
     color: #000000;
