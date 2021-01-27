@@ -120,9 +120,6 @@ table {
   display: none;
 }
 
-.slidespharmagest {
- /* display: none;*/
-}
 
 .dot {
   cursor: pointer;
@@ -245,9 +242,14 @@ table {
   border-width: 0px 0 2px 2px;
 }
 
+.video{
+  display: block;
+  background-position: right;
+  right: 0;
+}
 
 .slidespharmagest2{
-  margin-top: 2%;
+  margin-top: 1%;
   padding-left: 1%;
   padding-right: 1%;
   text-align: justify;
@@ -256,10 +258,10 @@ table {
   background-position: right;
   background-repeat: no-repeat;
   background-color: #ececec;
-  height: 30em;
+  height: 37em;
 }
 .slidespharmagest3{
-  margin-top: 2%;
+  margin-top: 1%;
   padding-left: 1%;
   padding-right: 1%;
   text-align: justify;
@@ -268,19 +270,84 @@ table {
   background-position: right;
   background-repeat: no-repeat;
   background-color: #ececec;
-  height: 30em;
+  height: 37em;
 }
 .bioo {
-  margin-top: 2%;
   padding-left: 1%;
   padding-right: 1%;
   text-align: justify;
   font-family: Arial;
-  background-image: url("../images/pharmagestbio.PNG");
-  background-position: right;
-  background-repeat: no-repeat;
   background-color: #ececec;
-  height: 30em;
+  height: 37em;
+  margin-top: 1%;
+}
+
+
+
+.biooresponsive {
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: justify;
+  font-family: Arial;
+  background-color: #ececec;
+  height: 36em;
+  margin-top: 1%;
+  display: none;
+}
+
+
+.infoslidespharmagest{
+  float: left;
+  width: 28%;
+  max-height: 36em;
+  text-align: justify;
+  padding: 0.5em;
+}
+/******responsive*********/
+
+.titre{
+  text-align: center;
+  color: #70b121;
+  margin-bottom: 0%;
+}
+
+/******responsive***********/
+
+.infoslides2pharmagest h2{
+  text-align: center;
+  color: #70b121;
+  margin-bottom: 0%;
+}
+
+.infoslides2pharmagest{
+  float: left;
+  width: 28%;
+  height: 36em;
+  text-align: justify;
+  padding: 0.5em;
+}
+
+.infoslides3pharmagest h2{
+  text-align: center;
+  color: #70b121;
+  margin-bottom: 0%;
+}
+
+.infoslides3pharmagest{
+  float: left;
+  width: 28%;
+  height: 36em;
+  text-align: justify;
+  padding: 0.5em;
+}
+
+.infoslides3pharmagest a{
+  color: #70b121;
+}
+
+.servicespharmagest{
+  color: #70b121;
+  font-size: 1em;
 }
 
 .pharmagest{
@@ -399,7 +466,7 @@ ul.tl li .item-detail{
     font-size:0.8em;
     text-align: justify;
     font-weight: normal;
-    font-family: sans-serif;
+    font-family: monospace;
 }
 ul.tl li .timestamp{
     color: #000000;
@@ -411,6 +478,50 @@ ul.tl li .timestamp{
 }
 /*****************************************************************************/
 
+
+@media all and (max-width: 1230px) {
+  .infoslidespharmagest{
+    width: 70%;    
+    height: 28em;
+  }
+  .videoslide1{
+    display: none;
+  }
+  .bioo{
+    background-image: url("../images/pharmagestbio.PNG");
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 30em;
+    }
+    .videoslide2{
+      display: none;
+    }
+    .slidespharmagest2{
+    background-image: url("../images/pharmagestbio.PNG");
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 30em;
+    }
+    .infoslides2pharmagest{
+      width: 70%; 
+      height: 28em;   
+    }
+
+  .videoslide3{
+    display: none;
+  }
+  .slidespharmagest3{
+  background-image: url("../images/pharmagestbio.PNG");
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 30em;
+  }
+  .infoslides3pharmagest{
+    width: 70%; 
+    height: 28em;   
+  }
+}
+
 @media all and (max-width: 1100px) {
   .prev, .next{
     top: 20em;
@@ -419,21 +530,20 @@ ul.tl li .timestamp{
   ul.tl li .timestamp {
     left: -30%;
 }
-.history-tl-container {
+  .history-tl-container {
   margin-left: 5%;
   width: 90%;
-}
-
-.responsiveli li{
+  }
+  .responsiveli li{
   padding-top: 1.5em;
   padding-left: 0.8em;
   color: white;
   margin-top: 2em;
   font-weight: bold;
   font-size: x-large;
-}
+  }
 
-.history-tl-container ul.tl li {
+  .history-tl-container ul.tl li {
     margin-left: 20%;
-}
+  }
 }
