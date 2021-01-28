@@ -471,4 +471,7 @@ ul li a:hover {
   .coeurslide1 {
     margin-left: 10%;
   }
+  ul li {
+    padding: 0.5em;
+}
 }
