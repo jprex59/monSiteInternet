@@ -250,7 +250,9 @@ li:hover,
   width: 100%;
   float: left;
 }
-
+.espacebio{
+  height: 12em;
+}
 
 /*--------------image avec info dynamique pour NLB ----------*/
 .cardnlb {
@@ -630,6 +632,9 @@ div a {
 
   .information-bar ul {
     display: none;
+   }
+   .espacebio{
+     display: none;
    }
    
 }
