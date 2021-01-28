@@ -607,9 +607,7 @@ div a {
   .boutong a {
     display: none;
   }
- 
-
-    li {
+  li {
     padding-top: 1.5em;
     padding-left: 0.8em;
     color: white;
@@ -637,10 +635,10 @@ div a {
 }
 
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 800px) {
   
   .bio{
-      font-size: 10px;
+      font-size: 0.7em;
   }
 }
 

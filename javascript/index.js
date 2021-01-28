@@ -1,42 +1,6 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+/*********************Animation ecriture progrssive*********
 
-/*setInterval(, 3000);*/
-
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    let slides = document.getElementsByClassName('slides');
-    let dots = document.getElementsByClassName('dot');
-    
-    if(n > slides.length) { slideIndex = 1 }
-    
-    if(n < 1 ) { slideIndex = slides.length }
-    
-    // Cacher toutes les slides
-    for(let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    
-    // Retirer "active" de tous les points
-    for(let i = 0; i < dots.length; i++) {
-      dots[i].classList.remove('active');
-    }
-    
-    // Afficher la slide demandée
-    slides[slideIndex - 1].style.display = 'block';
-    
-    // Ajouter "active" sur le point cliqué
-    dots[slideIndex - 1].classList.add('active');
-  }
-
-  $(document).ready(function(){
+$(document).ready(function(){
     var typed = new Typed(".texte", {
         strings: ["Âge : 19 ans", "Diplôme : Bac +2","Localisation : Haut De France"],
         typeSpeed: 80,
@@ -44,19 +8,50 @@ function showSlides(n) {
         loop: true
     });
 });
+**********************************************************************/
 
+/************Variable pour le menu*************************/
 const button = document.querySelector(".coeurslide1");
 const nav = document.querySelector("nav");
 const backdrop = document.querySelector(".backdrop");
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+const icon = document.querySelector('.hamburger');
+const closbackdrop = document.querySelector('.closehamburger');
 
+
+/*************Ouvrir le menu****************************/
 button.addEventListener("click", () => {
   nav.classList.add("open");
+  icon.style.display = 'none';
+  prev.style.display = 'none';
+  next.style.display = 'none';
+  closbackdrop.style.display = 'block';
 });
 
+icon.addEventListener('click', () => {
+  nav.classList.add("open");
+  icon.style.display = 'none';
+  prev.style.display = 'none';
+  next.style.display = 'none';
+  closbackdrop.style.display = 'block';
+});
+
+/***********Fermer le menu************************/
 backdrop.addEventListener("click", () => {
   nav.classList.remove("open");
+  icon.style.display = 'block';
+  closbackdrop.style.display = 'none';
+  prev.style.display = 'block';
+  next.style.display = 'block';
 });
 
-/********************************************************************************************************************************************************************************
- *****************************************************************************************************************************************************************************************
- *********************************************************************************************************************************************************************************/
+closbackdrop.addEventListener('click', () => {
+  nav.classList.remove("open");
+  closbackdrop.style.display = 'none';
+  icon.style.display = 'block';
+  prev.style.display = 'block';
+  next.style.display = 'block';
+  
+});
+
