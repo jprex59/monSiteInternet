@@ -3,13 +3,15 @@ body {
   margin: 0;
   background-color: #1b4570;
   overflow-x: hidden;
+  font-family: sans-serif;
 }
+
+
 h5 {
   color: white;
   text-align: center;
   font-size: 50px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: sans-serif;
   margin: 0;
 }
 
@@ -75,7 +77,7 @@ ul {
   height: 100%;
   margin: 0;
   font-size: 1em;
-  font-family: ui-monospace;
+  font-family: sans-serif;
 }
 
 .a {
@@ -206,20 +208,6 @@ li:hover,
   height: 200px;
   margin-left: 10%;
 }
-
-@media all and (max-width: 1100px) {
-  .menu ul {
-    margin-left: 5%;
-    padding-left: 0%;
-  }
-
-  .menu li {
-    padding: 0.7em 0.7em;
-  }
-}
-
-
-
 @media all and (max-width: 1100px) {
   li {
     padding-top: 1.5em;
@@ -246,12 +234,25 @@ li:hover,
     display: none;
    }
 
-   .presentation{
+   .menu ul {
+    margin-left: 5%;
+    padding-left: 0%;
+  }
+
+  .menu li {
+    padding: 0.7em 0.7em;
+  }
+  .presentation{
     background-attachment: initial;
     background-size:cover;
     height: 80em;
-  }   
+    }  
 }
 
-
-
+@media (orientation: landscape) and (max-device-width : 640px) {
+  .presentation{
+    background-attachment: initial;
+    background-size:cover;
+    height: 80em;
+    }  
+}

@@ -1,3 +1,9 @@
+body{
+  font-family: sans-serif;
+}
+
+
+
 /*---------------------------Home Page--------------------*/
 .menu {
   position: relative;
@@ -58,7 +64,7 @@ ul {
   height: 100%;
   margin: 0;
   font-size: 1em;
-  font-family: ui-monospace;
+  font-family: sans-serif;
 }
 
 .a {
@@ -127,15 +133,16 @@ li:hover,
 .title {
   margin: 0;
   padding: 24px;
-  font-size: 35px;
+  font-size: 25px;
   line-height: 1.5;
+  width: 100%;
   color: rgba(00 0 0 0.87);
 }
 
 .description {
   margin: 0;
   padding: 0 24px 24px;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.5;
   text-align: justify;
 }
@@ -517,7 +524,7 @@ div a {
   padding-left: 1%;
   padding-right: 1%;
   text-align: justify;
-  font-family: Arial;
+  font-family: sans-serif;
 }
 
 .visio {
