@@ -2,7 +2,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  text-decoration: none;
 }
+/**********************************************************************************/
+
 .menu {
   position: relative;
   margin: auto;
@@ -17,7 +20,8 @@ body {
   text-align: center;
   color: white;
   margin: 0;
-  margin-left: 6em;
+  width: 70%;
+  margin-left: 3em;
   margin-top: 0.5em;
 }
 
@@ -53,6 +57,7 @@ img {
   color: white;
   margin-left: 0.1em;
   font-size: 1.4em;
+  width: 270px;
 }
 
 div.information-bar ul {
