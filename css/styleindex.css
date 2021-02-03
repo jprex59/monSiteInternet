@@ -161,6 +161,10 @@ div.information-bar ul {
   background: url("../images/cybersec.PNG");
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .slide13 {
@@ -183,7 +187,6 @@ div.information-bar ul {
 }
 
 .coeurslide1 {
-  margin-left: 30%;
   text-align: center;
   background-color: rgba(19, 150, 190, 0.315);
   color: white;
@@ -517,22 +520,12 @@ a {
   .responsiveinfoslide12{
     height: 50%;
   }
-  .coeurslide1 {
-    margin-left: 25%;
-  }
 }
 @media all and (max-width: 1100px) {
 
 
   .infoslide1 {
     margin-top: 12em;
-  }
-  .backdrop {
-    height: 60em;
-  }
-
-  .coeurslide1 {
-    margin-left: 20%;
   }
   .responsiveinfoslide12{
     height: 60%;
@@ -542,12 +535,15 @@ a {
     justify-content: center;
   }
 }
-@media all and (max-width:950px){
+@media all and (max-width:970px){
   .slide2{
-    height: 45em;
+    height: 60em;
   }
 }
 @media all and (max-width: 900px) {
+  .backdrop {
+    height: 60em;
+  }
   .titre{
     display: none;
   }
@@ -556,9 +552,6 @@ a {
   }
   .responsiveinfoslide12{
     height: 50%;
-  }
-  .coeurslide1 {
-    margin-left: 10%;
   }
   nav ul li {
     padding: 0.5em;
@@ -573,9 +566,6 @@ a {
 .slide13 {
   height: 60em;
 }
-.slide2{
-  height: 60em;
-}
 .prev,
 .next {
   top: 30em;
@@ -586,3 +576,4 @@ a {
   justify-content: space-between;
 }
 }
+

@@ -18,6 +18,8 @@ const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const icon = document.querySelector('.hamburger');
 const closbackdrop = document.querySelector('.closehamburger');
+const card = document.querySelector('.card');
+
 
 
 /*************Ouvrir le menu****************************/
@@ -26,6 +28,7 @@ button.addEventListener("click", () => {
   icon.style.display = 'none';
   prev.style.display = 'none';
   next.style.display = 'none';
+  card.style.display = 'none';
   closbackdrop.style.display = 'block';
 });
 
@@ -34,6 +37,7 @@ icon.addEventListener('click', () => {
   icon.style.display = 'none';
   prev.style.display = 'none';
   next.style.display = 'none';
+  card.style.display = 'none';
   closbackdrop.style.display = 'block';
 });
 
@@ -44,6 +48,7 @@ backdrop.addEventListener("click", () => {
   closbackdrop.style.display = 'none';
   prev.style.display = 'block';
   next.style.display = 'block';
+  card.style.display = 'flex';
 });
 
 closbackdrop.addEventListener('click', () => {
@@ -52,6 +57,6 @@ closbackdrop.addEventListener('click', () => {
   icon.style.display = 'block';
   prev.style.display = 'block';
   next.style.display = 'block';
-  
+  card.style.display = 'flex';  
 });
 

@@ -61,8 +61,8 @@ footer{
     text-align: left;
     animation: 0.3s print;
     padding: 4px;
+    cursor:initial;
   }
-  
   
   
   @media all and (max-width: 900px) {
