@@ -1,523 +1,596 @@
-body{
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
+body {
+    margin: 0;
+    padding: 0;
+    font: 300 100%/1.5em 'Lato', sans-serif;
 }
 
+
+/****************************menudoc*******************************************/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card__wrapper {
+    height: 12em;
+    width: 13em;
+    margin: 3em;
+    margin-bottom: 0;
+    margin-top: 0;
+    position: relative;
+}
+
+.card__image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2rem;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.card__image--cobian {
+    background-image: url("../images/cobian.JPG");
+}
+
+.card__image--3tiers {
+    background-image: url("../images/arch3tiers.PNG");
+}
+
+.card__image--eon {
+    background-image: url("../images/eon.jpg");
+}
+
+.card__image--ad {
+    background-image: url("../images/ad.jpg");
+}
+
+.card__image--dns {
+    background-image: url("../images/dns.jpg");
+}
+
+.card__image--dhcp {
+    background-image: url("../images/dhcp.png");
+}
+
+.card__image--nlb {
+    background-image: url("../images/nlb.png");
+}
+
+.card__image--avoir {
+    background-image: url("../images/avoir.png");
+}
+
+.card__link {
+    margin-top: 0.5rem;
+    color: white;
+    border-radius: 10px 100px / 120px;
+    background-color: #204998;
+    padding: 0.5rem;
+    margin-bottom: 5%;
+}
+
+.card__title {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    width: 90%;
+    opacity: 0;
+    text-align: center;
+}
+
+.card:hover .card__image {
+    filter: blur(5px) brightness(0.6);
+}
+
+.card:hover .card__title {
+    opacity: 1;
+}
+
+.container {
+    margin: auto;
+    width: 98%;
+    background-color: #eaeaea;
+    background-image: url("../images/windowsserver.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 200px;
+}
+
+.container--responsive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 1500px;
+}
+
+.container--title {
+    width: 100%;
+    text-align: center;
+    margin: 1em;
+    text-transform: uppercase;
+}
 
 
 /*--------------image avec info dynamique pour architecture 3 tiers ----------*/
 
 .cardarch {
-  border-radius: 16px;
-  margin-left: 2%;
-  float: left;
-  width: 37%;
-  height: 30%;
-  max-width: 100%; 
-  min-height: 30%;
-  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2);
- /* background-color: rgb(238, 228, 228);*/
-  overflow: hidden;
-  background-image: url("../images/arch3tiers.PNG");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+    border-radius: 16px;
+    margin-left: 2%;
+    float: left;
+    width: 37%;
+    height: 30%;
+    max-width: 100%;
+    min-height: 30%;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2);
+    /* background-color: rgb(238, 228, 228);*/
+    overflow: hidden;
+    background-image: url("../images/arch3tiers.PNG");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .infoarch {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  background-color: rgb(238, 228, 228);
-  transform: translateY(100%) translateY(-88px) translateZ(0);
-  transition: transform 0.3s ease-out;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(238, 228, 228);
+    transform: translateY(100%) translateY(-88px) translateZ(0);
+    transition: transform 0.3s ease-out;
 }
 
 .infoarch:before {
-  z-index: -1;
-  display: block;
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-image: url("../images/arch3tiers.PNG");
-  filter: blur(10px);
-  background-size: cover;
-  opacity: 0.25;
-  transform: translateY(-100%) translateY(88px) translateZ(0);
-  transition: transform 0.3s ease-out;
+    z-index: -1;
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("../images/arch3tiers.PNG");
+    filter: blur(10px);
+    background-size: cover;
+    opacity: 0.25;
+    transform: translateY(-100%) translateY(88px) translateZ(0);
+    transition: transform 0.3s ease-out;
 }
 
+
 /*----Commun---a----tous----les-----cadres*/
+
 .title {
-  margin: 0;
-  padding: 24px;
-  font-size: 25px;
-  line-height: 1.5;
-  width: 100%;
-  color: rgba(00 0 0 0.87);
+    margin: 0;
+    padding: 24px;
+    font-size: 25px;
+    line-height: 1.5;
+    width: 100%;
+    color: rgba(00 0 0 0.87);
 }
 
 .description {
-  margin: 0;
-  padding: 0 24px 24px;
-  font-size: 15px;
-  line-height: 1.5;
-  text-align: justify;
+    margin: 0;
+    padding: 0 24px 24px;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
 }
+
+
 /*------------------*/
 
 .cardarch:hover .infoarch,
 .cardarch:hover .infoarch:before {
-  transform: translateY(0) translateZ(0);
+    transform: translateY(0) translateZ(0);
 }
+
+
 /*-------------------CobianBackup-----------*/
 
 .cardcobian {
-  border-radius: 16px;
-  margin-left: 2%;
-  float: left;
-  width: 30%;
-  height: 7%;
-  max-width: 100%;
-  min-height: 470px;
-  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  background-image: url("../images/cobian.JPG");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+    border-radius: 16px;
+    margin-left: 2%;
+    float: left;
+    width: 30%;
+    height: 7%;
+    max-width: 100%;
+    min-height: 470px;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-image: url("../images/cobian.JPG");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .infocobian {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  background-color: rgb(238, 228, 228);
-  transform: translateY(100%) translateY(-88px) translateZ(0);
-  transition: transform 0.3s ease-out;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(238, 228, 228);
+    transform: translateY(100%) translateY(-88px) translateZ(0);
+    transition: transform 0.3s ease-out;
 }
 
 .infocobian:before {
-  z-index: -1;
-  display: block;
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-image: url("../images/arch3tiers.PNG");
-  filter: blur(10px);
-  background-size: cover;
-  opacity: 0.25;
-  transform: translateY(-100%) translateY(88px) translateZ(0);
-  transition: transform 0.3s ease-out;
+    z-index: -1;
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("../images/arch3tiers.PNG");
+    filter: blur(10px);
+    background-size: cover;
+    opacity: 0.25;
+    transform: translateY(-100%) translateY(88px) translateZ(0);
+    transition: transform 0.3s ease-out;
 }
-
 
 .cardcobian:hover .infocobian,
 .cardcobian:hover .infocobian:before {
-  transform: translateY(0) translateZ(0);
+    transform: translateY(0) translateZ(0);
 }
 
+
 /*--------------image avec info dynamique pour eon ----------*/
+
 .cardeon {
-  border-radius: 16px;
-  margin-right: 2%;
-  float: right;
-  width: 37%;
-  height: 30%;
-  max-width: 100%;
-  min-height: 200px;
-  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  background-image: url("../images/eon.jpg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+    border-radius: 16px;
+    margin-right: 2%;
+    float: right;
+    width: 37%;
+    height: 30%;
+    max-width: 100%;
+    min-height: 200px;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-image: url("../images/eon.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .infoeon {
-  width: 100%;
-  height: 530px;
-  background-color: rgb(238, 228, 228);
-  transform: translateY(100%) translateY(-88px) translateZ(0);
-  transition: transform 0.3s ease-out;
-  background-image: url("../images/descriptioneon.PNG");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+    width: 100%;
+    height: 530px;
+    background-color: rgb(238, 228, 228);
+    transform: translateY(100%) translateY(-88px) translateZ(0);
+    transition: transform 0.3s ease-out;
+    background-image: url("../images/descriptioneon.PNG");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .infoeon:before {
-  z-index: -1;
-  display: block;
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  filter: blur(10px);
-  opacity: 0.25;
-  transform: translateY(-100%) translateY(88px) translateZ(0);
-  transition: transform 0.3s ease-out;
-  background-size: cover;
+    z-index: -1;
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    filter: blur(10px);
+    opacity: 0.25;
+    transform: translateY(-100%) translateY(88px) translateZ(0);
+    transition: transform 0.3s ease-out;
+    background-size: cover;
 }
 
 .cardeon:hover .infoeon,
 .cardeon:hover .infoeon:before {
-  transform: translateY(0) translateZ(0);
+    transform: translateY(0) translateZ(0);
 }
 
-/*-------------Pour---mettre--un--espace--------------*/
-.espace {
-  margin-top: 8%;
-  margin-bottom: 8%;
+
+
+.informations{
   width: 100%;
-  float: left;
+  background-image: url('../images/baudimont.jpg');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 100px;
+  background-color: #eaeaea;
 }
-.espacebio{
-  height: 12em;
+.informations p{
+  margin-top: 3em;
+  text-align: justify;
+  width: 88%;
+  padding: 1em;
+  font-family: sans-serif;
+  font-size: 17px;
 }
+
 
 /*--------------image avec info dynamique pour NLB ----------*/
+
 .cardnlb {
-  border-radius: 16px;
-  margin-left: 2%;
-  float: left;
-  width: 37%;
-  height: 35%;
-  max-width: 100%;
-  min-height: 200px;
-  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  background-image: url("../images/nlb.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+    border-radius: 16px;
+    margin-left: 2%;
+    float: left;
+    width: 37%;
+    height: 35%;
+    max-width: 100%;
+    min-height: 200px;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-image: url("../images/nlb.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .infonlb {
-  width: 100%;
-  height: 610px;
-  background-color: rgb(238, 228, 228);
-  transform: translateY(100%) translateY(-88px) translateZ(0);
-  transition: transform 0.3s ease-out;
-  background-image: url("../images/nlbcluster.PNG");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+    width: 100%;
+    height: 610px;
+    background-color: rgb(238, 228, 228);
+    transform: translateY(100%) translateY(-88px) translateZ(0);
+    transition: transform 0.3s ease-out;
+    background-image: url("../images/nlbcluster.PNG");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .infonlb:before {
-  z-index: -1;
-  display: block;
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-image: url("../images/nlb.png");
-  filter: blur(10px);
-  background-size: cover;
-  opacity: 0.25;
-  transform: translateY(-100%) translateY(88px) translateZ(0);
-  transition: transform 0.3s ease-out;
+    z-index: -1;
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("../images/nlb.png");
+    filter: blur(10px);
+    background-size: cover;
+    opacity: 0.25;
+    transform: translateY(-100%) translateY(88px) translateZ(0);
+    transition: transform 0.3s ease-out;
 }
+
 .cardnlb:hover .infonlb,
 .cardnlb:hover .infonlb:before {
-  transform: translateY(0) translateZ(0);
+    transform: translateY(0) translateZ(0);
 }
 
 .messagedroite {
-  float: left;
-  margin-top: 3%;
-  margin-left: 5%;
-  width: 50%;
-  font-size: 20px;
-  text-align: justify;
+    float: left;
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 50%;
+    font-size: 20px;
+    text-align: justify;
 }
 
 .messagegauche {
-  float: right;
-  margin-top: 3%;
-  margin-right: 5%;
-  width: 50%;
-  font-size: 20px;
-  text-align: justify;
+    float: right;
+    margin-top: 3%;
+    margin-right: 5%;
+    width: 50%;
+    font-size: 20px;
+    text-align: justify;
 }
 
 .coeur {
-  float: left;
-  margin-left: 20%;
-  margin-top: 10%;
-  background-color: #1488fa;
-  color: white;
-  border: 0;
-  padding: 0.5em 1em;
-  font-size: 1.5em;
-  border-radius: 1em;
-  outline: 0;
-  cursor: pointer;
-  transition: all 0.1s;
-  box-shadow: 0 0 0 0 rgba(255, 71, 84, 0.7);
-  animation: battement 2s infinite cubic-bezier(0.66, 0, 0, 1);
+    float: left;
+    margin-left: 20%;
+    margin-top: 10%;
+    background-color: #1488fa;
+    color: white;
+    border: 0;
+    padding: 0.5em 1em;
+    font-size: 1.5em;
+    border-radius: 1em;
+    outline: 0;
+    cursor: pointer;
+    transition: all 0.1s;
+    box-shadow: 0 0 0 0 rgba(255, 71, 84, 0.7);
+    animation: battement 2s infinite cubic-bezier(0.66, 0, 0, 1);
 }
 
 .coeur:hover {
-  background-color: #6da8e273;
+    background-color: #6da8e273;
 }
 
 .coeur2 {
-  float: left;
-  margin-top: 10%;
-  margin-left: 41%;
-  background-color: #1488fa;
-  color: white;
-  border: 0;
-  padding: 0.5em 1em;
-  font-size: 1.5em;
-  border-radius: 1em;
-  outline: 0;
-  cursor: pointer;
-  transition: all 0.1s;
-  box-shadow: 0 0 0 0 rgba(255, 71, 84, 0.7);
-  animation: battement 2s infinite cubic-bezier(0.66, 0, 0, 1);
+    float: left;
+    margin-top: 10%;
+    margin-left: 41%;
+    background-color: #1488fa;
+    color: white;
+    border: 0;
+    padding: 0.5em 1em;
+    font-size: 1.5em;
+    border-radius: 1em;
+    outline: 0;
+    cursor: pointer;
+    transition: all 0.1s;
+    box-shadow: 0 0 0 0 rgba(255, 71, 84, 0.7);
+    animation: battement 2s infinite cubic-bezier(0.66, 0, 0, 1);
 }
 
 .coeur2:hover {
-  background-color: #6da8e273;
+    background-color: #6da8e273;
 }
-/*BOUTON AVEC SECTION-------------------------*/
+
+
+/*******************BOUTON AVEC SECTION-------------------------*/
 
 div a {
-  display: block;
+    display: block;
 }
 
 .boutonbio {
-  opacity: 1;
-  -webkit-transition: all 0.5s ease-in 3s;
-  transition: all 0.5s ease-in 3s;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in 3s;
+    transition: all 0.5s ease-in 3s;
 }
 
 .boutonbio a {
-  display: inline-block;
-  float: left;
-  margin-top: 2%;
-  margin-left: 44%;
-  padding: 25px;
-  width: 32px;
-  height: 32px;
-  border: 2px solid black;
-  background-size: 14px auto;
-  border-radius: 50%;
-  z-index: 2;
-  -webkit-animation: bounce 2s infinite 2s;
-  animation: bounce 2s infinite 2s;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+    display: table-column-group;
+    float: right;
+    margin-right: 5%;
+    bottom: 0;
+    position: fixed;
+    padding: 5px;
+    width: 32px;
+    height: 32px;
+    border: 2px solid black;
+    background-size: 14px auto;
+    border-radius: 50%;
+    z-index: 2;
+    -webkit-animation: bounce 2s infinite 2s;
+    animation: bounce 2s infinite 2s;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    margin-left: 90%;
+    margin-bottom: 1%;
 }
 
 .boutonbio a span:before {
-  position: relative;
-  top: calc(50% - 8px);
-  left: calc(50% - 7px);
-  transform: rotate(-45deg);
-  display: block;
-  width: 12px;
-  height: 12px;
-  content: "";
-  border: 2px solid black;
-  border-width: 0px 0 2px 2px;
+    position: relative;
+    top: calc(50% - 8px);
+    bottom: 2px;
+    left: calc(50% - 7px);
+    transform: rotate(134deg);
+    display: block;
+    width: 10px;
+    height: 10px;
+    content: "";
+    border: 2px solid black;
+    border-width: 0px 0 2px 2px;
 }
 
-.bouton {
-  opacity: 1;
-  -webkit-transition: all 0.5s ease-in 3s;
-  transition: all 0.5s ease-in 3s;
-}
-
-.bouton a {
-  float: left;
-  margin-top: 2%;
-  margin-left: 26%;
-  padding: 25px;
-  width: 32px;
-  height: 32px;
-  border: 2px solid black;
-  background-size: 14px auto;
-  border-radius: 50%;
-  z-index: 2;
-  -webkit-animation: bounce 2s infinite 2s;
-  animation: bounce 2s infinite 2s;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-.bouton a span:before {
-  position: relative;
-  top: calc(50% - 8px);
-  left: calc(50% - 7px);
-  transform: rotate(-45deg);
-  display: block;
-  width: 12px;
-  height: 12px;
-  content: "";
-  border: 2px solid black;
-  border-width: 0px 0 2px 2px;
-}
-
-.boutong {
-  opacity: 1;
-  -webkit-transition: all 0.5s ease-in 3s;
-  transition: all 0.5s ease-in 3s;
-}
-
-.boutong a {
-  float: left;
-  margin-top: 1%;
-  margin-left: 48%;
-  padding: 25px;
-  width: 32px;
-  height: 32px;
-  border: 2px solid black;
-  background-size: 14px auto;
-  border-radius: 50%;
-  z-index: 2;
-  -webkit-animation: bounce 2s infinite 2s;
-  animation: bounce 2s infinite 2s;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-.boutong a span:before {
-  position: relative;
-  top: calc(50% - 8px);
-  left: calc(50% - 7px);
-  transform: rotate(-45deg);
-  display: block;
-  width: 12px;
-  height: 12px;
-  content: "";
-  border: 2px solid black;
-  border-width: 0px 0 2px 2px;
-}
-
-.boutonhaut {
-  opacity: 1;
-  -webkit-transition: all 0.5s ease-in 3s;
-  transition: all 0.5s ease-in 3s;
-}
-
-.boutonhaut a {
-  float: right;
-  margin-top: 1%;
-  margin-right: 47%;
-  padding: 25px;
-  width: 32px;
-  height: 32px;
-  border: 2px solid black;
-  background-size: 14px auto;
-  border-radius: 50%;
-  z-index: 2;
-  -webkit-animation: bounce 2s infinite 2s;
-  animation: bounce 2s infinite 2s;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-.boutonhaut a span:before {
-  position: relative;
-  top: calc(50% - 8px);
-  left: calc(50% - 7px);
-  transform: rotate(135deg);
-  display: block;
-  width: 12px;
-  height: 12px;
-  content: "";
-  border: 2px solid black;
-  border-width: 0px 0 2px 2px;
-}
 .bio {
-  margin-top: 2%;
-  padding-left: 1%;
-  padding-right: 1%;
-  text-align: justify;
-  font-family: sans-serif;
+    margin-top: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-align: justify;
+    font-family: sans-serif;
 }
 
 .visio {
-  margin-top: 2%;
-  padding-left: 1%;
-  width: 99%;
-  height: 550px;
-  background-image: url("../images/Visio\ infra\ bts\ 2e\ année.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+    margin-top: 2%;
+    padding-left: 1%;
+    height: 550px;
+    background-image: url("../images/Visio\ infra\ bts\ 2e\ année.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/************************responsive*****************************************************/
+@media all and (max-width: 1560px) {
+    .container--responsive {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 1260px) {
+    .card__wrapper {
+        margin: 2em;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .container--responsive {
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 1260px) {
+    .card__wrapper {
+        margin: 1em;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media all and (max-width: 1160px) {
+    .sidebar li {
+        padding-top: 1.5em;
+        padding-left: 0.8em;
+        color: white;
+        margin-top: 2em;
+        font-weight: bold;
+        font-size: x-large;
+    }
+    .information-bar li {
+        display: none;
+    }
+    .sidebar {
+        width: 280px;
+        transform: translateX(-290px);
+    }
+    .closehamburger1 {
+        left: 6em;
+    }
+    li:hover {
+        color: teal;
+    }
+    .information-bar ul {
+        display: none;
+    }
+    .espacebio {
+        display: none;
+    }
+    .container--responsive {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .container--responsive {
+        width: 70%;
+    }
+}
+@media all and (max-width: 950px) {
+.visio{
+  background-image: url('../images/Visio\ infra\ bts\ 2e\ année\ verticale.png');
   background-position: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  background-size: contain;
+  height: 50em;
 }
-
-
-
-
-@media all and (max-width: 1100px) {
-  .bouton a{
-    display: none;
-  }
-  .boutonbio a {
-    display: none;
-  }
-  .boutonhaut a{
-    display: none;
-  }
-  .boutong a {
-    display: none;
-  }
-  .sidebar li {
-    padding-top: 1.5em;
-    padding-left: 0.8em;
-    color: white;
-    margin-top: 2em;
-    font-weight: bold;
-    font-size: x-large;
-  }
-  .information-bar li{
-    display: none;
-  }
-
-  .sidebar{
-    width: 280px;
-    transform: translateX(-290px);
-  }
-
-  .closehamburger1{
-    left: 6em;
-  }
-  li:hover{
-    color: teal;
-  }
-
-  .information-bar ul {
-    display: none;
-   }
-   .espacebio{
-     display: none;
-   }
-   
+.informations p{
+  padding: 0.5em;
+  font-size: 10px;
+  width: 85%;
 }
-
-
+.informations{
+  background-position: right;
+}
+h5{
+  font-size: 14px;
+}
+}
 @media all and (max-width: 800px) {
-  
-  .bio{
-      font-size: 0.7em;
-  }
+    .bio {
+        font-size: 0.7em;
+    }
+    .card__wrapper {
+        margin: 1em;
+        margin-top: 3em;
+        margin-bottom: 0;
+    }
 }
 
-
-
-
-
-
+@media all and (max-width: 718px) {
+  .container--responsive {
+    width: 100%;
+  }
+}

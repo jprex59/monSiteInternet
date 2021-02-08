@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container--section{
+    height: 28em;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    border-top-right-radius: 5%;
+    color: white;
+    text-align: justify;
+    width: 50%;
+}
+
+.section1{
+   background-color: #0c2461;
+}
+
+.section2{
+    background-color: #1e3799;
+}
+
+.section3{
+    background-color: #4a69bd;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.section4{
+    background-color: #6a89cc;
+}
+h1{
+    text-transform: uppercase;
+    border-left: 4mm ridge rgb(161, 40, 40);
+    margin: 0;
+    padding: 10px;
+    margin-left: 25px;
+}
+
+.section3 h1{
+    width: -webkit-fill-available;
+}
+
+h3{
+    text-transform: uppercase;
+    border-left: solid 4px black ;
+    padding: 5px;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+h5{
+    text-transform: uppercase;
+    border-left: solid 4px black ;
+    padding: 5px;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 4%;
+}
+
+.container--section p{
+    margin-left: 40px;
+    padding: 5px;
+    text-align: justify;
+}
+
+.container--section a{
+    color: rgb(165, 22, 22);
+    transition: all 1s;
+    font-weight: bold;
+}
+
+.container--section a:hover{
+    text-decoration: underline white;
+}
+.container--section ul{
+    cursor:initial;
+    width: 15em;
+}
+.container--section ul li{
+    margin: 0;
+    padding: 0;
+}
+
+.section3 h5{
+    margin-left: 0px;
+    margin-bottom: 5%;
+}
+
+@media all and (max-width : 1136px){
+    .container--section{
+        width: 100%;
+    }
+    .container--section ul{
+        width: auto;
+    }
+}
