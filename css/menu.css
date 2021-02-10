@@ -70,14 +70,14 @@
     cursor: pointer;
     color: #ffffff;
     font-size: 1.1em;
-    padding-top: 1.5em;
+    padding-top: 1.3em;
     padding-left: 1em;
     transition: all 0.1s;
   }
   
   li:hover,
   .active {
-    color: white;
+    color: rgb(163, 142, 142);
   }
   
   .hamburger {
