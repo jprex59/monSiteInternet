@@ -214,6 +214,9 @@ li:hover,
     .closehamburger1 {
         left: 13em;
     }
+    .onglet {
+        font-size: 40px;
+    }
 }
 
 @media all and (max-width: 800px) {
