@@ -123,23 +123,24 @@ body {
     text-transform: uppercase;
 }
 
+.informations {
+    width: 100%;
+    background-image: url('../images/baudimont.jpg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100px;
+    background-color: #eaeaea;
+}
 
-.informations{
-  width: 100%;
-  background-image: url('../images/baudimont.jpg');
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 100px;
-  background-color: #eaeaea;
+.informations p {
+    margin-top: 3em;
+    text-align: justify;
+    width: 88%;
+    padding: 1em;
+    font-family: sans-serif;
+    font-size: 17px;
 }
-.informations p{
-  margin-top: 3em;
-  text-align: justify;
-  width: 88%;
-  padding: 1em;
-  font-family: sans-serif;
-  font-size: 17px;
-}
+
 .visio {
     margin-top: 2%;
     padding-left: 1%;
@@ -150,7 +151,9 @@ body {
     background-position: center;
 }
 
+
 /************************responsive*****************************************************/
+
 @media all and (max-width: 1560px) {
     .container--responsive {
         width: 100%;
@@ -185,9 +188,6 @@ body {
         font-weight: bold;
         font-size: x-large;
     }
-    .information-bar li {
-        display: none;
-    }
     .sidebar {
         width: 280px;
         transform: translateX(-290px);
@@ -197,9 +197,6 @@ body {
     }
     li:hover {
         color: teal;
-    }
-    .information-bar ul {
-        display: none;
     }
     .container--responsive {
         width: 100%;
@@ -211,27 +208,29 @@ body {
         width: 70%;
     }
 }
+
 @media all and (max-width: 950px) {
-.visio{
-  background-image: url('../images/Visio\ infra\ bts\ 2e\ année\ verticale.png');
-  background-position: center;
-  margin-bottom: 5%;
-  margin-top: 5%;
-  background-size: contain;
-  height: 50em;
+    .visio {
+        background-image: url('../images/Visio\ infra\ bts\ 2e\ année\ verticale.png');
+        background-position: center;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        background-size: contain;
+        height: 50em;
+    }
+    .informations p {
+        padding: 0.5em;
+        font-size: 10px;
+        width: 85%;
+    }
+    .informations {
+        background-position: right;
+    }
+    h5 {
+        font-size: 14px;
+    }
 }
-.informations p{
-  padding: 0.5em;
-  font-size: 10px;
-  width: 85%;
-}
-.informations{
-  background-position: right;
-}
-h5{
-  font-size: 14px;
-}
-}
+
 @media all and (max-width: 800px) {
     .bio {
         font-size: 0.7em;
@@ -244,7 +243,7 @@ h5{
 }
 
 @media all and (max-width: 718px) {
-  .container--responsive {
-    width: 100%;
-  }
+    .container--responsive {
+        width: 100%;
+    }
 }
