@@ -164,6 +164,11 @@ table {
   width: 20px;
 }
 
+.formation{
+  background-color: blue;
+  color: black;
+}
+
 .hotline{
     background: #9dcbd8;
     color: #050303;

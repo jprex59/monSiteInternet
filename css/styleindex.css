@@ -544,6 +544,9 @@ a {
   .backdrop {
     height: 60em;
   }
+ul{
+    margin-top: 10%;
+  }
   .titre{
     display: none;
   }

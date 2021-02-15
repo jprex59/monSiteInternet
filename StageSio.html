@@ -216,7 +216,7 @@
               <tr>
                 <td class="atelier"><a href="#4" id="to4">4</a></td>
                 <td class="atelier"><a href="#5" id="to5">5</a></td>
-                <td class="tech"><a href="#6" id="to6">6</a></td>
+                <td class="formation"><a href="#6" id="to6">6</a></td>
                 <td class="hotline"><a href="#7" id="to7">7</a></td>
                 <td class="hotline"><a href="#8" id="to8">8</a></td>
                 <td><a href="#9" id="to9">9</a></td>
@@ -233,7 +233,7 @@
                 <td><a href="#16" id="to16">16</a></td>
                 <td><a href="#17" id="to17">17</a></td>
                 <td></td>
-                <td class="tech">tech</td>
+                <td class="tech"><p style="font-size: 14px; margin: 0;">Technicien</p></td>
                    
               </tr>
               <tr> 
@@ -257,7 +257,7 @@
                 <td><a href="#30" id="to30">30</a></td>
                 <td><a href="#31" id="to31">31</a></td>
                 <td></td>
-                <td></td>
+                <td class="formation"><p style="font-size: 14px; margin: 0;">Formation</p></td>
               </tr>
               <tr>
                 <td class="next-month">1</a></td>
@@ -299,35 +299,35 @@
                 <tr>
                   <td class="tech"><a href="#1f" id="to1f">1</a></td>
                   <td class="tech"><a href="#2f" id="to2f">2</a></td>
-                  <td class="current-day event"><a href="#3f" id="to3f">3</a></td>
-                  <td><a href="#4f" id="to4f">4</a></td>
-                  <td><a href="#5f" id="to5f">5</a></td>
+                  <td class="formation"><a href="#3f" id="to3f">3</a></td>
+                  <td class="tech"><a href="#4f" id="to4f">4</a></td>
+                  <td class=""><a href="#5f" id="to5f">5</a></td>
                   <td><a href="#6f" id="to6f">6</a></td>
                   <td><a href="#7f" id="to7f">7</a></td>
                   <td></td>
                   <td class="atelier">Atelier</td>
                 </tr>
                 <tr>
-                  <td><a href="#8f" id="to8f">8</a></td>
-                  <td><a href="#9f" id="to9f">9</a></td>
-                  <td><a href="#10f" id="to10f">10</a></td>
-                  <td><a href="#11f" id="to11f">11</a></td>
-                  <td><a href="#12f" id="to12f">12</a></td>
+                  <td class="tech"><a href="#8f" id="to8f">8</a></td>
+                  <td class="hotline"><a href="#9f" id="to9f">9</a></td>
+                  <td class="tech"><a href="#10f" id="to10f">10</a></td>
+                  <td class="tech"><a href="#11f" id="to11f">11</a></td>
+                  <td class="tech"><a href="#12f" id="to12f">12</a></td>
                   <td><a href="#13f" id="to13f">13</a></td>
                   <td><a href="#14f" id="to14f">14</a></td>
                   <td></td>
                   <td class="hotline">Hotline</td>
                 </tr>
                 <tr>
-                  <td><a href="#15f" id="to15f">15</a></td>
-                  <td><a href="#16f" id="to16f">16</a></td>
+                  <td class="tech"><a href="#15f" id="to15f">15</a></td>
+                  <td class="current-day"><a href="#16f" id="to16f">16</a></td>
                   <td><a href="#17f" id="to17f">17</a></td>
                   <td><a href="#18f" id="to18f">18</a></td>
                   <td><a href="#19f" id="to19f">19</a></td>
                   <td>20</td>
                   <td>21</td>
                   <td></td>
-                 <td class="tech">Tech</td>
+                  <td class="tech"><p style="font-size: 14px; margin: 0;">Technicien</p></td>
                 </tr>
                 <tr>
                   <td>22</td>
@@ -350,7 +350,7 @@
                   <td class="next-month">6</td>
                   <td class="next-month">7</td>
                   <td></td>
-                  <td></td>
+                  <td class="formation"><p style="font-size: 14px; margin: 0;">Formation</p></td>
                 </tr>
 
                 <tr>
@@ -613,11 +613,123 @@
             <div class="timestamp" id="3f">
               Mercredi 03/02/21
             </div>
+            <div class="item-title">Formation</div>
+            <div class="item-detail">
+              Journée dédié à former les techniciens sur la mise en place des étiquettes éléctroniques. 
+            </div>
+          </li>  
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="4f">
+              Jeudi 04/02/21
+            </div>
+            <div class="item-title">Technicien</div>
+            <div class="item-detail">
+              Lors de cette journée nous sommes allés dépanner un switch et un lecteur de code barre tombés en panne, changer des ordinateurs et dépanner 
+              d'urgence un serveur tombé en panne.
+            </div>
+          </li> 
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="5f">
+              Vendredi 05/02/21
+            </div>
+            <div class="item-title">?</div>
+            <div class="item-detail">
+              ..
+            </div>
+          </li> 
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="8f">
+              Lundi 08/02/21
+            </div>
+            <div class="item-title">Technicien</div>
+            <div class="item-detail">
+              J'ai éffectué de la hotline au matin et et nous sommes intervenu pour un changement d'imprimante l'après-midi
+            </div>
+          </li> 
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="9f">
+              Mardi 09/02/21
+            </div>
+            <div class="item-title">Technicien</div>
+            <div class="item-detail">
+              J'ai éffectué de la hotline au matin et et nous sommes intervenu pour un changement de lecteur de code barre et point d'accés 
+              sur armentierres
+            </div>
+          </li> 
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="10f">
+              Mercredi 10/02/21
+            </div>
+            <div class="item-title">Technicien</div>
+            <div class="item-detail">
+              nous avons installés à Mericourt 5 pcs ainsi que leur lecteurs de carte vitale associé, 1 NAS et une imprimante.
+            </div>
+          </li> 
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="11f">
+              Jeudi 11/02/21
+            </div>
+            <div class="item-title">?</div>
+            <div class="item-detail">
+              ..
+            </div>
+          </li> 
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="12f">
+              Vendredi 12/02/21
+            </div>
+            <div class="item-title">Technicien</div>
+            <div class="item-detail">
+              Cette journéè été dédié a une intervention sur morly-gomont pour un problème de fax et un échange de matériel avec un autre technicien sur 
+              Laon
+            </div>
+          </li> 
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="15f">
+              Lundi 15/02/21
+            </div>
+            <div class="item-title">Formation</div>
+            <div class="item-detail">
+              Lors de cette journée j'ai eu la responsabilité de former un nouveau stagiaire pour lui expliquer et lui montrer l'informatique qu'il verrai à 
+              l'entreprise Pharmagest.
+            </div>
+          </li> <!---
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="16f">
+              Mardi 16/02/21
+            </div>
+            <div class="item-title">?</div>
+            <div class="item-detail">
+              ..
+            </div>
+          </li> 
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="17f">
+              Mercredi 17/02/21
+            </div>
+            <div class="item-title">?</div>
+            <div class="item-detail">
+              ..
+            </div>
+          </li> 
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="18f">
+              Jeudi 18/02/21
+            </div>
             <div class="item-title">?</div>
             <div class="item-detail">
               Journée actuel
             </div>
-          </li>  
+          </li> 
+          <li class="tl-item" ng-repeat="item in retailer_history">
+            <div class="timestamp" id="19f">
+              Vendredi 19/02/21
+            </div>
+            <div class="item-title">?</div>
+            <div class="item-detail">
+              ..
+            </div>
+          </li> ---->
         </ul>
       </div>
        
