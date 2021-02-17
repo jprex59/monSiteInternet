@@ -64,7 +64,43 @@ footer{
     cursor:initial;
   }
   
+
+  .langue{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    float: left;
+    margin-right: 3px;
+    background-size: contain;
+  }
+  .langue_niveau{
+    margin-right: 10px;
+    width: 30px;
+  }
+  .langue_niveauFr{
+    width: 70px;
+    height: 20px;
+    margin: 0;
+    float: left;
+    margin-right: 3px;
+  }
+
+  .fr{
+    background-image: url("../images/france.png");
+  }
   
+  .ang{
+    background-image: url('../images/angleterre.png');
+    background-size: 25px;
+    background-position: center;
+  }
+
+  .esp{
+    background-image: url('../images/espagne.png');
+    background-size: 25px;
+    background-position: center;
+  }
+
   @media all and (max-width: 900px) {
   footer ul{
     width: 40%;
