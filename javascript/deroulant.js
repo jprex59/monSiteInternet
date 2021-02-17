@@ -70,17 +70,17 @@ body.addEventListener('touchmove', a => {
 
 
 body.addEventListener('touchend', a => {
-  if (touchEndd - touchStartt > 250 ) {
+  if (touchEndd - touchStartt > 350 ) {
     sidebar.classList.add('open');
     closesidebar.classList.add('open');
-     icon.style.display = 'none';
-  closesidebar2.style.display = 'block';
-  containerstage.style.position = 'initial';
-  prev.style.display = 'none';
-  next.style.display = 'none';
-  prevpharmagest.style.display = 'none';
-  nextpharmagest.style.display = 'none';
-  timeline.style.display = 'none';
+    icon.style.display = 'none';
+    closesidebar2.style.display = 'block';
+    containerstage.style.position = 'initial';
+    prev.style.display = 'none';
+    next.style.display = 'none';
+    prevpharmagest.style.display = 'none';
+    nextpharmagest.style.display = 'none';
+    timeline.style.display = 'none';
   }
 });
 
@@ -98,7 +98,7 @@ body.addEventListener('touchmove', e => {
 });
 
 body.addEventListener('touchend', e => {
-  if (touchStart - touchEnd > 250 ) {
+  if (touchStart - touchEnd > 100 ) {
     sidebar.classList.remove('open');
     icon.style.display = 'block';
     closesidebar2.style.display = 'none';
