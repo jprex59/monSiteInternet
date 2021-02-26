@@ -7,12 +7,45 @@ body {
 }
 
 
-h5 {
+h2 {
   color: white;
   text-align: center;
   font-size: 50px;
   font-family: sans-serif;
   margin: 0;
+}
+
+h3{
+  color: white;
+  margin: 20px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.mess p{
+  color: white;
+  padding: 10px;
+  text-align: justify;
+}
+
+.lienarticle{
+  text-decoration: none;
+  color: white;
+  float: right;
+  background-color: #0f273f;
+  padding: 5px;
+  padding-top: 0;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: all .7s;
+}
+
+.lienarticle:hover{
+  background-color: rgb(255, 255, 255);
+  color: black;
+  box-shadow: 5px 5px 5px black;
 }
 
 
@@ -36,33 +69,39 @@ h5 {
   height: 200px;
   margin-left: 5%;
   width: 20%;
-  border: solid;
-  background-color: cornflowerblue;
 }
 .droite {
   float: right;
   height: 200px;
   margin-right: 5%;
   width: 20%;
-  border: solid;
-  background-color: darkblue;
 }
-
-.messg {
+.mess{
   border: solid;
   width: 60%;
+}
+.g {
   float: right;
-  height: 200px;
   margin-right: 5%;
 }
 
-.messd {
-  border: solid;
-  width: 60%;
+.d {
   float: left;
-  height: 200px;
   margin-left: 10%;
 }
+
+/******************************************IMAGE ARTICLES*******************************************/
+.img1{
+  background-image: url('../images/techno/img1.jpg');
+}
+.img2{
+  background-image: url('../images/techno/img2.png');
+}
+.img{
+  background-position: center;
+  background-size: cover;
+}
+/**********************responsive************************************************/
 @media all and (max-width: 1100px) {
   li {
     padding-top: 1.5em;
@@ -102,6 +141,27 @@ h5 {
     background-size:cover;
     height: 80em;
     }  
+  .g{
+    margin-right: 1%;
+  }
+  .d{
+    margin-left: 1%;
+  }
+  .mess{
+    width: 70%;
+  }
+  .gauche{
+    margin-left: 1%;
+    width: 25%;
+  }
+  .droite{
+    margin-right: 1%;
+    width: 25%;
+  }
+  .img{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 }
 
 @media (orientation: landscape) and (max-device-width : 640px) {
