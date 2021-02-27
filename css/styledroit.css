@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #5e3311;
+  background-color: #f4ebe2;
   overflow-x: hidden;
   font-family: sans-serif;
 }
@@ -14,7 +14,7 @@ h2 {
 }
 
 h3{
-  color: white;
+  color: black;
   margin: 20px;
   text-transform: uppercase;
   text-decoration: underline;
@@ -22,7 +22,7 @@ h3{
 }
 
 .mess p{
-  color: white;
+  color: black;
   padding: 10px;
   text-align: justify;
 }

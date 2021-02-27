@@ -1,14 +1,14 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #1b4570;
+  background-color: #ffffff;
   overflow-x: hidden;
   font-family: sans-serif;
 }
 
 
 h2 {
-  color: white;
+  color: black;
   text-align: center;
   font-size: 50px;
   font-family: sans-serif;
@@ -16,7 +16,7 @@ h2 {
 }
 
 h3{
-  color: white;
+  color: black;
   margin: 20px;
   text-transform: uppercase;
   text-decoration: underline;
@@ -24,7 +24,7 @@ h3{
 }
 
 .mess p{
-  color: white;
+  color: black;
   padding: 10px;
   text-align: justify;
 }
@@ -51,8 +51,8 @@ h3{
 
 /*------------------------------------------------*/
 .presentation{
-  background-image: url("../images/smartcities.PNG");
-  background-size: unset;
+  background-image: url("../images/smartcities2.PNG");
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment:fixed;
@@ -103,15 +103,6 @@ h3{
 }
 /**********************responsive************************************************/
 @media all and (max-width: 1100px) {
-  li {
-    padding-top: 1.5em;
-    padding-left: 0.8em;
-    color: white;
-    margin-top: 2em;
-    font-weight: bold;
-    font-size: x-large;
-  }
-
   .sidebar{
     width: 280px;
     transform: translateX(-290px);
@@ -120,27 +111,16 @@ h3{
   .closehamburger1{
     left: 6em;
   }
-  li:hover{
-    color: teal;
-  }
-
-  .information-bar ul {
-    display: none;
-   }
-
-   .menu ul {
-    margin-left: 5%;
-    padding-left: 0%;
-  }
-
-  .menu li {
-    padding: 0.7em 0.7em;
-  }
   .presentation{
+    background-image: url("../images/smartcities.PNG");
     background-attachment: initial;
-    background-size:cover;
-    height: 80em;
+    background-size:contain;
+    height: 50em;
+    background-position: top;
     }  
+    h2 {
+      color: white;
+    }
   .g{
     margin-right: 1%;
   }
@@ -166,6 +146,7 @@ h3{
 
 @media (orientation: landscape) and (max-device-width : 640px) {
   .presentation{
+    background-image: url("../images/smartcities.PNG");
     background-attachment: initial;
     background-size:cover;
     height: 80em;
