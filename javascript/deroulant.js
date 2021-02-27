@@ -4,6 +4,7 @@ const iconspans2 = document.querySelectorAll('.closehamburger2 span');  // retou
 const sidebar = document.querySelector('.sidebar');
 const closesidebar = document.querySelector('.closehamburger1');
 const closesidebar2 = document.querySelector('.closehamburger2');
+const body = document.querySelector('body');
 
 
 
