@@ -36,7 +36,28 @@ body {
     flex-wrap: wrap;
 }
 .section4{
-    background-color: #6a89cc;
+    height: 28em;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    color: black;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section4 h1{
+    text-transform: uppercase;
+    border: none;
+    margin: 0;
+    padding: 10px;
+    transform: rotate(3deg);
+    width: 300px;
+    text-align: center;
+}
+.section4 h2{
+    text-align: center;
+    padding: 50px;
 }
 h1{
     text-transform: uppercase;
@@ -85,7 +106,7 @@ h5{
 }
 .container--section ul{
     cursor:initial;
-    width: 15em;
+    width: 14em;
 }
 .container--section ul li{
     margin: 0;
@@ -96,6 +117,9 @@ h5{
     margin-left: 0px;
     margin-bottom: 5%;
 }
+#source1{
+    width: 16em;
+}
 
 @media all and (max-width : 1136px){
     .container--section{
@@ -103,5 +127,8 @@ h5{
     }
     .container--section ul{
         width: auto;
+    }
+    .section4{
+        width: 100%;
     }
 }
