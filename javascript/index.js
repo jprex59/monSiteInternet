@@ -19,8 +19,11 @@ const next = document.querySelector(".next");
 const icon = document.querySelector('.hamburger');
 const closbackdrop = document.querySelector('.closehamburger');
 const card = document.querySelector('.card');
+const iframe = document.querySelector("iframe");
+const slide3 = document.querySelector(".slide3");
 
-
+width = document.documentElement.clientWidth;
+console.log(width);
 
 /*************Ouvrir le menu****************************/
 button.addEventListener("click", () => {
@@ -39,6 +42,16 @@ icon.addEventListener('click', () => {
   next.style.display = 'none';
   card.style.display = 'none';
   closbackdrop.style.display = 'block';
+  if (width >970) {
+    iframe.style.height = '38em'; 
+    slide3.style.height = '38em'; 
+    backdrop.style.height = '38em'; 
+  }
+  else{
+    iframe.style.height = '60em'; 
+    slide3.style.height = '60em';
+    backdrop.style.height = '60em'; 
+  }   
 });
 
 /***********Fermer le menu************************/
@@ -49,6 +62,8 @@ backdrop.addEventListener("click", () => {
   prev.style.display = 'block';
   next.style.display = 'block';
   card.style.display = 'flex';
+  iframe.style.height = '1147px';
+  slide3.style.height = '1147px'; 
 });
 
 closbackdrop.addEventListener('click', () => {
@@ -57,6 +72,8 @@ closbackdrop.addEventListener('click', () => {
   icon.style.display = 'block';
   prev.style.display = 'block';
   next.style.display = 'block';
-  card.style.display = 'flex';  
+  card.style.display = 'flex'; 
+  iframe.style.height = '1147px';
+  slide3.style.height = '1147px'; 
 });
 

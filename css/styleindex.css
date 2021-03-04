@@ -294,6 +294,10 @@ nav ul li a:hover {
   align-items: center;
 }
 
+iframe{
+  /*display: none;*/
+}
+
 .backdrop {
   position: absolute;
   height: 100vh;
