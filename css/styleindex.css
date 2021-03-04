@@ -296,6 +296,7 @@ nav ul li a:hover {
 
 .backdrop {
   position: absolute;
+  height: 100vh;
   top: 0;
   left: 0;
   right: 0;
@@ -547,9 +548,6 @@ a {
   }
 }
 @media all and (max-width: 900px) {
-  .backdrop {
-    height: 60em;
-  }
   .titre{
     display: none;
   }
