@@ -6,7 +6,9 @@ const closesidebar = document.querySelector('.closehamburger1');
 const closesidebar2 = document.querySelector('.closehamburger2');
 const body = document.querySelector('body');
 
-
+width = document.documentElement.clientWidth;
+console.log(width);
+console.log("width");
 
 
 let touchStart, touchEnd;
