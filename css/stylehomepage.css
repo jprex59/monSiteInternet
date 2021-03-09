@@ -160,18 +160,18 @@ body {
     font-size: 17px;
   }
   
-  .hljs:hover {
+.hljs:hover {
     border-color: #ff4754;
-  }
-  .PowerShell_Height{
-  max-height: 550px;
-  }
-  .exo_container_python{
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      padding: 1em;
-  }
+}
+.PowerShell_Height{
+    max-height: 550px;
+}
+.exo_container_python{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1em;
+}
 
 .contexts_TP{
     text-align: justify;
@@ -319,6 +319,9 @@ h3{
     }
     p{
         font-size: 10px ;
+    }
+    .PowerShell_Height{
+        font-size: 10px;
     }
     .informations {
         background-position: right;
