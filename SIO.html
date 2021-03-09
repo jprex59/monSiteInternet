@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.5" />
     <link rel="stylesheet" href="./css/footer.css" type="text/css" />
     <script src="https://kit.fontawesome.com/b8f4ab5226.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/atom-one-dark.min.css" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js"></script>
 </head>
 
 <body>
@@ -179,6 +181,147 @@
     <!----------------->
     <div style="clear: both; width: 100%;height: 2em;"></div>
 
+<div class="contexts_TP">
+    <h3>PowerShell</h3>
+    <p> <b>Context : </b></br>La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des espaces et des services aux différentes ligues sportives régionales
+         et à d’autres structures hébergées. Dernièrement le serveur LDAP de la maison des ligues est tombé en panne. L’administrateur réseau 
+         n’ayant pas mis en place de protocole de gestion de panne, et ne disposant pas de sauvegarde pour ce serveur, vous demande de redéployer 
+         le serveur AD et de le configurer. Vous devrez aussi à partir des fichiers fournis recréer automatiquement les comptes utilisateurs et
+          les groupes correspondant.</p>
+</div>
+
+    <!----------------------------------PowerShell--------------------------->
+    <pre>
+        <code class="PowerShell PowerShell_Height">
+    # Script pour enregistrer des utilisateurs dans AD
+    # version 1.0
+    # Auteur : JEAN PARIS
+            
+            
+    #Activation du module AD
+    Import-Module ActiveDirectory
+            
+            
+    #Force le type d'execution
+    Set-ExecutionPolicy Unrestricted
+            
+    #mettre comme quoi le module AD est chargé
+            
+    Write-Host "Module ActiveDirectory chargé !"
+            
+    #ici on récupère le fichier avec les utilisateurs a ajouter dans l'AD
+            
+    $file=Read-Host -Prompt "Saisir le nom du fichier à importer"
+    $users=Import-CSV $file
+            
+    #on récupère chaque information dans le fichier ligne par ligne pour creer un utilisateur grâce aux fonctions et on passe une ligne pour recommencer
+            
+    Import-CSV -Delimiter ";" -Path .\users.csv | ForEach-Object {
+        $name = $_.Prenom  
+        $surname = $_.Nom
+        $department = $_.Ligue
+        $displayname = "$name $surname"
+               
+            New-ADUser -Name $displayname -GivenName $name -Surname $surname -DisplayName $displayname -department $department -AccountPassword (ConvertTo-SecureString "P@ssw0rd" -AsPlainText -force) -Enabled $true
+            Write-Host "Création de $displayname : Prénom=$name Nom=$surname Ligue=$ligue Fichier source=$file"
+    }
+        </code>
+    </pre>
+<!------------------------------Python---------------------------------->
+<div class="contexts_TP">
+    <h3>Python</h3>
+    <p>
+    <b>Context : </b></br>le but de l'exercice est d'utiliser des fonctions/ procédures pour mettre en place un système de niveau. Voici à quoi servent les différentes fonctions :</br></br> 
+    <b>Level_up</b> augmente d'un niveau le champion choisi.</br>
+    <b>Level_n</b> augmente de N niveau le champion choisi.</br>
+    <b>Alea_Level</b> augmente d'un niveau aléatoire le champion choisi.</br>
+    <b>Rénitialiser</b> rénitialise le niveau du champion choisi.</br>
+    <b>Equipe_niveau_alea</b> augmente d'un niveau aléatoire l'équipe des champions.</br>
+    <b>Equipe_niveau_alea2</b> même objectif mais d'une autre façon
+    </p>    
+</div>
+    <pre class="exo_container_python">
+        <code class="python exo_Python">
+            #2 eme partie
+            #Enoncé
+
+Zohé = ["mage",1,60,28,180]
+Malf = ["tank",1,55,30,210]
+Lucia = ["tireur",1,65,28,160]
+Maho = ["tank",1,50,35,230]
+Cenna=["tireur",1,70,25,130]
+
+Level=["",1,5,2,1.1]
+Equipe = [Cenna,Zohé,Malf,Lucia,Maho]
+        </code>
+        <code class="python exo_Python">
+# Question 1 en prenant
+# pour éxemple Cenna 
+
+def Rénitialiser(champion):
+     champion=["tireur",1,70,25,130]
+     Cenna=champion
+     return(champion)
+
+#print(Rénitialiser(Cenna))
+    </code>
+    <code class="python exo_Python">
+# Question 2 #
+
+def Level_up(champion):
+    for i in range(0,4):
+      champion[i]=champion[i]+Level[i]
+    champion[4]=champion[4]*Level[4]
+    return (champion)
+
+def Level_n(champion,n):
+    for i in range (1,n):
+        champion=Level_up(champion)
+    return (champion)
+
+def Alea_level(champion):
+     import random
+     r = random.randint(0, 20)
+     Level_n(champion,r)
+     for i in range (1,r):
+        champion=Level_up(champion)
+     return (champion)
+
+#print(Alea_level(Cenna))
+    </code>
+    <code class="python exo_Python">
+# Question 3 #
+
+def Equipe_niveau_alea() :
+     print(Alea_level(Cenna))
+
+     print(Alea_level(Zohé))
+
+     print(Alea_level(Malf))
+
+     print(Alea_level(Lucia))
+
+     print(Alea_level(Maho))
+
+     return()
+
+#print(Equipe_niveau_alea())
+
+# ou ...
+
+def Equipe_niveau_alea2() :
+     for i in range (0,4) :
+         champion=Equipe[i]
+         print(Alea_level(champion))
+     return()
+
+print(Equipe_niveau_alea2())
+        </code>
+    </pre>
+
+
+
+    <div style="clear: both; width: 100%;height: 2em;"></div>
     <footer>
         <ul>
           <li class="titlefooter">About Me</li>
@@ -221,6 +364,9 @@
       </footer>
     <!-------------------------------------------------------------------- dernière div avant de sortir du cadre de la page------------------------------------------------------->
     <script src="./javascript/deroulant.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
 </body>
 </body>
 
