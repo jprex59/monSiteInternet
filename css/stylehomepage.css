@@ -173,14 +173,53 @@ body {
       padding: 1em;
   }
 
-  h3{
-      text-align: center;
-  }
 .contexts_TP{
     text-align: justify;
-}
-p{
+    background-color: #eaeaea;
     padding: .5em;
+    background-image: url("../images/powershell.jpg");
+    background-position: top right 25px;
+    background-size: 80px;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+.contexts_TP_python{
+    display: flex;
+    justify-content: space-between;
+    background-color: #eaeaea;
+}
+.python_img{
+    background-image: url("../images/python.png");
+    background-position: bottom 30% left 5%;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    border: none;
+}
+.contexts_TP p, .contexts_TP_python p{
+    padding: 1em;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+}
+.python_title{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.python_context{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2em;
+}
+
+h3{
+    font-size: 1.5em;
 }
 
 /************************responsive*****************************************************/
