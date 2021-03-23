@@ -27,7 +27,7 @@ const stjeanID = document.getElementById('stjeanID');
 width = document.documentElement.clientWidth;
 
 function animation() {
-    var reponse = window.confirm("Accepter permet d'avoir les informations complémentaires et/ou pages associés aux informations contenant un symbole en clicant dessus");
+    var reponse = window.confirm("[CV avec accés aux liens] Votre taille d'écran le permet, si vous le souhaitez, acceptez et vous pourrez accéder aux liens ");
     if (reponse) {
         container.style.justifyContent = 'space-around';
         container.style.margin = '50px';
