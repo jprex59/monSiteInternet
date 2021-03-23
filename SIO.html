@@ -19,9 +19,9 @@
     <!-------------------------------------------------------------------- début de page  ----------------------------------------------------------->
     <div class="menu">
         <div class="information-bar">
-                <p class="name">Jean Paris BTS SIO 2</p>
+            <p class="name">Jean Paris BTS SIO 2</p>
             <div class="profile">
-                <img src="images/jean.JPG">
+                <img src="images/jeanPro.jpg">
             </div>
         </div>
     </div>
@@ -84,7 +84,7 @@
     </div>
 
     <!-------------------------------------------------------------------- >image visio  --------------------------------------------------------->
-    <div class="informations">
+    <div class="informations" id="section_visio">
         <p>
             Durant cette année de BTS j’apprends les différents types d’architectures des <b>réseaux informatiques</b> et notamment comment les <b>installer, les administrer, les protéger et gérer la maintenance</b> des équipements.
             </br>
@@ -181,14 +181,13 @@
     <!----------------->
     <div style="clear: both; width: 100%;height: 2em;"></div>
 
-<div class="contexts_TP">
-    <h3 style="text-align: center;">PowerShell</h3>
-    <p> <b>Context : </b></br>La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des espaces et des services aux différentes ligues sportives régionales
-         et à d’autres structures hébergées. Dernièrement <b>le serveur LDAP</b> de la maison des ligues <b>est tombé en panne</b>. L’administrateur réseau 
-         n’ayant pas mis en place de protocole de gestion de panne, et ne disposant pas de sauvegarde pour ce serveur, vous demande de redéployer 
-         le serveur AD et de le configurer. Vous devrez aussi à partir des fichiers fournis <b>recréer automatiquement les comptes utilisateurs et
+    <div class="contexts_TP">
+        <h3 style="text-align: center;">PowerShell</h3>
+        <p> <b>Context : </b></br>La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des espaces et des services aux différentes ligues sportives régionales et à d’autres structures hébergées. Dernièrement <b>le serveur LDAP</b> de la maison
+            des ligues <b>est tombé en panne</b>. L’administrateur réseau n’ayant pas mis en place de protocole de gestion de panne, et ne disposant pas de sauvegarde pour ce serveur, vous demande de redéployer le serveur AD et de le configurer. Vous
+            devrez aussi à partir des fichiers fournis <b>recréer automatiquement les comptes utilisateurs et
           les groupes correspondant</b>.</p>
-</div>
+    </div>
 
     <!----------------------------------PowerShell--------------------------->
     <pre>
@@ -227,24 +226,25 @@
     }
         </code>
     </pre>
-<!------------------------------Python---------------------------------->
-<div class="contexts_TP_python">
-    <div class="python_title">
-        <h3>Python</h3>
-        <img src="./images/python.png" class="python_img">
+    <!------------------------------Python---------------------------------->
+    <div id="section_python" class="contexts_TP_python">
+        <div class="python_title">
+            <h3>Python</h3>
+            <img src="./images/python.png" class="python_img">
+        </div>
+        <div class="python_context">
+            <p>
+                <b>Context : </b></br>le but de l'exercice est d'utiliser des fonctions/ procédures pour mettre en place un système de niveau. Voici à quoi servent les différentes fonctions :</br>
+                </br>
+                <b>Level_up</b> augmente d'un niveau le champion choisi.</br>
+                <b>Level_n</b> augmente de N niveau le champion choisi.</br>
+                <b>Alea_Level</b> augmente d'un niveau aléatoire le champion choisi.</br>
+                <b>Rénitialiser</b> rénitialise le niveau du champion choisi.</br>
+                <b>Equipe_niveau_alea</b> augmente d'un niveau aléatoire l'équipe des champions.</br>
+                <b>Equipe_niveau_alea2</b> même objectif mais d'une autre façon
+            </p>
+        </div>
     </div>
-    <div class="python_context">
-    <p>
-    <b>Context : </b></br>le but de l'exercice est d'utiliser des fonctions/ procédures pour mettre en place un système de niveau. Voici à quoi servent les différentes fonctions :</br></br> 
-    <b>Level_up</b> augmente d'un niveau le champion choisi.</br>
-    <b>Level_n</b> augmente de N niveau le champion choisi.</br>
-    <b>Alea_Level</b> augmente d'un niveau aléatoire le champion choisi.</br>
-    <b>Rénitialiser</b> rénitialise le niveau du champion choisi.</br>
-    <b>Equipe_niveau_alea</b> augmente d'un niveau aléatoire l'équipe des champions.</br>
-    <b>Equipe_niveau_alea2</b> même objectif mais d'une autre façon
-    </p>
-    </div>  
-</div>
     <pre class="exo_container_python">
         <code class="python exo_Python">
             #2 eme partie
@@ -329,44 +329,47 @@ print(Equipe_niveau_alea2())
     <div style="clear: both; width: 100%;height: 2em;"></div>
     <footer>
         <ul>
-          <li class="titlefooter">About Me</li>
-          <li><i class="fas fa-map-marked-alt"></i> Hauts de France/ Douai</li>
-          <li>&#x1F588; : 119 rue de la tour de Bourgogne 59500 </li>
-          <li style="font-size: 15px; color: red;">&#x2706; : 06.89.45.70.26</li>
-          <li>&#128231; : jean.paris.pro@gmail.com</li>
-          
+            <li class="titlefooter">About Me</li>
+            <li><i class="fas fa-map-marked-alt"></i> Hauts de France/ Douai</li>
+            <li>&#x1F588; : 119 rue de la tour de Bourgogne 59500 </li>
+            <li style="font-size: 15px; color: red;">&#x2706; : 06.89.45.70.26</li>
+            <li>&#128231; : jean.paris.pro@gmail.com</li>
+
         </ul>
         <div class="main center">
-          <div class="icon center">
-            <a  href="https://www.linkedin.com/in/jean-paaris/" class="fab fa-linkedin fa-2x" style="text-decoration: none;"></a>
-          </div>
-          <div class="icon center">
-            <a href="https://www.instagram.com/jean59paris/" class="fab fa-instagram fa-2x" style="text-decoration: none;"></a>
-          </div>
+            <div class="icon center">
+                <a href="https://www.linkedin.com/in/jean-paaris/" class="fab fa-linkedin fa-2x" style="text-decoration: none;"></a>
+            </div>
+            <div class="icon center">
+                <a href="https://www.instagram.com/jean59paris/" class="fab fa-instagram fa-2x" style="text-decoration: none;"></a>
+            </div>
         </div>
-  
+
         <ul>
-          <li class="titlefooter">Informatique</li>             
-          <li>
-            <div class="langue" style="margin-right: 15px;"><i class="fas fa-language"></i></div>
-            <div class="langue fr"></div><div class="langue langue_niveauFr">Courant</div>
-            <div class="langue esp"></div><div class="langue langue_niveau">B1</div>
-            <div class="langue ang"></div><div class="langue langue_niveau">B1</div>
-            <div style="clear: both;"></div>
-          </li>
-          <li><i class="fas fa-server"></i> <i class="fas fa-network-wired"></i> Spécialité, objectif master</li>
-          <li><i class="fas fa-code"></i> <i class="fas fa-database"></i> Loisir/ pour mon site</li>
-          <li><i class="fas fa-user-shield"></i> <i class="fas fa-unlock-alt"></i> Objectif apres le master</li>
+            <li class="titlefooter">Informatique</li>
+            <li>
+                <div class="langue" style="margin-right: 15px;"><i class="fas fa-language"></i></div>
+                <div class="langue fr"></div>
+                <div class="langue langue_niveauFr">Courant</div>
+                <div class="langue esp"></div>
+                <div class="langue langue_niveau">B1</div>
+                <div class="langue ang"></div>
+                <div class="langue langue_niveau">B1</div>
+                <div style="clear: both;"></div>
+            </li>
+            <li><i class="fas fa-server"></i> <i class="fas fa-network-wired"></i> Spécialité, objectif master</li>
+            <li><i class="fas fa-code"></i> <i class="fas fa-database"></i> Loisir/ pour mon site</li>
+            <li><i class="fas fa-user-shield"></i> <i class="fas fa-unlock-alt"></i> Objectif apres le master</li>
         </ul>
-  
+
         <ul>
-          <li class="titlefooter">Other</li>
-          <li><i class="fas fa-car"></i> Permis B/ Voiture</li>
-          <li><a href="CV.html" style="font-size: 20px; font-weight: initial; color: red; text-decoration: none;"><i class="far fa-address-card"></i> CV</a></li>
-          <li><i class="fas fa-birthday-cake"></i> 19 ans</li>
-          <li>&copy; 2020</li>
+            <li class="titlefooter">Other</li>
+            <li><i class="fas fa-car"></i> Permis B/ Voiture</li>
+            <li><a href="CV.html" style="font-size: 20px; font-weight: initial; color: red; text-decoration: none;"><i class="far fa-address-card"></i> CV</a></li>
+            <li><i class="fas fa-birthday-cake"></i> 19 ans</li>
+            <li>&copy; 2020</li>
         </ul>
-      </footer>
+    </footer>
     <!-------------------------------------------------------------------- dernière div avant de sortir du cadre de la page------------------------------------------------------->
     <script src="./javascript/deroulant.js"></script>
     <script>

@@ -434,13 +434,13 @@ iframe{
 
 
 .card0 {
-  background: url('../images/jean.PNG') center center no-repeat;
-  background-size: 300px;
+  background: url('../images/jeanPro.jpg') center center no-repeat;
+  background-size: 450px;
 }
     
 .card0:hover {
-    background: url('../images/jean.PNG') left center no-repeat;
-    background-size: 600px;
+    background: url('../images/jeanPro.jpg') left -50px top -80px no-repeat;
+    background-size: 580px;
 }
 
 
