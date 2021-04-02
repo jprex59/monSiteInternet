@@ -45,7 +45,6 @@ body{
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
-  flex-wrap: wrap;
 }
 .source_column{
   width: 500px;
@@ -151,6 +150,11 @@ body{
 }
 
 
+@media all and (max-width: 1590px) {
+  .container_source{
+    flex-wrap: wrap;
+  }
+}
 
 
 
