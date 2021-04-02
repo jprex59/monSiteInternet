@@ -1,154 +1,198 @@
-body {
+body{
+  margin: 0;
   padding: 0;
-  margin: 0;
-  background-color: #ffffff;
-  overflow-x: hidden;
   font-family: sans-serif;
 }
 
-
-h2 {
-  color: black;
-  text-align: center;
-  font-size: 50px;
-  font-family: sans-serif;
-  margin: 0;
-}
-
-h3{
-  color: black;
-  margin: 20px;
-  text-transform: uppercase;
-  text-decoration: underline;
-  text-align: center;
-}
-
-.mess p{
-  color: black;
-  padding: 10px;
-  text-align: justify;
-}
-
-.lienarticle{
-  text-decoration: none;
-  color: white;
-  float: right;
-  background-color: #0f273f;
-  padding: 5px;
-  padding-top: 0;
-  margin: 10px;
-  border-radius: 5px;
-  font-size: 20px;
-  transition: all .7s;
-}
-
-.lienarticle:hover{
-  background-color: rgb(255, 255, 255);
-  color: black;
-  box-shadow: 5px 5px 5px black;
-}
-
-
-/*------------------------------------------------*/
 .presentation{
-  background-image: url("../images/smartcities2.PNG");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment:fixed;
+  height: 100vh;
   width: 100%;
-  height: 65em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/*****************************************************/
-.gauche {
-  float: left;
-  height: 200px;
-  margin-left: 5%;
-  width: 20%;
-}
-.droite {
-  float: right;
-  height: 200px;
-  margin-right: 5%;
-  width: 20%;
-}
-.mess{
-  border: solid;
-  width: 60%;
-}
-.g {
-  float: right;
-  margin-right: 5%;
-}
-
-.d {
-  float: left;
-  margin-left: 10%;
-}
-
-/******************************************IMAGE ARTICLES*******************************************/
-.img1{
-  background-image: url('../images/techno/img1.jpg');
-}
-.img2{
-  background-image: url('../images/techno/img2.png');
-}
-.img{
+  background-image: url('../images/smartcities2.jpg');
   background-position: center;
   background-size: cover;
 }
-/**********************responsive************************************************/
-@media all and (max-width: 1100px) {
-  .sidebar{
-    width: 280px;
-    transform: translateX(-290px);
-  }
 
-  .closehamburger1{
-    left: 6em;
-  }
-  .presentation{
-    background-image: url("../images/smartcities.PNG");
-    background-attachment: initial;
-    background-size:contain;
-    height: 50em;
-    background-position: top;
-    }  
-    h2 {
-      color: white;
-    }
-  .g{
-    margin-right: 1%;
-  }
-  .d{
-    margin-left: 1%;
-  }
-  .mess{
-    width: 70%;
-  }
-  .gauche{
-    margin-left: 1%;
-    width: 25%;
-  }
-  .droite{
-    margin-right: 1%;
-    width: 25%;
-  }
-  .img{
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #151728;
+  color: white;
 }
 
-@media (orientation: landscape) and (max-device-width : 640px) {
-  .presentation{
-    background-image: url("../images/smartcities.PNG");
-    background-attachment: initial;
-    background-size:cover;
-    height: 80em;
-    }  
+.title h1{
+  text-transform: uppercase;
+}
+.paragraphe{
+  background-color: #eaeaea;
+  padding: 10px;
+  text-align: justify;
+}
+.paragraphe h2{
+  margin: 0;
+  margin-left: 2em;
+}
+.paragraphe p{
+  padding: 1em;
+  background-color: #f3f3f3;
+  border-radius: 7px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.container_source{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.source_column{
+  width: 500px;
+  text-align: justify;
+  margin: 15px;
+}
+.source_column a:hover{
+  color: black;
+}
+
+.source_column p{
+  font-size: 20px;
+}
+
+.source h2{
+  margin-left: 2em;
+}
+
+
+
+
+/***********Articles********************/
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #eaeaea;
+  overflow: hidden;
+  height: 0;
+  transition: 0.3s all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay a{
+  padding: 5px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  transition: all .5s;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.overlay a:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.artical{
+  width: 100%;
+}
+.artical h2{
+  color: black;
+  margin-left: 2em;
+}
+.container-artical {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+.artical-item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+  position: relative;
+  width: 100%;
+}
+.artical-item p {
+  font-size: 15px;
+  color: black;
+  text-align: justify;
+}
+.artical-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 600px;
+  margin: 15px;
+}
+.artical-title{
+  background-color: #f3f3f3;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+}
+.artical-title h4 {
+  font-size: 20px;  
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+}
+.artical-item:hover .overlay {
+  height: 100%;
+  padding: 20px;
+}
+
+
+
+
+
+@media all and (max-width: 1078px) {
+  .source_column{
+    width: 700px;
+  }
+
+  .source_column p{
+    font-size: 23px;
+  }
+
+  .artical-item p {
+    font-size: 20px;
+  }
+
+  .artical-card{
+    width: 750px;
+  }
+}
+
+.art1{ 
+  background: url('../images/techno/img1.jpg'); 
+  background-size: cover; 
+}
+
+.art2{
+  background-image: url('../images/techno/img2.png');
+  background-size: cover;
+}
+.art3{
+  background-image: url('../images/techno/img3.jpg');
+  background-size: cover;
+}
+.art4{
+  background-image: url('../images/techno/img4.png');
+  background-size: cover;
+}
+.art8{
+  background-image: url('../images/techno/img8.png');
+  background-size: cover;
+}
+.art{
+  background-image: url('../images/article.PNG');
+  background-size: cover;
 }

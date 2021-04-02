@@ -14,39 +14,53 @@
 </head>
 
 <body>
+    <div style="display: flex; justify-content: center; width: 100%;">
+    <nav class="menu">
+        <a href="#section_visio" class="nav-item is-active">Projet</a>
+        <a href="#container" class="nav-item">Documentations</a>
+        <a href="#powershell" class="nav-item">Powershell</a>
+        <a href="#section_python" class="nav-item">Python</a>
+        <span class="nav-item-hamburger hamburger" onmouseover="redhamburger()"  onmouseout="hamburger()">
+            <span></span>
+        <span></span>
+        <span></span>
+        </span>
+        <span class="nav-indicator"></span>
+    </nav>
+</div>
+    
+<div class="header"><h1>Années de SIO</h1></div>
 
-
-    <!-------------------------------------------------------------------- début de page  ----------------------------------------------------------->
-    <div class="menu">
-        <div class="information-bar">
-            <p class="name">Jean Paris BTS SIO 2</p>
-            <div class="profile">
-                <img src="images/jeanPro.jpg">
-            </div>
-        </div>
-    </div>
-
-    <span class="hamburger">
-			<span></span>
+    <span class="hamburger1">
+        <span></span>
     <span></span>
     <span></span>
     </span>
 
     <span class="closehamburger2">
-			<span></span>
+        <span></span>
     <span></span>
     <span></span>
     </span>
 
+    <span class="closehamburger_Responsive">
+        <span></span>
+    <span></span>
+    <span></span>
+    </span>
+
+    
+   
+
     <span class="closehamburger1">
-		x
-		</span>
+	x
+	</span>
 
     <div class="sidebar">
         <div class="espace"></div>
         <a href="SIO.html">
             <div class="onglet">
-                <i class="fas fa-graduation-cap"></i> SIO
+                <i class="fas fa-graduation-cap"></i>SIO
             </div>
         </a>
         <a href="StageSio.html">
@@ -60,7 +74,7 @@
             </div>
         </a>
         <a href="VeilleJuridique.html">
-            <div class="onglet">
+            <div class="onglet" style="margin-bottom: 50px;">
                 <i class="fas fa-book"></i> veille juridique
             </div>
         </a>
@@ -83,8 +97,11 @@
         <div class="espace"></div>
     </div>
 
+
+
     <!-------------------------------------------------------------------- >image visio  --------------------------------------------------------->
     <div class="informations" id="section_visio">
+        <h3 style="text-align: center; margin: 10px;">Projet de réseau :</h3>
         <p>
             Durant cette année de BTS j’apprends les différents types d’architectures des <b>réseaux informatiques</b> et notamment comment les <b>installer, les administrer, les protéger et gérer la maintenance</b> des équipements.
             </br>
@@ -101,7 +118,7 @@
     <div class="container" id="container">
         <div class="container--responsive">
             <h2 class="container--title">Mes Documentations</h2>
-            <h5 class="container--title">(Cliquez pour accédes à mes documentations)</h5>
+            <h5 class="container--title">(Cliquez pour accéder à mes documentations)</h5>
 
 
             <a href="#">
@@ -181,7 +198,7 @@
     <!----------------->
     <div style="clear: both; width: 100%;height: 2em;"></div>
 
-    <div class="contexts_TP">
+    <div class="contexts_TP" id="powershell">
         <h3 style="text-align: center;">PowerShell</h3>
         <p> <b>Context : </b></br>La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des espaces et des services aux différentes ligues sportives régionales et à d’autres structures hébergées. Dernièrement <b>le serveur LDAP</b> de la maison
             des ligues <b>est tombé en panne</b>. L’administrateur réseau n’ayant pas mis en place de protocole de gestion de panne, et ne disposant pas de sauvegarde pour ce serveur, vous demande de redéployer le serveur AD et de le configurer. Vous
@@ -239,7 +256,7 @@
                 <b>Level_up</b> augmente d'un niveau le champion choisi.</br>
                 <b>Level_n</b> augmente de N niveau le champion choisi.</br>
                 <b>Alea_Level</b> augmente d'un niveau aléatoire le champion choisi.</br>
-                <b>Rénitialiser</b> rénitialise le niveau du champion choisi.</br>
+                <b>Réinitialiser</b> réinitialise le niveau du champion choisi.</br>
                 <b>Equipe_niveau_alea</b> augmente d'un niveau aléatoire l'équipe des champions.</br>
                 <b>Equipe_niveau_alea2</b> même objectif mais d'une autre façon
             </p>
@@ -263,12 +280,12 @@ Equipe = [Cenna,Zohé,Malf,Lucia,Maho]
 # Question 1 en prenant
 # pour éxemple Cenna 
 
-def Rénitialiser(champion):
+def Réinitialiser(champion):
      champion=["tireur",1,70,25,130]
      Cenna=champion
      return(champion)
 
-#print(Rénitialiser(Cenna))
+#print(Réinitialiser(Cenna))
     </code>
     <code class="python exo_Python">
 # Question 2 #
@@ -332,7 +349,7 @@ print(Equipe_niveau_alea2())
             <li class="titlefooter">About Me</li>
             <li><i class="fas fa-map-marked-alt"></i> Hauts de France/ Douai</li>
             <li>&#x1F588; : 119 rue de la tour de Bourgogne 59500 </li>
-            <li style="font-size: 15px; color: red;">&#x2706; : 06.89.45.70.26</li>
+            <li style="font-size: 15px">&#x2706; : 06.89.45.70.26</li>
             <li>&#128231; : jean.paris.pro@gmail.com</li>
 
         </ul>

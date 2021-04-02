@@ -27,6 +27,20 @@ body {
     box-shadow: 5px 5px 5px 5px rgb(92, 92, 92);
 }
 
+.button_interactif{
+    background-color: #151728;
+    border-radius: 7px;
+    color: white;
+    padding: 10px;
+    margin: 15px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.button_interactif:hover{
+    background-color: white;
+    color: #151728;
+}
 
 /*******************IFRAME************************/
 

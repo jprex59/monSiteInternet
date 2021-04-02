@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font: 300 100%/1.5em 'Lato', sans-serif;
+    font: 300 100%/1.5em sans-serif;
 }
 
 
@@ -113,7 +113,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     margin: auto;
-    width: 1500px;
+    width: 1200px;
 }
 
 .container--title {
@@ -130,15 +130,17 @@ body {
     background-position: top right;
     background-size: 100px;
     background-color: #eaeaea;
+    padding: 10px;
+    width: 98%;
 }
 
 .informations p {
+    margin: 15px;
     margin-top: 3em;
     text-align: justify;
     width: 88%;
     padding: 1em;
     font-family: sans-serif;
-    font-size: 17px;
 }
 
 .visio {
@@ -193,14 +195,17 @@ body {
     background-image: url("../images/python.png");
     background-position: bottom 30% left 5%;
     background-size: 100px;
+    width: 100px;
     background-repeat: no-repeat;
     border-radius: 0;
     border: none;
 }
-.contexts_TP p, .contexts_TP_python p{
+.contexts_TP p, .contexts_TP_python p, .informations p{
     padding: 1em;
     background-color: #f3f3f3;
     border-radius: 5px;
+    font-size: 17px;
+    margin: 0;
 }
 .python_title{
     width: 20%;
@@ -224,11 +229,6 @@ h3{
 
 /************************responsive*****************************************************/
 
-@media all and (max-width: 1560px) {
-    .container--responsive {
-        width: 100%;
-    }
-}
 
 @media all and (max-width: 1540px) {
 
@@ -312,19 +312,9 @@ h3{
         background-size: contain;
         height: 50em;
     }
-    .informations p {
-        padding: 0.5em;
-        font-size: 10px;
-        width: 85%;
-    }
-    p{
-        font-size: 10px ;
-    }
+
     .PowerShell_Height{
         font-size: 10px;
-    }
-    .informations {
-        background-position: right;
     }
     h5 {
         font-size: 14px;
@@ -356,3 +346,5 @@ h3{
         justify-content: space-between;
     }
     }
+
+    

@@ -23,12 +23,11 @@ const playlistID = document.getElementById('playlistID');
 const SIOID = document.getElementById('SIOID');
 const LicenceID = document.getElementById('LicenceID');
 const stjeanID = document.getElementById('stjeanID');
+const interactif = document.getElementById('cv_interactif');
 
 width = document.documentElement.clientWidth;
 
 function animation() {
-    var reponse = window.confirm("[CV avec accés aux liens] Votre taille d'écran le permet, si vous le souhaitez, acceptez et vous pourrez accéder aux liens ");
-    if (reponse) {
         container.style.justifyContent = 'space-around';
         container.style.margin = '50px';
 
@@ -157,13 +156,15 @@ function animation() {
             pharmagest.classList.remove('open');
             CyberPlanet.classList.remove('open');
         });
+        interactif.style.display = 'none';
+}
 
-
-    } else {}
+function noanimation(){
+    interactif.style.display = 'none';
 }
 
 if (width > 1600) {
-    window.onload = animation;
+    interactif.style.display = 'flex';
 }
 
 

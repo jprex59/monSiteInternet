@@ -17,36 +17,53 @@
 </head>
 
 <body>
-    <div class="page">
-        <div class="menu">
-            <div class="information-bar">
-                    <p class="name">Jean Paris BTS SIO 2</p>
-                <div class="profile">
-                    <img src="images/jeanPro.jpg">
-                </div>
-            </div>
-        </div>
-        <span class="hamburger">
-        <span></span>
+    <div style="display: flex; justify-content: center; width: 100%;">
+        <nav class="menu">
+            <a href="#company" class="nav-item is-active">L'Entreprise</a>
+            <a href="#calendrier" class="nav-item">Calendrier</a>
+            <a href="#localisation" class="nav-item">Localisation</a>
+            <a href="#day" class="nav-item">Rapports Journaliers</a>
+            <span class="nav-item-hamburger hamburger" onmouseover="redhamburger()"  onmouseout="hamburger()">
+                <span></span>
+            <span></span>
+            <span></span>
+            </span>
+            <span class="nav-indicator"></span>
+        </nav>
+    </div>
+        
+    <div class="header"><h1>Stage de 2e année</h1></div>
+    
+        <span class="hamburger1">
+            <span></span>
         <span></span>
         <span></span>
         </span>
-
+    
         <span class="closehamburger2">
-        <span></span>
+            <span></span>
         <span></span>
         <span></span>
         </span>
-
+    
+        <span class="closehamburger_Responsive">
+            <span></span>
+        <span></span>
+        <span></span>
+        </span>
+    
+        
+       
+    
         <span class="closehamburger1">
-      x
-      </span>
-
+        x
+        </span>
+    
         <div class="sidebar">
             <div class="espace"></div>
             <a href="SIO.html">
                 <div class="onglet">
-                    <i class="fas fa-graduation-cap"></i> SIO
+                    <i class="fas fa-graduation-cap"></i>SIO
                 </div>
             </a>
             <a href="StageSio.html">
@@ -60,7 +77,7 @@
                 </div>
             </a>
             <a href="VeilleJuridique.html">
-                <div class="onglet">
+                <div class="onglet" style="margin-bottom: 50px;">
                     <i class="fas fa-book"></i> veille juridique
                 </div>
             </a>
@@ -82,82 +99,96 @@
             </a>
             <div class="espace"></div>
         </div>
+    
 
-        <span class="slidespharmagest">
-      <div class="bioo">
-        <div class="infoslidespharmagest">
-          <h1 class="titre">Pharmagest </h1>
-          <a href="https://pharmagest.com/qui-sommes-nous/groupe-pharmagest/" style="color: #70b121; text-align: center; margin-bottom: 2%; display: block;">(Voir le site)</a>
-          Stage de 2e année du BTS SIO (2020)</br>
-          <b>Durée :</b> 7 semaines du 4 Janvier au 19 Février 2021</br></br>
-          Pharmagest est une entreprise du domaine informatique spécialisée dans les pharmacies/ les officines ...
-          Pharmagest est divisée en 20 sites dans la France avec les Antilles. 
-          </br></br>J'effectue mon stage à l'agence Pharmagest de Cuincy qui est en charge de la région Hauts de France</br>
-          <b>Localisation :</b> Zac de la Haute Rive, 59553 Cuincy</br></br>
-          <b>Quelques chiffres :</b></br>
-          <b>CA des 3 premiers semestres de 2020 :</b> 127.7M </br>
-          <b>CA annuel 2019 :</b> 158.55M </br>
-          <b>Groupe :</b> La cooperative Welcoop (3e Slide)
-          
-        </div>
-        <video class="videoslide1" muted autoplay loop width="70%" height="100%">      
-          <source src="./vidéos/pharmagest.mp4"type="video/mp4">
-      </video>
-      </div>
-        </span>
 
-        <span class="slidespharmagest">
-        <div class="slidespharmagest2">
-          <div class="infoslides2pharmagest">
-            <h2>L'agence Régionale :</h2>
-            </br>Elle dispose de plusieurs services :</br></br>
-            <h3 class="servicespharmagest">L'atelier divisé en 2 parties :</h3>
-            SAV et Préparation de serveurs neufs</br></br>
-            <h3 class="servicespharmagest">Les techniciens itinérants :</h3>
-            qui sont en charge des installations du matériel neuf et de la maintenance des produits installés.</br></br>
-            <h3 class="servicespharmagest">Le Service d'Assistance Technique Régional, A.T.R. :</h3>
-            qui se charge du Helpdesk qui centralise les appels des pharmacies et qui agit
-            avec la prise à distance ou s'il est dans l'incapacité de répondre au problème doit se rapprocher de l'ESEC (Répond à la norme ISO), 
-            European Service Expert Center, ou déclencher une intervention sur site au près des techniciens itinérants.</ol>
-                        
-          </div>
-
-          <video class="videoslide2" muted autoplay loop width="70%" height="100%">      
-          <source src="./vidéos/pharmagestservices.mp4" type="video/mp4">
-        </video>
-
-        </div>
-        </span>
-
-        <span class="slidespharmagest">
-          <div class="slidespharmagest3">
-            <div class="infoslides3pharmagest">
-              <h2>La cooperative Welcoop</h2>
-              <a href="https://www.lacooperativewelcoop.com/" style="color: #70b121; text-align: center; margin-bottom: 2%; display: block;">
-                (Voir le site)</a></br>
-              "Le  Groupe  Pharmagest  est  le  leader  français  de  l’informatique de  santé  avec  plus  de  44%  de  parts  de  marché  en 
-              informatique  de pharmacie  officinale,  28%  des  EHPAD,  43%  des  HAD,  20%  des  maisons  de  santé.  Avec  plus  de  1.000  
-              collaborateurs,  la  stratégie  du Groupe Pharmagest s’articule autour d’un cœur de métier : l’innovation informatique au service
-              de la Santé et le développement de 2 axes prioritaires  :  1/  les  services  et  technologies  à  destination  des  professionnels
-              de  santé  ;  2/  les  domaines  technologiques  capables d’améliorer l’efficience des systèmes de santé"</br></br>
-              <b>Source :</b> Communiqués de presse de Pharmagest, CA 2019 </br><a href="https://pharmagest.com/wp-content/uploads/PHARMAGEST_COMMUNIQUE_20200206_CA-2019.pdf">voir la source</a>
+        <div class="container_company" id="company">
+            <a class="modal_a button_modal company" href="#demo"><h4><i class="fas fa-bookmark"></i> Pharmagest</h4></a>
+            <a class="modal_a button_modal service " href="#demo1"><h4><i class="fas fa-bookmark"></i> L'agence régionale</h4></a>
+            <a class="modal_a button_modal group " href="#demo2"><h4><i class="fas fa-bookmark"></i> Le groupe</h4></a>
+            <a class="modal_a button_modal skills " href="#demo3"><h4><i class="fas fa-bookmark"></i> Projets et compétences</h4></a>
+        
+            <div id="demo" class="modal">
+              <div class="modal_content">
+                <h3><i class="far fa-bookmark"></i> L'entreprise</h3>
+            
+                <p>Stage de 2e année du BTS SIO (2020)
+                  Durée : 7 semaines du 4 Janvier au 19 Février 2021</br></br>
+                  
+                  Pharmagest est une entreprise du <b>domaine informatique spécialisée dans les pharmacies/ les officines</b> ... 
+                  Pharmagest est divisée en 20 sites dans la France avec les Antilles.</br></br>
+                  
+                  J'effectue mon stage à l'agence Pharmagest de <b>Cuincy qui est en charge de la région Hauts de France</b>
+                  Localisation : Zac de la Haute Rive, 59553 Cuincy</br></br>
+                  
+                  Quelques chiffres :</br>
+                  CA de Janvier à Septembre  de 2020 : 127.7M</br>
+                  CA annuel 2019 : 158.55M</br>
+                  Groupe : La cooperative Welcoop</br>
+                </p>
+                <a class="modal_link" href="https://pharmagest.com/qui-sommes-nous/groupe-pharmagest/">Voir le site</a>
+            
+                <a href="#" class="modal_a modal_close ">&times;</a>
+              </div>
+            </div>
+        
+            <div id="demo1" class="modal">
+                <div class="modal_content">
+                  <h3><i class="far fa-bookmark"></i> Les services</h3>
               
-  </div>
-            <video class="videoslide3" muted autoplay loop width="70%" height="100%">      
-            <source src="./vidéos/welcoop.mp4" type="video/mp4">
-           </video>
-          </div>
-          </span>
+                  <p>Elle dispose de plusieurs services :</br></br>
+        
+                    <b>L'atelier</b> divisé en 2 parties :</br>
+                    <b>SAV</b> et <b>Préparation de serveurs neufs</b></br></br>
+                    
+                    <b>Les techniciens itinérants</b> :</br>
+                    qui sont en charge des installations du matériel neuf et de la maintenance des produits installés.</br></br>
+                    
+                    <b>Le Service d'Assistance Technique Régional, A.T.R. :</b></br>
+                    qui se charge du <b>Helpdesk</b> qui centralise les appels des pharmacies et qui agit avec la prise à distance 
+                    ou s'il est dans l'incapacité de répondre au problème doit se rapprocher de l'ESEC (Répond à la norme ISO),
+                    European Service Expert Center, ou déclencher une intervention sur site auprès des techniciens itinérants.</p>
+              
+                  <a href="#" class="modal_a modal_close">&times;</a>
+                </div>
+              </div>
+        
+              <div id="demo2" class="modal">
+                <div class="modal_content">
+                  <h3><i class="far fa-bookmark"></i> Le groupe</h3>
+              
+                  <p>"Le Groupe Pharmagest est le leader français de l’informatique de santé avec plus de 44% de parts de marché en
+                     informatique de pharmacie officinale, 28% des EHPAD, 43% des HAD, 20% des maisons de santé. Avec plus de 1.000 collaborateurs,
+                      la stratégie du Groupe Pharmagest s’articule autour d’un cœur de métier : l’innovation informatique au service de la Santé et
+                       le développement de 2 axes prioritaires : 1/ les services et technologies à destination des professionnels de santé ; 
+                       2/ les domaines technologiques capables d’améliorer l’efficience des systèmes de santé"</br></br>
+        
+                    Source : Communiqué de presse de Pharmagest, CA 2019</br>
+                    </p>
+                    <a class="modal_link" href="https://www.lacooperativewelcoop.com/">Voir la source</a>
+              
+                  <a href="#" class=" modal_a modal_close">&times;</a>
+                </div>
+              </div>
 
+              <div id="demo3" class="modal">
+                <div class="modal_content">
+                  <h3><i class="far fa-bookmark"></i> Projets et compétences</h3>
+                    <p>
+                        <i class="fas fa-tools"></i> S.A.V Réparation du matériel informatique : ordinateurs, imprimantes, scanners, routeurs...</br></br>
+                        <i class="fas fa-headset"></i> Hotline</br></br>
+                        <i class="fas fa-server"></i> Préparation et transfert de serveurs</br></br>
+                        <i class="fas fa-laptop-medical"></i> Installation et dépannage de matériel informatique avec un technicien itinérant</br></br></br>
+                        <i class="fab fa-linux"></i> Découverte de Linux (Centos)</br></br>
+                        <i class="fas fa-network-wired"></i> Base d'un réseau LAN 
 
-        <a class="prevpharmagest" onclick="plusSlidess(-1)">&#10094;</a>
-        <a class="nextpharmagest" onclick="plusSlidess(1)">&#10095;</a>
-    </div>
-    <div style="text-align: center">
-        <span class="dotpharmagest" onclick="currentSlides(1)"></span>
-        <span class="dotpharmagest" onclick="currentSlides(2)"></span>
-        <span class="dotpharmagest" onclick="currentSlides(3)"></span>
-    </div>
+                    </p>              
+                  <a href="#" class=" modal_a modal_close">&times;</a>
+                </div>
+              </div>
+        </div>
+        
+       
 
     <div style="text-align: center; margin-top: 2%;"><b>Cliquez sur un jour du calendrier pour accéder à l'emplacement du rapport journalier correspondant</b></div>
 
@@ -359,9 +390,9 @@
         <span class="dot" onclick="currentSlide(2)"></span>
     </div>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4508.532189824666!2d3.0265563166876404!3d50.37111398045537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2cb98a4aef575%3A0xf6fc2f238d382091!2sPharmagest%20Inter%40ctive!5e0!3m2!1sfr!2sfr!4v1614364594902!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe id="localisation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4508.532189824666!2d3.0265563166876404!3d50.37111398045537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2cb98a4aef575%3A0xf6fc2f238d382091!2sPharmagest%20Inter%40ctive!5e0!3m2!1sfr!2sfr!4v1614364594902!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-    <div class="history-tl-container">
+    <div class="history-tl-container" id="day">
         <ul class="tl">
             <li class="tl-item" ng-repeat="item in retailer_history">
                 <div class="timestamp" id="4">
@@ -702,7 +733,7 @@
           <li class="titlefooter">About Me</li>
           <li><i class="fas fa-map-marked-alt"></i> Hauts de France/ Douai</li>
           <li>&#x1F588; : 119 rue de la tour de Bourgogne 59500 </li>
-          <li style="font-size: 15px; color: red;">&#x2706; : 06.89.45.70.26</li>
+          <li style="font-size: 15px;">&#x2706; : 06.89.45.70.26</li>
           <li>&#128231; : jean.paris.pro@gmail.com</li>
           
         </ul>

@@ -10,13 +10,142 @@
   font-family: 'FontAwesome', sans-serif;
 } 
  
-/* ---------- GENERAL ---------- */
+/*-------------Modal---------------*/
+.container_company{
+  margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: sans-serif;
+    flex-wrap: wrap;
+}
 
+.modal_content p{
+  text-align: justify;
+}
+.container_company a h4{
+  font-size: 17px;
+  background-color: #f3f3f3;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.modal_link{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: #151728;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+  float: right;
+  transition: all .5s;
+}
+
+.modal_link:hover{
+  color: black;
+  background-color: #ececec;
+}
+
+.button_modal{
+  width: 500px;
+  height: 310px;
+  margin-top: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.company{
+  background-image: url('../images/pharmagestbio.PNG');
+  background-position: center;
+  background-size: 210px;
+  background-repeat: no-repeat;
+}
+
+.group{
+  background-image: url('../images/groupe.png');
+  background-position: center;
+  background-size: 190px;
+  background-repeat: no-repeat;
+}
+
+.service{
+  background-image: url('../images/service.png');
+  background-position: center;
+  background-size: 230px;
+  background-repeat: no-repeat;
+}
+
+.skills{
+  background-image: url('../images/workexperience.png');
+  background-position: center;
+  background-size: 230px;
+  background-repeat: no-repeat;
+}
+
+.modal_a {
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: black;
+    transition: all .5s;
+    background-color: #ececec;
+  }
+
+.modal_a:hover {
+  background-size: 280px;
+  background-color: #c0c0c0;
+}
+
+  .modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0; right: 0;
+    bottom: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, .7);
+    transition: all .4s;
+  }
+
+
+  .modal:target {
+    visibility: visible;
+    opacity: 1;
+    z-index: 99999;
+    position: fixed;
+  }
+
+  .modal_content {
+    border-radius: 4px;
+    position: relative;
+    width: 700px;
+    font-size: 20px;
+    max-width: 90%;
+    background: white;
+    padding: 1.5em 2em;
+    margin: 25px;
+  }
+  
+  .modal_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: grey;
+    text-decoration: none;
+  }
+
+
+/* ---------- GENERAL ---------- */
 body{
   line-height:1.3em;
-  background: #f9f9f9;
   color: #000000;
   font: 300 100%/1.5em 'Lato', sans-serif;
+  min-width: 750px;
+  background-color: #ececec14;
 }
 
 a {
@@ -49,7 +178,6 @@ table {
   width: 750px;
   position: relative;
   border: solid white;
-  background-color: #ececec;
 }
 
 
@@ -102,19 +230,7 @@ table {
   color: #cbd1d2;
 }
 
-.prev,
-.next {
-  cursor: pointer;
-  color: white;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  padding: 16px;
-  border-radius: 0 3px 3px 0;
-  background: rgba(0, 0, 0, 0.5);
-  transition: all 0.3s;
-  display: block;
-}
+
 
 .slides {
   display: none;
@@ -211,121 +327,6 @@ table {
 
 
 
-.slidespharmagest2{
-  margin-top: 1%;
-  padding-left: 1%;
-  padding-right: 1%;
-  text-align: justify;
-  font-family: sans-serif;
-  background-image: url("../images/pharmagestbio.PNG");
-  background-position: right;
-  background-repeat: no-repeat;
-  background-color: #ececec;
-  height: 37em;
-}
-.slidespharmagest3{
-  margin-top: 1%;
-  padding-left: 1%;
-  padding-right: 1%;
-  text-align: justify;
-  font-family: sans-serif;
-  background-image: url("../images/pharmagestbio.PNG");
-  background-position: right;
-  background-repeat: no-repeat;
-  background-color: #ececec;
-  height: 37em;
-}
-.bioo {
-  padding-left: 1%;
-  padding-right: 1%;
-  text-align: justify;
-  font-family: sans-serif;
-  background-color: #ececec;
-  height: 37em;
-  margin-top: 1%;
-}
-
-
-
-.biooresponsive {
-  padding-left: 1%;
-  padding-right: 1%;
-  text-align: justify;
-  font-family: sans-serif;
-  background-color: #ececec;
-  height: 36em;
-  margin-top: 1%;
-  display: none;
-}
-
-
-.infoslidespharmagest{
-  float: left;
-  width: 28%;
-  max-height: 36em;
-  text-align: justify;
-  padding: 0.5em;
-}
-/******responsive*********/
-
-.titre{
-  text-align: center;
-  color: #70b121;
-  margin-bottom: 0%;
-}
-
-/******responsive***********/
-
-.infoslides2pharmagest h2{
-  text-align: center;
-  color: #70b121;
-  margin-bottom: 0%;
-}
-
-.infoslides2pharmagest{
-  float: left;
-  width: 28%;
-  height: 36em;
-  text-align: justify;
-  padding: 0.5em;
-}
-
-.infoslides3pharmagest h2{
-  text-align: center;
-  color: #70b121;
-  margin-bottom: 0%;
-}
-
-.infoslides3pharmagest{
-  float: left;
-  width: 28%;
-  height: 36em;
-  text-align: justify;
-  padding: 0.5em;
-}
-
-.infoslides3pharmagest a{
-  color: #70b121;
-}
-
-.servicespharmagest{
-  color: #70b121;
-  font-size: 1em;
-}
-
-.pharmagest{
-  color: rgb(0, 196, 49);
-  white-space: nowrap;
-  text-align: center;
-  font-size: 2em;
-  font-family: sans-serif;
-  margin-top: 1%;
-}
-.pharmagest:hover{
-  color: rgb(255, 255, 255);
-  border-radius: 15px;
-}
-
 
 
 .prev,
@@ -352,30 +353,6 @@ table {
   background: rgba(0, 0, 0, 0.8);
 }
 
-
-.prevpharmagest,
-.nextpharmagest {
-  cursor: pointer;
-  color: white;
-  position: absolute;
-  top: 30em;
-  transform: translate(0, -50%);
-  padding: 16px;
-  border-radius: 0 3px 3px 0;
-  background: rgba(0, 0, 0, 0.5);
-  transition: all 0.3s;
-  display: block;
-}
-
-.nextpharmagest {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prevpharmagest:hover,
-.nextpharmagest:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
 
 
 
@@ -441,47 +418,21 @@ ul.tl li .timestamp{
 }
 /*****************************************************************************/
 
+@media all and (max-width: 2300px) {
+  .button_modal{
+    width: 335px;
+  }
+}
 
-@media all and (max-width: 1230px) {
-  .infoslidespharmagest{
-    width: 70%;    
-    height: 28em;
+@media all and (max-width: 1500px) {
+  .button_modal{
+    width: 310px;
   }
-  .videoslide1{
-    display: none;
-  }
-  .bioo{
-    background-image: url("../images/pharmagestbio.PNG");
-    background-position: right;
-    background-repeat: no-repeat;
-    height: 30em;
-    }
-    .videoslide2{
-      display: none;
-    }
-    .slidespharmagest2{
-    background-image: url("../images/pharmagestbio.PNG");
-    background-position: right;
-    background-repeat: no-repeat;
-    height: 30em;
-    }
-    .infoslides2pharmagest{
-      width: 70%; 
-      height: 28em;   
-    }
+}
 
-  .videoslide3{
-    display: none;
-  }
-  .slidespharmagest3{
-  background-image: url("../images/pharmagestbio.PNG");
-  background-position: right;
-  background-repeat: no-repeat;
-  height: 30em;
-  }
-  .infoslides3pharmagest{
-    width: 70%; 
-    height: 28em;   
+@media all and (max-width: 1380px) {
+  .button_modal{
+    width: 500px;
   }
 }
 
@@ -509,4 +460,24 @@ ul.tl li .timestamp{
   .history-tl-container ul.tl li {
     margin-left: 20%;
   }
+
+  .button_modal{
+    width: 450px;
+  }
 }
+
+
+@media all and (max-width: 1000px) {
+  .button_modal{
+    width: 310px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .modal_content{
+    width: 95%;
+  }
+}
+
+
+
