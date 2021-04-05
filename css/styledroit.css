@@ -100,6 +100,18 @@ body{
 .artical{
   width: 100%;
 }
+
+.artical h3{
+  color: rgb(255, 255, 255);
+  margin-left: 3em;
+  background-color: #151728;
+  padding: 12px;
+  border-radius: 5px;
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
 .artical h2{
   color: black;
   margin-left: 2em;
@@ -144,6 +156,27 @@ body{
   color: black;
   text-align: center;
 }
+
+.title2014{
+  background-image: url('../images/juridique/img1.jpg');
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.title1y{
+  background-image: url('../images/juridique/art3\ -\ Copie.png');
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.titleaffaire h4{
+  width: 80%;
+  text-align: center;
+}
+
+
 .artical-item:hover .overlay {
   height: 100%;
   padding: 20px;
@@ -184,19 +217,23 @@ body{
 .art2{
   background-image: url('../images/techno/img2.png');
   background-size: cover;
-}/*
+}
 .art3{
-  background-image: url('../images/techno/img3.jpg');
+  background-image: url('../images/juridique/art3.png');
   background-size: cover;
 }
-.art4{
-  background-image: url('../images/techno/img4.png');
-  background-size: cover;
+.artrisc{
+  background-image: url('../images/juridique/risk.jpg');
+  background-size: 400px;
+  background-position: top;
+  background-repeat: no-repeat;
 }
-.art8{
-  background-image: url('../images/techno/img8.png');
-  background-size: cover;
-}*/
+.artmapaye{
+  background-image: url('../images/juridique/mapaye.png');
+  background-size: 450px;
+  background-position: top;
+  background-repeat: no-repeat;
+}
 .art{
   background-image: url('../images/article.PNG');
   background-size: cover;
