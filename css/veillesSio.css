@@ -1,0 +1,36 @@
+.containerInformatique,
+.containerJuridique {
+	display: none;
+}
+
+.open {
+	display: block !important;
+}
+
+.tabs li.is-active a {
+	color: #3298dc;
+}
+
+.is-parent img {
+	border-radius: 8px !important;
+}
+
+@media all and (max-width: 1216px) {
+	.is-parent img {
+		width: 300px;
+		height: 200px;
+	}
+}
+@media all and (max-width: 770px) {
+	.is-parent img {
+		width: auto;
+		height: auto;
+	}
+}
+
+.content p a {
+	margin-top: 10px;
+}
+.content p {
+	text-align: justify !important;
+}

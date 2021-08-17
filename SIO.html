@@ -1,218 +1,173 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html class="has-navbar-fixed-top" lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+		<link rel="stylesheet" href="./css/sio.css" />
+		<link rel="stylesheet" href="./css/all.css" />
+		<link rel="stylesheet" href="./css/bulma-tooltip.css" />
+		<link rel="stylesheet" href="./css/bulma-pageloader.min.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/b8f4ab5226.js" crossorigin="anonymous"></script>
 
-<head>
-    <title>SIO</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/stylehomepage.css" type="text/css" />
-    <link rel="stylesheet" href="./css/menu.css" type="text/css" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
-    <link rel="stylesheet" href="./css/footer.css" type="text/css" />
-    <script src="https://kit.fontawesome.com/b8f4ab5226.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/atom-one-dark.min.css" type="text/css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js"></script>
-</head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/atom-one-dark.min.css" type="text/css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<title>SIO</title>
+	</head>
+	<body>
+		<div class="pageloader"><span class="title">Chargement....</span></div>
+		<a href="#" class="up"><i class="fas fa-caret-up"></i></a>
+		<nav class="navbar is-fixed-top is-info" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<!---faire changer le nom en fonction du titre de la ssection-->
+				<a class="navbar-item title is-4" id="SectionName" href="index.html">Mon Portfolio</a>
 
-<body>
-    <div style="display: flex; justify-content: center; width: 100%;">
-    <nav class="menu">
-        <a href="#section_visio" class="nav-item is-active">Projet</a>
-        <a href="#container" class="nav-item">Documentations</a>
-        <a href="#powershell" class="nav-item">Powershell</a>
-        <a href="#section_python" class="nav-item">Python</a>
-        <span class="nav-item-hamburger hamburger" onmouseover="redhamburger()"  onmouseout="hamburger()">
-            <span></span>
-        <span></span>
-        <span></span>
-        </span>
-        <span class="nav-indicator"></span>
-    </nav>
-</div>
-    
-<div class="header"><h1>Années de SIO</h1></div>
+				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
 
-    <span class="hamburger1">
-        <span></span>
-    <span></span>
-    <span></span>
-    </span>
+			<div id="navbarBasicExample" class="navbar-menu">
+				<div class="navbar-start"></div>
 
-    <span class="closehamburger2">
-        <span></span>
-    <span></span>
-    <span></span>
-    </span>
+				<div class="navbar-end">
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link"> BTS SIO </a>
+						<div class="navbar-dropdown">
+							<a href="./sio.html" class="navbar-item"> Projets et stages </a>
 
-    <span class="closehamburger_Responsive">
-        <span></span>
-    <span></span>
-    <span></span>
-    </span>
+							<hr class="navbar-divider" />
+							<a href="./veillesSio.html" class="navbar-item"> Veilles technologique et juridique </a>
+						</div>
+					</div>
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link"> Licence IG </a>
+						<div class="navbar-dropdown">
+							<a class="navbar-item"> A Venir </a>
+							<hr class="navbar-divider" />
+						</div>
+					</div>
+					<a href="projets.html" class="navbar-item"> Projets </a>
+					<a href="https://github.com/jprex59" class="navbar-item github"><i class="fab fa-github"></i></a>
 
-    
-   
+					<div class="navbar-item">
+						<div class="buttons">
+							<a href="index.html#contact" class="button is-info is-inverted">
+								<strong>Contact</strong>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<section class="hero is-info">
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<p class="title">BTS SIO</p>
+					<p class="subtitle">2019 - 2021</p>
+				</div>
+			</div>
+		</section>
+		<div class="container is-fluid container-img section is-medium">
+			<article class="message is-dark box" data-aos="zoom-in">
+				<div class="message-body">
+					<p class="title is-4">Projet réseau</p>
+					Durant cette année de BTS j’apprends les différents types d’architectures des <b>réseaux informatiques</b> et notamment comment les
+					<b>installer, les administrer, les protéger et gérer la maintenance</b> des équipements.
+					<br />
+					Le but de monter cette architecture est de découvrir les différents services mais aussi de voir les principes de sécurité qui en découlent
+					comme : La QOS (Quality Of Services, La tolérance de panne, Le PSI (Plan De Sécurité Informatique), La haute disponibilité.
+					<br />
+					Durant la 1ère année j’ai également appris lors des cours de programmation à <b>coder un petit site internet</b> avec la mise en place d’un
+					CRUD connecté à une base de données mais aussi le langage C et Python.
+					<br />
+				</div>
+			</article>
+			<img class="imgHorizontale section" src="./img/sio/Visio infra bts 2e année.png" />
+			<img class="imgVerticale section" src="./img/sio/Visio infra bts 2e année verticale.png" />
 
-    <span class="closehamburger1">
-	x
-	</span>
+			<div class="container container_card" data-aos="fade-right">
+				<a
+					href="./DOC/7- AD.pdf"
+					class="card_own card_patron has-tooltip-arrow has-tooltip-primary has-tooltip-active"
+					data-tooltip="Voir la documentation"
+				>
+					<img class="image_own" src="./img/sio/ad.jpg" />
+					<div class="titleAbsolute"><p class="block title is-6">AD</p></div>
+					<p class="block subtitle is-6">Voir la documentation <i class="fas fa-long-arrow-alt-right"></i></p>
+				</a>
+				<a href="./DOC/1- Architecture n tiers.pdf" class="card_own card_patron card-responsive">
+					<img class="image_own" src="./img/sio/arch3tiers.PNG" />
+					<div class="titleAbsolute"><p class="block title is-6">Architecture 3 tiers</p></div>
+					<p class="block subtitle is-6">Voir la documentation <i class="fas fa-long-arrow-alt-right"></i></p>
+				</a>
+				<a href="./DOC/5- Cobian.pdf" class="card_own card_patron">
+					<img class="image_own" src="./img/sio/cobian.JPG" />
+					<div class="titleAbsolute"><p class="block title is-6">Cobian Backup</p></div>
+					<p class="block subtitle is-6">Voir la documentation <i class="fas fa-long-arrow-alt-right"></i></p>
+				</a>
+				<a href="./DOC/8- DHCP.pdf" class="card_own">
+					<img class="image_own" src="./img/sio/dhcp.png" />
+					<div class="titleAbsolute"><p class="block title is-6">DHCP</p></div>
+					<p class="block subtitle is-6">Voir la documentation <i class="fas fa-long-arrow-alt-right"></i></p>
+				</a>
+				<div class="divider is-right"></div>
+				<a href="./DOC/6- DNS.pdf" class="card_own card_patron">
+					<img class="image_own" src="./img/sio/dns-removebg-preview.png" />
+					<div class="titleAbsolute"><p class="block title is-6">DNS</p></div>
+					<p class="block subtitle is-6">Voir la documentation <i class="fas fa-long-arrow-alt-right"></i></p>
+				</a>
+				<a href="./DOC/2- Supervision EON.pdf" class="card_own card_patron card-responsive">
+					<img class="image_own" src="./img/sio/eon.jpg" />
+					<div class="titleAbsolute"><p class="block title is-6">EON</p></div>
+					<p class="block subtitle is-6">Voir la documentation <i class="fas fa-long-arrow-alt-right"></i></p>
+				</a>
+				<a href="./DOC/4- NLB.pdf" class="card_own card_patron">
+					<img class="image_own" src="./img/sio/nlb.png" />
+					<div class="titleAbsolute"><p class="block title is-6">NLB</p></div>
+					<p class="block subtitle is-6">Voir la documentation <i class="fas fa-long-arrow-alt-right"></i></p>
+				</a>
+				<a class="card_own card_last_column">
+					<img class="image_own" src="./img/sio/psi-removebg-preview.png" />
+					<div class="titleAbsolute"><p class="block title is-6">PSI</p></div>
+					<p class="block subtitle is-6">Voir la documentation <i class="fas fa-long-arrow-alt-right"></i></p>
+				</a>
 
-    <div class="sidebar">
-        <div class="espace"></div>
-        <a href="SIO.html">
-            <div class="onglet">
-                <i class="fas fa-graduation-cap"></i>SIO
-            </div>
-        </a>
-        <a href="StageSio.html">
-            <div class="onglet">
-                <i class="fas fa-building"></i> Stage
-            </div>
-        </a>
-        <a href="VeilleTechno.html">
-            <div class="onglet">
-                <i class="fas fa-city"></i> veille technologique
-            </div>
-        </a>
-        <a href="VeilleJuridique.html">
-            <div class="onglet" style="margin-bottom: 50px;">
-                <i class="fas fa-book"></i> veille juridique
-            </div>
-        </a>
-        <div class="espace"></div>
-        <a href="CV.html">
-            <div class="onglet">
-                <i class="far fa-address-card"></i> CV
-            </div>
-        </a>
-        <a href="index.html">
-            <div class="onglet">
-                <i class="fas fa-home"></i> Home
-            </div>
-        </a>
-        <a href="info.html">
-            <div class="onglet">
-                <i class="fas fa-info-circle"></i> A propos
-            </div>
-        </a>
-        <div class="espace"></div>
-    </div>
+				<!-------------------Pour rajouter des sites, changer le "SRC" pour mettre les logos et le "nom de la marque"
+				associé, enlever aussi les commentaires "/*" et "*/" au niveau de la classe ".container_card" ----->
+				<!---
+				<div class="card_own card_last_column">
+					<img class="image_own" src="./img/logo/interrogation.png" />
+					<div class="titleAbsolute"><p class="block title is-6">Nom de la marque</p></div>
+					<p class="block subtitle is-6">Select this site <i class="fas fa-long-arrow-alt-right"></i></p>
+				</div>
+				<div class="divider is-right"></div>
+				<div class="card_own card_last_column">
+					<img class="image_own" src="./img/logo/interrogation.png" />
+					<div class="titleAbsolute"><p class="block title is-6">Nom de la marque</p></div>
+					<p class="block subtitle is-6">Select this site <i class="fas fa-long-arrow-alt-right"></i></p>
+				</div>----->
+			</div>
+			<article class="message is-dark box" data-aos="fade-left">
+				<div class="message-body">
+					<p class="title is-4">Powershell</p>
+					<b>Context : </b><br />La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des espaces et des services aux différentes ligues
+					sportives régionales et à d’autres structures hébergées. Dernièrement <b>le serveur LDAP</b> de la maison des ligues
+					<b>est tombé en panne</b>. L’administrateur réseau n’ayant pas mis en place de protocole de gestion de panne, et ne disposant pas de
+					sauvegarde pour ce serveur, vous demande de redéployer le serveur AD et de le configurer. Vous devrez aussi à partir des fichiers fournis
+					<b>recréer automatiquement les comptes utilisateurs et les groupes correspondant</b>.
+				</div>
+			</article>
 
-
-
-    <!-------------------------------------------------------------------- >image visio  --------------------------------------------------------->
-    <div class="informations" id="section_visio">
-        <h3 style="text-align: center; margin: 10px;">Projet de réseau :</h3>
-        <p>
-            Durant cette année de BTS j’apprends les différents types d’architectures des <b>réseaux informatiques</b> et notamment comment les <b>installer, les administrer, les protéger et gérer la maintenance</b> des équipements.
-            </br>
-            Le but de monter cette architecture est de découvrir les différents services mais aussi de voir les principes de sécurité qui en découlent comme : La QOS (Quality Of Services, La tolérance de panne, Le PSI (Plan De Sécurité Informatique), La haute disponibilité.
-            </br>
-            Durant la 1ère année j’ai également appris lors des cours de programmation à <b>coder un site internet simple</b> avec la mise en place d’un CRUD connecté à une base de données mais aussi le langage C et Python.
-            </br>
-        </p>
-    </div>
-
-    <h1 style="text-align: center; margin-top: 3%; font-size: 25px;">Mon architecture réseau (Environnement 3) Jean et Remy</h1>
-    <div class="visio"></div>
-    <!------------------------------------------------------------------------------------->
-    <div class="container" id="container">
-        <div class="container--responsive">
-            <h2 class="container--title">Mes Documentations</h2>
-            <h5 class="container--title">(Cliquez pour accéder à mes documentations)</h5>
-
-
-            <a href="./DOC/5- Cobian.pdf">
-                <div class="card">
-                    <div class="card__wrapper">
-                        <div class="card__image card__image--cobian"></div>
-                        <div class="card__title">Cobian Backup</div>
-                    </div>
-                    <a class="card__link" href="./DOC/5- Cobian.pdf">Sauvegarde</a>
-                </div>
-            </a>
-
-            <a href="./DOC/1- Architecture n tiers.pdf">
-                <div class="card">
-                    <div class="card__wrapper">
-                        <div class="card__image card__image--3tiers"></div>
-                        <div class="card__title">Arch 3 tiers</div>
-                    </div>
-                    <a class="card__link" href="./DOC/1- Architecture n tiers.pdf">Hébergement web</a>
-                </div>
-            </a>
-
-            <a href="./DOC/2- Supervision EON.pdf">
-                <div class="card">
-                    <div class="card__wrapper">
-                        <div class="card__image card__image--eon"></div>
-                        <div class="card__title">Eyes Of Network</div>
-                    </div>
-                    <a class="card__link" href="./DOC/2- Supervision EON.pdf">Supervision</a>
-                </div>
-            </a>
-            <a href="./DOC/7- AD.pdf">
-            <div class="card">
-                <div class="card__wrapper">
-                    <div class="card__image card__image--ad"></div>
-                    <div class="card__title">Active Directory</div>
-                </div>
-                <a class="card__link" href="./DOC/7- AD.pdf">Gestion de sessions</a>
-            </div>
-            </a>
-            <a href="./DOC/6- DNS.pdf">
-            <div class="card">
-                <div class="card__wrapper">
-                    <div class="card__image card__image--dns"></div>
-                    <div class="card__title">Domain Name System</div>
-                </div>
-                <a class="card__link" href="./DOC/6- DNS.pdf">Traduction de noms</a>
-            </div>
-            </a>   
-            <a href="./DOC/8- DHCP.pdf">
-            <div class="card">
-                <div class="card__wrapper">
-                    <div class="card__image card__image--dhcp"></div>
-                    <div class="card__title">DHCP</div>
-                </div>
-                <a class="card__link" href="./DOC/8- DHCP.pdf">Configuration IP automatique </a>
-            </div>
-            </a>
-
-            <a href="./DOC/4- NLB.pdf">
-                <div class="card">
-                    <div class="card__wrapper">
-                        <div class="card__image card__image--nlb"></div>
-                        <div class="card__title">Network Load Balancing</div>
-                    </div>
-                    <a class="card__link" href="./DOC/4- NLB.pdf">Cluster de basculement</a>
-                </div>
-            </a>
-            <a href="#">
-            <div class="card">
-                <div class="card__wrapper">
-                    <div class="card__image card__image--psi"></div>
-                    <div class="card__title">PSI</div>
-                </div>
-                <a class="card__link" href="#">Plan de sécurité informatique</a>
-            </div>
-            </a>
-        </div>
-    </div>
-
-    <!----------------->
-    <div style="clear: both; width: 100%;height: 2em;"></div>
-
-    <div class="contexts_TP" id="powershell">
-        <h3 style="text-align: center;">PowerShell</h3>
-        <p> <b>Context : </b></br>La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des espaces et des services aux différentes ligues sportives régionales et à d’autres structures hébergées. Dernièrement <b>le serveur LDAP</b> de la maison
-            des ligues <b>est tombé en panne</b>. L’administrateur réseau n’ayant pas mis en place de protocole de gestion de panne, et ne disposant pas de sauvegarde pour ce serveur, vous demande de redéployer le serveur AD et de le configurer. Vous
-            devrez aussi à partir des fichiers fournis <b>recréer automatiquement les comptes utilisateurs et
-          les groupes correspondant</b>.</p>
-    </div>
-
-    <!----------------------------------PowerShell--------------------------->
-    <pre>
-        <code class="PowerShell PowerShell_Height">
+			<pre>
+        <code class="PowerShell PowerShell_Height"data-aos="fade-right">
     # Script pour enregistrer des utilisateurs dans AD
     # version 1.0
     # Auteur : JEAN PARIS
@@ -247,27 +202,22 @@
     }
         </code>
     </pre>
-    <!------------------------------Python---------------------------------->
-    <div id="section_python" class="contexts_TP_python">
-        <div class="python_title">
-            <h3>Python</h3>
-            <img src="./images/python.png" class="python_img">
-        </div>
-        <div class="python_context">
-            <p>
-                <b>Context : </b></br>le but de l'exercice est d'utiliser des fonctions/ procédures pour mettre en place un système de niveau. Voici à quoi servent les différentes fonctions :</br>
-                </br>
-                <b>Level_up</b> augmente d'un niveau le champion choisi.</br>
-                <b>Level_n</b> augmente de N niveau le champion choisi.</br>
-                <b>Alea_Level</b> augmente d'un niveau aléatoire le champion choisi.</br>
-                <b>Réinitialiser</b> réinitialise le niveau du champion choisi.</br>
-                <b>Equipe_niveau_alea</b> augmente d'un niveau aléatoire l'équipe des champions.</br>
-                <b>Equipe_niveau_alea2</b> même objectif mais d'une autre façon
-            </p>
-        </div>
-    </div>
-    <pre class="exo_container_python">
-        <code class="python exo_Python">
+
+			<article class="message is-dark box" data-aos="fade-left">
+				<div class="message-body">
+					<p class="title is-4">Python</p>
+					<b>Context : </b><br />le but de l'exercice est d'utiliser des fonctions/ procédures pour mettre en place un système de niveau. Voici à quoi
+					servent les différentes fonctions :<br />
+					<br />
+					<b>Level_up</b> augmente d'un niveau le champion choisi. / <b>Level_n</b> augmente de N niveau le champion choisi. /
+					<b>Alea_Level</b> augmente d'un niveau aléatoire le champion choisi. / <b>Réinitialiser</b> réinitialise le niveau du champion choisi. /
+					<b>Equipe_niveau_alea</b> augmente d'un niveau aléatoire l'équipe des champions. / <b>Equipe_niveau_alea2</b> même objectif mais d'une autre
+					façon
+				</div>
+			</article>
+			<div class="container">
+				<pre class="exo_container_python">
+        <code class="python exo_Python" data-aos="fade-right">
             #2 eme partie
             #Enoncé
 
@@ -280,7 +230,7 @@ Cenna=["tireur",1,70,25,130]
 Level=["",1,5,2,1.1]
 Equipe = [Cenna,Zohé,Malf,Lucia,Maho]
         </code>
-        <code class="python exo_Python">
+        <code class="python exo_Python" data-aos="fade-left">
 # Question 1 en prenant
 # pour éxemple Cenna 
 
@@ -291,7 +241,7 @@ def Réinitialiser(champion):
 
 #print(Réinitialiser(Cenna))
     </code>
-    <code class="python exo_Python">
+    <code class="python exo_Python" data-aos="fade-right">
 # Question 2 #
 
 def Level_up(champion):
@@ -315,7 +265,7 @@ def Alea_level(champion):
 
 #print(Alea_level(Cenna))
     </code>
-    <code class="python exo_Python">
+    <code class="python exo_Python" id="pythonLast" data-aos="fade-left">
 # Question 3 #
 
 def Equipe_niveau_alea() :
@@ -344,59 +294,164 @@ def Equipe_niveau_alea2() :
 print(Equipe_niveau_alea2())
         </code>
     </pre>
+			</div>
+		</div>
+		<div class="divider"></div>
+		<div class="container_company" id="company" data-aos="fade-up-right">
+			<a
+				onclick="openModal(1)"
+				class="modal_a button_modal company has-tooltip-arrow has-tooltip-primary has-tooltip-active"
+				data-tooltip="Cliquez pour accéder aux informations !"
+				href="#demo"
+				><h4><i class="fas fa-bookmark"></i> Pharmagest</h4></a
+			>
+			<a onclick="openModal(2)" class="modal_a button_modal service" href="#demo1"
+				><h4><i class="fas fa-bookmark"></i> L'agence régionale</h4></a
+			>
+			<a onclick="openModal(3)" class="modal_a button_modal group" href="#demo2"
+				><h4><i class="fas fa-bookmark"></i> Le groupe</h4></a
+			>
+			<a onclick="openModal(4)" class="modal_a button_modal skills" href="#demo3"
+				><h4><i class="fas fa-bookmark"></i> Projets et compétences</h4></a
+			>
 
+			<div class="modal">
+				<div class="modal-background"></div>
+				<div class="modal-card">
+					<header class="modal-card-head">
+						<p class="modal-card-title">Modal title</p>
+						<button class="delete" aria-label="close"></button>
+					</header>
+					<section class="modal-card-body">
+						<!-- Content ... -->
+					</section>
+					<footer class="modal-card-foot">
+						<button class="button is-success">Save changes</button>
+						<button class="button">Cancel</button>
+					</footer>
+				</div>
+			</div>
+		</div>
 
+		<div class="modal" id="Modal_1">
+			<div class="modal-background"></div>
+			<div class="modal-card responsive-card">
+				<header class="modal-card-head">
+					<p class="modal-card-title"><i class="far fa-bookmark"></i> L'entreprise</p>
+					<button class="delete" aria-label="close" onclick="closeModal(1)"></button>
+				</header>
+				<section class="modal-card-body">
+					<p>
+						Stage de 2e année du BTS SIO (2020) Durée : 7 semaines du 4 Janvier au 19 Février 2021<br /><br />
 
-    <div style="clear: both; width: 100%;height: 2em;"></div>
-    <footer>
-        <ul>
-            <li class="titlefooter">About Me</li>
-            <li><i class="fas fa-map-marked-alt"></i> Hauts de France/ Douai</li>
-            <li>&#x1F588; : 119 rue de la tour de Bourgogne 59500 </li>
-            <li style="font-size: 15px">&#x2706; : 06.89.45.70.26</li>
-            <li>&#128231; : jean.paris.pro@gmail.com</li>
+						Pharmagest est une entreprise du <b>domaine informatique spécialisée dans les pharmacies/ les officines</b> ... Pharmagest est divisée
+						en 20 sites dans la France avec les Antilles.<br /><br />
 
-        </ul>
-        <div class="main center">
-            <div class="icon center">
-                <a href="https://www.linkedin.com/in/jean-paaris/" class="fab fa-linkedin fa-2x" style="text-decoration: none;"></a>
-            </div>
-            <div class="icon center">
-                <a href="https://www.instagram.com/jean59paris/" class="fab fa-instagram fa-2x" style="text-decoration: none;"></a>
-            </div>
-        </div>
+						J'effectue mon stage à l'agence Pharmagest de <b>Cuincy qui est en charge de la région Hauts de France</b> Localisation : Zac de la
+						Haute Rive, 59553 Cuincy<br /><br />
 
-        <ul>
-            <li class="titlefooter">Informatique</li>
-            <li>
-                <div class="langue" style="margin-right: 15px;"><i class="fas fa-language"></i></div>
-                <div class="langue fr"></div>
-                <div class="langue langue_niveauFr">Courant</div>
-                <div class="langue esp"></div>
-                <div class="langue langue_niveau">B1</div>
-                <div class="langue ang"></div>
-                <div class="langue langue_niveau">B1</div>
-                <div style="clear: both;"></div>
-            </li>
-            <li><i class="fas fa-server"></i> <i class="fas fa-network-wired"></i> Spécialité, objectif master</li>
-            <li><i class="fas fa-code"></i> <i class="fas fa-database"></i> Loisir/ pour mon site</li>
-            <li><i class="fas fa-user-shield"></i> <i class="fas fa-unlock-alt"></i> Objectif apres le master</li>
-        </ul>
+						Quelques chiffres :<br />
+						CA de Janvier à Septembre de 2020 : 127.7M<br />
+						CA annuel 2019 : 158.55M<br />
+						Groupe : La cooperative Welcoop<br />
+					</p>
+					<a class="button is-info" href="https://pharmagest.com/qui-sommes-nous/groupe-pharmagest/">Voir le site</a>
+				</section>
+				<footer class="modal-card-foot"></footer>
+			</div>
+		</div>
 
-        <ul>
-            <li class="titlefooter">Other</li>
-            <li><i class="fas fa-car"></i> Permis B/ Voiture</li>
-            <li><a href="CV.html" style="font-size: 20px; font-weight: initial; color: red; text-decoration: none;"><i class="far fa-address-card"></i> CV</a></li>
-            <li><i class="fas fa-birthday-cake"></i> 19 ans</li>
-            <li>&copy; 2020</li>
-        </ul>
-    </footer>
-    <!-------------------------------------------------------------------- dernière div avant de sortir du cadre de la page------------------------------------------------------->
-    <script src="./javascript/deroulant.js"></script>
-    <script>
-        hljs.initHighlightingOnLoad();
-    </script>
-</body>
-</body>
+		<div class="modal" id="Modal_2">
+			<div class="modal-background"></div>
+			<div class="modal-card responsive-card">
+				<header class="modal-card-head">
+					<p class="modal-card-title"><i class="far fa-bookmark"></i> Les services</p>
+					<button class="delete" aria-label="close" onclick="closeModal(2)"></button>
+				</header>
+				<section class="modal-card-body">
+					<p>
+						Elle dispose de plusieurs services :<br /><br />
 
+						<b>L'atelier</b> divisé en 2 parties :<br />
+						<b>SAV</b> et <b>Préparation de serveurs neufs</b><br /><br />
+
+						<b>Les techniciens itinérants</b> :<br />
+						qui sont en charge des installations du matériel neuf et de la maintenance des produits installés.<br /><br />
+
+						<b>Le Service d'Assistance Technique Régional, A.T.R. :</b><br />
+						qui se charge du <b>Helpdesk</b> qui centralise les appels des pharmacies et qui agit avec la prise à distance ou s'il est dans
+						l'incapacité de répondre au problème doit se rapprocher de l'ESEC (Répond à la norme ISO), European Service Expert Center, ou déclencher
+						une intervention sur site auprès des techniciens itinérants.
+					</p>
+				</section>
+				<footer class="modal-card-foot"></footer>
+			</div>
+		</div>
+
+		<div class="modal" id="Modal_3">
+			<div class="modal-background"></div>
+			<div class="modal-card responsive-card">
+				<header class="modal-card-head">
+					<p class="modal-card-title"><i class="far fa-bookmark"></i> Le groupe</p>
+					<button class="delete" aria-label="close" onclick="closeModal(3)"></button>
+				</header>
+				<section class="modal-card-body">
+					<p>
+						"Le Groupe Pharmagest est le leader français de l’informatique de santé avec plus de 44% de parts de marché en informatique de pharmacie
+						officinale, 28% des EHPAD, 43% des HAD, 20% des maisons de santé. Avec plus de 1.000 collaborateurs, la stratégie du Groupe Pharmagest
+						s’articule autour d’un cœur de métier : l’innovation informatique au service de la Santé et le développement de 2 axes prioritaires : 1/
+						les services et technologies à destination des professionnels de santé ; 2/ les domaines technologiques capables d’améliorer
+						l’efficience des systèmes de santé"<br /><br />
+
+						Source : Communiqué de presse de Pharmagest, CA 2019<br />
+					</p>
+					<a class="button is-info" href="https://www.lacooperativewelcoop.com/">Voir la source</a>
+				</section>
+				<footer class="modal-card-foot"></footer>
+			</div>
+		</div>
+
+		<div class="modal" id="Modal_4">
+			<div class="modal-background"></div>
+			<div class="modal-card responsive-card">
+				<header class="modal-card-head">
+					<p class="modal-card-title"><i class="far fa-bookmark"></i> Projets et compétences</p>
+					<button class="delete" aria-label="close" onclick="closeModal(4)"></button>
+				</header>
+				<section class="modal-card-body">
+					<p>
+						<i class="fas fa-tools"></i> S.A.V Réparation du matériel informatique : ordinateurs, imprimantes, scanners, routeurs...<br /><br />
+						<i class="fas fa-headset"></i> Hotline<br /><br />
+						<i class="fas fa-server"></i> Préparation et transfert de serveurs<br /><br />
+						<i class="fas fa-laptop-medical"></i> Installation et dépannage de matériel informatique avec un technicien itinérant<br /><br /><br />
+						<i class="fab fa-linux"></i> Découverte de Linux (Centos)<br /><br />
+						<i class="fas fa-network-wired"></i> Base d'un réseau LAN
+					</p>
+				</section>
+				<footer class="modal-card-foot"></footer>
+			</div>
+		</div>
+
+		<iframe
+			class="section"
+			id="localisation"
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4508.532189824666!2d3.0265563166876404!3d50.37111398045537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2cb98a4aef575%3A0xf6fc2f238d382091!2sPharmagest%20Inter%40ctive!5e0!3m2!1sfr!2sfr!4v1614364594902!5m2!1sfr!2sfr"
+			width="100%"
+			height="450"
+			style="border: 0"
+			allowfullscreen=""
+			loading="lazy"
+		></iframe>
+
+		<div class="footer-own">
+			<p>&copy; 17 / 08 / 2021</p>
+		</div>
+
+		<script>
+			hljs.initHighlightingOnLoad();
+			AOS.init();
+		</script>
+		<script type="text/javascript" src="./js/all.js"></script>
+		<script type="text/javascript" src="./js/sio.js"></script>
+	</body>
 </html>

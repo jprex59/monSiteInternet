@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top" lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="./css/projets.css" />
+		<link rel="stylesheet" href="./css/all.css" />
+		<link rel="stylesheet" href="./css/bulma-pageloader.min.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/b8f4ab5226.js" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css" />
+		<link href="~bulma-carousel/dist/css/bulma-carousel.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+		<link rel="stylesheet" href="./css/bulma-divider.css" />
+
+		<title>Projets</title>
+	</head>
+	<body>
+		<div class="pageloader"><span class="title">Chargement...</span></div>
+		<a href="#" class="up"><i class="fas fa-caret-up"></i></a>
+		<!----Debut page presentation------->
+		<nav class="navbar is-fixed-top is-info" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<!---faire changer le nom en fonction du titre de la ssection-->
+				<a class="navbar-item title is-4" id="SectionName" href="index.html">Mon Portfolio</a>
+
+				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+
+			<div id="navbarBasicExample" class="navbar-menu">
+				<div class="navbar-start"></div>
+
+				<div class="navbar-end">
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link"> BTS SIO </a>
+						<div class="navbar-dropdown">
+							<a href="./sio.html" class="navbar-item"> Projets et stages </a>
+
+							<hr class="navbar-divider" />
+							<a href="./veillesSio.html" class="navbar-item"> Veilles technologique et juridique </a>
+						</div>
+					</div>
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link"> Licence IG </a>
+						<div class="navbar-dropdown">
+							<a class="navbar-item"> A Venir </a>
+							<hr class="navbar-divider" />
+						</div>
+					</div>
+					<a href="projets.html" class="navbar-item"> Projets </a>
+					<a href="https://github.com/jprex59" class="navbar-item github"><i class="fab fa-github"></i></a>
+
+					<div class="navbar-item">
+						<div class="buttons">
+							<a href="index.html#contact" class="button is-info is-inverted">
+								<strong>Contact</strong>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<section class="hero is-info">
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<p class="title">Mes projets</p>
+					<p class="container is-max-desktop text has-text-centered">Sites Internet - Extensions chrome</p>
+				</div>
+			</div>
+		</section>
+		<div class="divider">Les extensions CHROME :</div>
+
+		<!-------------------->
+		<div class="container containerExtensions">
+			<div class="section_own" data-aos="fade-left" data-aos-duration="1000">
+				<div class="infoContainer box">
+					<i class="fas fa-file-code icon-info"></i>
+					<p class="title is-3">Nom ?</p>
+					<p class="info">
+						Une extension permettant d'automatiser des tâches sur des sites internet (présent sur la 1er slide) avec plusieurs profiles
+						<br />
+						<strong>Ps</strong> : Le logo est un logo appartenant à une autre entreprise qui m'a servi de tester le rendu final.<br />
+						<strong>Vendu à un client/ Projet design non terminé</strong>
+					</p>
+				</div>
+				<div class="carousel_container_own" id="Extensions_Contains">
+					<!-- Start Carousel -->
+					<div id="carousel-demo" class="carousel">
+						<div class="item-1 image is-4by3">
+							<img src="./img/projets/etensionClement/hGgU0GdjxO.png" />
+						</div>
+						<div class="item-2 image is-4by3">
+							<img src="./img/projets/etensionClement/EqCsqW11yR.png" />
+						</div>
+						<div class="item-3 image is-4by3">
+							<img src="./img/projets/etensionClement/EmRm5lBruV.png" />
+						</div>
+						<div class="item-4 image is-4by3">
+							<img src="./img/projets/etensionClement/9ZVHcFJWhV.png" />
+						</div>
+						<div class="item-5 image is-4by3">
+							<img src="./img/projets/etensionClement/RtHGCeolCf.png" />
+						</div>
+					</div>
+					<!-- End Carousel -->
+				</div>
+			</div>
+
+			<div class="section_own sectionPrimary" data-aos="fade-left" data-aos-duration="1000">
+				<div class="infoContainer box">
+					<i class="fas fa-file-code icon-info"></i>
+					<p class="title is-3">Alchemy</p>
+					<p class="info">
+						Une extension permettant d'automatiser des tâches sur des sites internet (présent sur la 2e slide) avec plusieurs profils
+						<br />
+						<strong>Vendu à un client/ Projet terminé</strong>
+						<br /><br />
+						<a href="https://twitter.com/AlchemyScripts" class="button is-info">Voir le Twitter</a>
+					</p>
+				</div>
+				<div class="carousel_container_own">
+					<!-- Start Carousel -->
+					<div id="carousel-demo" class="carousel">
+						<div class="item-1 item-relatif">
+							<figure class="image is-4by3">
+								<iframe
+									class="has-ratio"
+									src="https://www.youtube.com/embed/fafDmi8LCvk"
+									title="YouTube video player"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen
+								></iframe>
+							</figure>
+						</div>
+						<div class="item-2 image is-4by3">
+							<img src="./img/projets/extensionMart/R516PxGVkz.png" />
+						</div>
+						<div class="item-3 image is-4by3">
+							<img src="./img/projets/extensionMart/QAqFTjGg1W.png" />
+						</div>
+						<div class="item-4 image is-4by3">
+							<img src="./img/projets/extensionMart/AtMbOcOuRO.png" />
+						</div>
+						<div class="item-5 image is-4by3">
+							<img src="./img/projets/extensionMart/IAYfiIX6PU.png" />
+						</div>
+					</div>
+					<!-- End Carousel -->
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="divider">Les sites internet :</div>
+		</div>
+		<div class="container containerSites" id="Sites_Contains">
+			<div class="section_own" data-aos="fade-left" data-aos-duration="1000">
+				<div class="infoContainer box">
+					<i class="fas fa-file-code icon-info"></i>
+					<p class="title is-3">Un compteur de points fait maison</p>
+					<p class="info">
+						Le chiffre est divisé en 2 sur la hauteur, le haut du chiffre rajoute +1 alors qu'à l'inverse le bas enlève -1
+						<br />
+						<strong>Entrainement personnel/ Projet terminé</strong>
+						<br /><br />
+						<a href="https://jprex59.github.io/compteur-de-points/" class="button is-info">Découvrir le site</a>
+					</p>
+				</div>
+				<div class="carousel_container_own">
+					<!-- Start Carousel -->
+					<div id="carousel-demo" class="carousel">
+						<div class="item-1">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="./img/projets/Chronopoints/chrome_rkomfqjNxQ.png" alt="Placeholder image" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="content has-text-centered">La page d'accueil</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-2">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="./img/projets/Chronopoints/chrome_rddfnJ848u.png" alt="Placeholder image" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="content has-text-centered">La page principale</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-3">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="./img/projets/Chronopoints/chrome_04MJjlfd8W.png" alt="Placeholder image" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="content has-text-centered">Le menu</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-4">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="./img/projets/Chronopoints/chrome_N3PZoBOXjd.png" alt="Placeholder image" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="content has-text-centered">Le "Reset score"</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Carousel -->
+				</div>
+			</div>
+			<div class="section_own" data-aos="fade-left" data-aos-duration="1000">
+				<div class="infoContainer box">
+					<i class="fas fa-file-code icon-info"></i>
+					<p class="title is-3">Portfolio de Martin Vion</p>
+					<p class="info">
+						Martin Vion est un entrepreneur pour l'instant dans le domaine des sneakers. Son site internet retrace ses différents projets.
+						<br />
+						<strong>Entrainement personnel/ Projet terminé</strong>
+						<br /><br />
+						<a href="https://jprex59.github.io/MartPortfolio/" class="button is-info">Découvrir le site</a>
+					</p>
+				</div>
+				<div class="carousel_container_own">
+					<!-- Start Carousel -->
+					<div id="carousel-demo" class="carousel">
+						<div class="item-1">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="./img/projets/MartPortfolio/MartCorp.png" alt="Placeholder image" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="content has-text-centered">La page d'accueil</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-2">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="./img/projets/MartPortfolio/Mart01.png" alt="Placeholder image" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="content has-text-centered">Le profil de Mart01</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-3">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="./img/projets/MartPortfolio/Fluxy.png" alt="Placeholder image" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="content has-text-centered">Le projet Fluxy</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-4">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="./img/projets/MartPortfolio/Alchemy.png" alt="Placeholder image" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="content has-text-centered">Le projet Alchemy</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Carousel -->
+				</div>
+			</div>
+		</div>
+		<div class="footer-own">
+			<p>&copy; 17 / 08 / 2021</p>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+
+		<script type="text/javascript" src="./js/projets.js"></script>
+		<script type="text/javascript" src="./js/carousel.js"></script>
+		<script type="text/javascript" src="./js/all.js"></script>
+		<script src="~bulma-carousel/dist/js/bulma-carousel.min.js"></script>
+
+		<script>
+			AOS.init();
+		</script>
+	</body>
+</html>

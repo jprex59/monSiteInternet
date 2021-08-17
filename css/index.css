@@ -1,0 +1,254 @@
+strong {
+	font-weight: 600 !important;
+}
+.presentation-container {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	position: relative;
+}
+
+.information {
+	width: 40%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	padding-left: 100px;
+}
+.imgResponsive {
+	display: none;
+	width: 400px;
+}
+.information p {
+	width: 100%;
+	text-align: center;
+}
+.information .title {
+	margin-bottom: 50px;
+	font-size: 50px;
+	letter-spacing: 5px;
+	text-align: left;
+}
+.information .title span {
+	margin-right: 10px;
+}
+.information .subtitle {
+	text-align: justify;
+	letter-spacing: 1px;
+}
+.presentation {
+	position: relative;
+	width: 60%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 550px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bg {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: #3196d9;
+	clip-path: circle(40% at 120% 100%);
+	z-index: -1;
+}
+
+.button-container {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 10px;
+}
+
+.socials {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	z-index: 9;
+}
+.medias {
+	position: relative;
+}
+
+.fab {
+	font-size: 40px;
+	color: #fff;
+	margin: 15px;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+
+.fab:hover {
+	color: #1c7ab9;
+}
+
+@media all and (max-width: 1140px) {
+	.information {
+		padding-left: 20px;
+	}
+	.presentation {
+		background-size: 500px;
+	}
+}
+
+@media all and (max-width: 880px) {
+	.presentation {
+		display: none;
+	}
+	.imgResponsive {
+		display: block;
+	}
+	.information {
+		width: 70%;
+	}
+	.bg {
+		clip-path: circle(35% at 120% 100%);
+	}
+	.fab {
+		margin: 5px;
+	}
+}
+
+@media all and (max-width: 500px) {
+	.bg {
+		clip-path: circle(33% at 120% 100%);
+	}
+
+	.information .subtitle {
+		letter-spacing: 0px;
+	}
+	.information {
+		width: 80%;
+		padding: 7px;
+	}
+}
+@media all and (max-width: 430px) {
+	.information .title {
+		margin-bottom: 30px;
+		font-size: 30px;
+	}
+	.information {
+		width: 100%;
+		padding: 7px;
+	}
+}
+@media all and (max-height: 750px) {
+	.imgResponsive {
+		width: 320px;
+	}
+}
+@media all and (max-height: 680px) {
+	.imgResponsive {
+		width: 280px;
+	}
+	.fab {
+		font-size: 27px;
+	}
+	.information .title {
+		margin-bottom: 30px;
+		font-size: 27px;
+	}
+
+	.information .subtitle {
+		font-size: 20px;
+	}
+}
+@media all and (max-height: 600px) {
+	.information .title {
+		margin-bottom: 30px;
+		font-size: 23px;
+	}
+
+	.information .subtitle {
+		font-size: 15px;
+	}
+	.socials {
+		right: 12px;
+	}
+}
+@media all and (max-height: 500px) {
+	.bg {
+		clip-path: circle(40% at 120% 100%);
+	}
+	.imgResponsive {
+		display: none;
+	}
+}
+
+.container-tiles {
+	display: flex;
+	flex-wrap: wrap;
+}
+.tile .title {
+	margin-bottom: 40px !important;
+	font-size: 25px;
+}
+.tile {
+	position: relative;
+	min-width: 250px;
+	margin: 10px;
+}
+.title .fas {
+	font-size: 25px;
+	position: absolute;
+	top: 24px;
+	right: 5px;
+	color: #3196d9b7;
+	transition: all 0.5s;
+}
+.fa-mobile-alt {
+	font-size: 18px;
+}
+
+#experience {
+	text-align: center;
+}
+
+.content-ul {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.content-ul ul {
+	width: 50%;
+	text-align: center;
+}
+.contentIcon {
+	width: 16% !important;
+	text-align: center !important;
+}
+.contentInfo {
+	width: 84% !important;
+}
+.contentMore ul {
+	text-align: left;
+}
+
+#experience {
+	position: absolute;
+	top: 60%;
+	left: 35%;
+}
+@media all and (max-width: 770px) {
+	#experience {
+		position: initial;
+	}
+}
+@media all and (max-width: 360px) {
+	.title .fas {
+		top: 4px;
+	}
+}

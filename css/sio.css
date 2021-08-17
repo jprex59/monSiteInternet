@@ -1,0 +1,350 @@
+.has-tooltip-arrow {
+	z-index: 0 !important;
+}
+
+.imgVerticale {
+	display: none;
+}
+
+@media all and (max-width: 950px) {
+	.imgVerticale {
+		display: block;
+	}
+	.imgHorizontale {
+		display: none;
+	}
+}
+
+.container-img {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+/**/
+pre {
+	background-color: rgba(0, 0, 0, 0);
+}
+.hljs {
+	padding: 0.6rem 2rem;
+	background: black;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
+	transition: all 0.2s;
+	font-size: 14px;
+}
+
+.hljs:hover {
+	border-color: #ff4754;
+}
+.PowerShell_Height {
+	max-height: 550px;
+}
+.exo_container_python {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 1em;
+}
+@media all and (max-width: 1540px) {
+	.exo_Python {
+		width: 48%;
+		margin-bottom: 1em;
+	}
+	.exo_container_python {
+		padding: 0;
+	}
+}
+@media all and (max-width: 967px) {
+	.exo_container_python {
+		justify-content: left;
+	}
+}
+@media all and (max-width: 965px) {
+	.exo_Python {
+		width: 47%;
+	}
+	.exo_container_python {
+		justify-content: space-between;
+	}
+}
+@media all and (max-width: 950px) {
+	.PowerShell_Height {
+		font-size: 10px;
+	}
+}
+@media all and (max-width: 690px) {
+	.exo_Python {
+		width: 100%;
+	}
+	.exo_container_python {
+		justify-content: space-between;
+	}
+}
+
+/***********Stages****************/
+
+/*-------------Modal---------------*/
+.container_company {
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-family: sans-serif;
+	flex-wrap: wrap;
+}
+
+.modal_content p {
+	text-align: justify;
+}
+.container_company a h4 {
+	font-size: 17px;
+	background-color: #f3f3f3;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.button_modal {
+	width: 400px;
+	height: 300px;
+	margin-top: 50px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.company {
+	background-image: url("../img/sio/pharmagestbio.PNG");
+	background-position: center;
+	background-size: 210px;
+	background-repeat: no-repeat;
+}
+
+.group {
+	background-image: url("../img/sio/groupe.png");
+	background-position: center;
+	background-size: 190px;
+	background-repeat: no-repeat;
+}
+
+.service {
+	background-image: url("../img/sio/service.png");
+	background-position: center;
+	background-size: 230px;
+	background-repeat: no-repeat;
+}
+
+.skills {
+	background-image: url("../img/sio/workexperience.png");
+	background-position: center;
+	background-size: 230px;
+	background-repeat: no-repeat;
+}
+
+.modal_a {
+	text-decoration: none;
+	padding: 15px;
+	border-radius: 5px;
+	transition: all 0.5s;
+	background-color: #3298dc9c;
+	box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+}
+
+.modal_a:hover {
+	background-size: 280px;
+	background-color: #3298dc;
+}
+.modal_a h4 {
+	text-transform: uppercase;
+	color: black;
+}
+
+.modal_content {
+	border-radius: 4px;
+	position: relative;
+	width: 700px;
+	font-size: 20px;
+	max-width: 90%;
+	background: white;
+	padding: 1.5em 2em;
+	margin: 25px;
+}
+
+.modal_close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: grey;
+	text-decoration: none;
+}
+
+@media all and (max-width: 2300px) {
+	.button_modal {
+		width: 335px;
+	}
+}
+
+@media all and (max-width: 1500px) {
+	.button_modal {
+		width: 310px;
+	}
+}
+
+@media all and (max-width: 1380px) {
+	.button_modal {
+		width: 500px;
+	}
+}
+@media all and (max-width: 1100px) {
+	.button_modal {
+		width: 450px;
+	}
+}
+@media all and (max-width: 1000px) {
+	.button_modal {
+		width: 310px;
+	}
+}
+
+@media all and (max-width: 800px) {
+	.modal_content {
+		width: 95%;
+	}
+}
+
+/*******card docs**********/
+
+/********Site***************/
+.divider {
+	width: 95%;
+	margin: 0px !important;
+	height: 0;
+}
+
+.container_card {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 3rem 0rem !important;
+	/*
+	overflow-y: scroll;*/
+}
+.card_own {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	transition: all 0.5s;
+	min-height: 100px;
+	width: 190px;
+	height: 190px;
+	align-items: center;
+	cursor: pointer;
+	border-radius: 0 0 3px 0;
+	border-bottom: 5px solid #e7edf400;
+	border-bottom: 1px solid #e7edf4;
+}
+
+.card_patron {
+	border-right: 1px solid #e7edf4;
+}
+
+.card_own:hover {
+	border-bottom: 5px solid /*#19d6ba*/ #3298dc;
+	box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+	background-color: #ffffff;
+}
+.card_own img {
+	max-width: 150px;
+	max-height: 90px;
+	margin-top: 25px;
+}
+.card_own .title {
+	font-weight: 500;
+	color: #5e5d5d;
+	background-color: rgba(255, 255, 255, 0);
+	text-align: center;
+}
+
+.titleAbsolute {
+	position: absolute;
+	left: 0px;
+	bottom: 35px;
+	width: 100%;
+}
+
+.card_own .subtitle {
+	font-weight: 500;
+	color: /*#19d6ba*/ #3298dc;
+	background-color: rgba(255, 255, 255, 0);
+	opacity: 0;
+	transition: all 0.5s;
+	position: absolute;
+	left: 7px;
+	bottom: 10px;
+}
+.card_own .subtitle:hover {
+	opacity: 1;
+}
+.modal-card-body p {
+	text-align: justify;
+}
+
+@media all and (max-width: 875px) {
+	.card_own {
+		width: 160px;
+	}
+	.card_own .subtitle {
+		display: none;
+	}
+}
+@media all and (max-width: 750px) {
+	.card_own {
+		width: 143px;
+	}
+	.card_own .subtitle {
+		left: 10px;
+	}
+	.card_own img {
+		max-height: 80px;
+	}
+}
+@media all and (max-width: 640px) {
+	.card_own {
+		width: 200px;
+	}
+	.card_own .subtitle {
+		left: 30px;
+	}
+	.card-responsive {
+		border-right: 0px solid #e7edf4 !important;
+	}
+	.card_own img {
+		max-height: 100px;
+	}
+}
+@media all and (max-width: 470px) {
+	.card_own {
+		width: 145px;
+	}
+	.card_own .subtitle {
+		display: none;
+	}
+	.card_own img {
+		max-height: 85px;
+	}
+}
+@media all and (max-width: 355px) {
+	.card_own {
+		width: 125px;
+	}
+	.card_own img {
+		max-height: 70px;
+	}
+}
+
+.titleStage {
+	margin-left: 20px;
+	width: 230px;
+	background-color: #19d6ba;
+	color: #fff;
+}

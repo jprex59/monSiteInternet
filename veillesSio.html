@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top" lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+		<link rel="stylesheet" href="./css/veillesSio.css" />
+		<link rel="stylesheet" href="./css/all.css" />
+		<link rel="stylesheet" href="./css/bulma-tooltip.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/b8f4ab5226.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="./css/bulma-pageloader.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/atom-one-dark.min.css" type="text/css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<title>Mes Veilles</title>
+	</head>
+	<body>
+		<div class="pageloader"><span class="title">Chargement....</span></div>
+
+		<a href="#veilles" class="up"><i class="fas fa-caret-up"></i></a>
+		<nav class="navbar is-fixed-top is-info" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<!---faire changer le nom en fonction du titre de la ssection-->
+				<a class="navbar-item title is-4" id="SectionName" href="index.html">Mon Portfolio</a>
+
+				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+
+			<div id="navbarBasicExample" class="navbar-menu">
+				<div class="navbar-start"></div>
+
+				<div class="navbar-end">
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link"> BTS SIO </a>
+						<div class="navbar-dropdown">
+							<a href="./sio.html" class="navbar-item"> Projets et stages </a>
+
+							<hr class="navbar-divider" />
+							<a href="./veillesSio.html" class="navbar-item"> Veilles technologique et juridique </a>
+						</div>
+					</div>
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link"> Licence IG </a>
+						<div class="navbar-dropdown">
+							<a class="navbar-item"> A Venir </a>
+							<hr class="navbar-divider" />
+						</div>
+					</div>
+					<a href="projets.html" class="navbar-item"> Projets </a>
+					<a href="https://github.com/jprex59" class="navbar-item github"><i class="fab fa-github"></i></a>
+
+					<div class="navbar-item">
+						<div class="buttons">
+							<a href="index.html#contact" class="button is-info is-inverted">
+								<strong>Contact</strong>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<section class="hero is-info">
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<p class="title">Mes veilles</p>
+					<p class="box container is-max-desktop text has-text-justified">
+						Dans le cadre de mon BTS j'ai du tenir une veille informatique sur les <strong>SMART CITIES</strong> (les villes intelligentes) et
+						juridique sur les <strong>CONTRATS DE PRODUCTION ET DE FOURNITURE DE SERVICE INFORMATIQUE</strong>.
+					</p>
+				</div>
+			</div>
+		</section>
+		<div class="container section is-medium" data-aos="zoom-in-right">
+			<article class="message is-dark box">
+				<div class="message-body">
+					<p class="title is-4">Qu'est-ce qu'une veille ?</p>
+					<p class="text has-text-justified">
+						<i class="fas fa-info-circle"></i> la veille informationnelle est une « activité continue en grande partie itérative visant à une
+						surveillance active de l’environnement technologique, commercial, etc., pour en anticiper les évolutions »
+						<a href="https://fr.wikipedia.org/wiki/Veille_informationnelle">(Wikipedia)</a>
+					</p>
+				</div>
+			</article>
+		</div>
+		<div class="tabs is-centered is-boxed is-medium" id="veilles">
+			<ul>
+				<li class="is-active" id="informatique">
+					<a>
+						<span class="icon is-small"><i class="fas fa-server" aria-hidden="true"></i></span>
+						<span>Informatique</span>
+					</a>
+				</li>
+				<li id="juridique">
+					<a>
+						<span class="icon is-small"><i class="fas fa-gavel" aria-hidden="true"></i></span>
+						<span>Juridique</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="container section containerInformatique">
+			<article class="message" data-aos="fade-right">
+				<div class="message-header">
+					<p>LES SMART CITIES</p>
+				</div>
+				<div class="message-body">
+					"<b>Une ville intelligente</b> est une municipalité qui <b>utilise les technologies de l’information et de la communication (TIC)</b> pour
+					<b>accroître son efficacité</b> opérationnelle, partager des informations avec le public et
+					<b>améliorer à la fois la qualité des services gouvernementaux et le bien-être des citoyens</b>.<br />
+					<br />
+
+					Bien que la définition exacte varie en fonction de la personne à qui vous parlez, la mission principale d’une ville intelligente est d’<b
+						>optimiser</b
+					>
+					les fonctions de la ville et de <b>stimuler</b> la croissance économique tout <b>en améliorant la qualité de vie</b> de ses citoyens grâce à
+					une <b>technologie intelligente</b> et à l’analyse des données. La valeur d’une ville intelligente est déterminée par ce qu’elle choisit de
+					faire avec la technologie, et non pas seulement par la puissance de la technologie dont elle dispose." <br />
+					<br />
+					Extrait de
+					<b
+						><a href="https://actualiteinformatique.fr/internet-of-things-iot/la-ville-intelligente-smart-city"
+							>"La ville intelligente (smart city)"</a
+						>
+						AI actualité informatique</b
+					>
+				</div>
+			</article>
+
+			<div class="tile is-ancestor" data-aos="fade-right">
+				<div class="tile is-parent container">
+					<img class="image" src="./img/sio/veilles/techno/img1.jpg" />
+				</div>
+				<div class="tile is-parent is-8">
+					<article class="tile is-child box">
+						<p class="title">LES INTELLIGENCES DE LA SMART CITY</p>
+						<div class="content">
+							<p>
+								Le concept des smart cities ou villes intelligentes est très en vogue. Mais qu’entendent exactement ses promoteurs par ce terme
+								? La définition varie, en fonction du point de vue. D’un côté, une vision techno-centrée, de l’autre une approche par
+								l’humain.<br />
+
+								« IBM a même conçu un “indice d’intelligence” des villes qui lui permet de mesurer la performance de chaque ville selon 7
+								critères : services publics urbains, “citoyens” (éducation, santé, sécurité…), business, transports, communications, eau,
+								énergie. Amsterdam s’y compare à Paris, New York, Copenhague, Tokyo… », indiquait Daniel Kaplan, le délégué général de la
+								Fondation Internet nouvelle génération (FING).<br />
+
+								21/02/2014 |mis à jour le 08/02/2017 par Sabine Blanc<br />
+								<a class="button is-info" href="https://www.lagazettedescommunes.com/222064/les-intelligences-de-la-smart-city/"
+									>Voir l'article</a
+								>
+							</p>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="tile is-ancestor" data-aos="fade-left">
+				<div class="tile is-parent is-8">
+					<article class="tile is-child box">
+						<p class="title">SMART CITY : QUAND LES DONNÉES IRRIGUENT LA VILLE</p>
+						<div class="content">
+							<p>
+								En s’imposant au cœur des villes intelligentes, les données ouvrent la voie à de nouveaux services améliorant l’écosystème
+								urbain. Enjeu de pouvoir, elles représentent un marché d’avenir qui attise les convoitises. Collectivités, délégataires de
+								service public et géants du numérique sont sur les rangs, tandis que l’open data fait valoir sa transparence.<br />
+
+								Emmanuel Schneider specialist des smarts cities chez cisco :<br />
+								« Aujourd’hui, les échanges sont plus aisés, car tout le monde comprend la valeur de la donnée. Nous sommes arrivés à un point
+								de bascule où la numérisation des services devient une évidence »<br />
+
+								28/12/2019 par Alexandre Coutoacouto<br />
+								<a class="button is-info" href="https://www.industrie-techno.com/article/smart-city-quand-les-donnees-irriguent-la-ville.58141"
+									>Voir l'article</a
+								>
+							</p>
+						</div>
+					</article>
+				</div>
+				<div class="tile is-parent container">
+					<img class="image" src="./img/sio/veilles/techno/img2.png" />
+				</div>
+			</div>
+			<div class="tile is-ancestor" data-aos="fade-right">
+				<div class="tile is-parent container">
+					<img class="image" src="./img/sio/veilles/techno/img3.jpg" />
+				</div>
+				<div class="tile is-parent is-8">
+					<article class="tile is-child box">
+						<p class="title">SANTANDER : LA VILLE AUX 20.000 CAPTEURS, MODÈLE DU SMART CITY EUROPÉEN</p>
+						<div class="content">
+							<p>
+								Le #ForumSmartCity, organisé par La Tribune le 20 novembre prochain, est l'occasion de revenir sur les problématiques et les
+								perspectives de la ville de demain. La station balnéaire espagnole a été retenue par la Commission européenne pour devenir le
+								banc d’essai de l’Union en matière de smart city. Avec près de 20 000 capteurs pour 180 000 habitants, la ville est un
+								laboratoire vivant unique au monde. Reportage.<br />
+								<a
+									class="button is-info"
+									href="https://www.latribune.fr/technos-medias/internet/20141107tribe37bf8af2/santander-la-ville-aux-20-000-capteurs-modele-du-smart-city-europeen.html"
+									>Voir l'article</a
+								>
+							</p>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="tile is-ancestor" data-aos="fade-left">
+				<div class="tile is-parent is-8">
+					<article class="tile is-child box">
+						<p class="title">Smart city : les avantages de la ville intelligente</p>
+						<div class="content">
+							<p>
+								Si les villes et les technologies dites « intelligentes » présentent également de nombreux avantages pratiques et économiques,
+								nous nous intéresserons aujourd’hui aux quatre grands domaines dans lesquels elles ont le plus convaincu ces dernières
+								années.<br />
+								<a class="button is-info" href="https://www.globalsign.com/fr/blog/les-avantages-de-la-ville-intelligente">Voir l'article</a>
+							</p>
+						</div>
+					</article>
+				</div>
+				<div class="tile is-parent container">
+					<img class="image" src="./img/sio/veilles/techno/img4.png" />
+				</div>
+			</div>
+			<div class="tile is-ancestor" data-aos="fade-right">
+				<div class="tile is-parent container">
+					<img class="image" src="./img/sio/veilles/article.PNG" />
+				</div>
+				<div class="tile is-parent is-8">
+					<article class="tile is-child box">
+						<p class="title">Les 10 événements Smart City de 2020 à ne pas manquer</p>
+						<div class="content">
+							<p>
+								La Smart City est indissociables des problématiques de mobilité. De nombreux sommets, conférences et salons naissent autour de
+								ce sujet afin de présenter les nouvelles innovations mises à la disposition des territoires. Voici les 10 événements Smart City
+								à ne pas manquer en 2020.<br />
+								<a class="button is-info" href="https://www.via-id.com/les-10-evenements-smart-city-de-2020-a-ne-pas-manquer/"
+									>Voir l'article</a
+								>
+							</p>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="tile is-ancestor" data-aos="fade-left">
+				<div class="tile is-parent is-8">
+					<article class="tile is-child box">
+						<p class="title">Smart Cities Tour - Arras - NOUVELLE DATE 1er JUIN 2021 !</p>
+						<div class="content">
+							<p>
+								Après le report des deux premières dates pour cause de situation sanitaire, nous sommes ravis de vous proposer une nouvelle
+								date, le 1er juin 2021. Cette nouvelle date reste bien entendu conditionnée aux contraintes que pourrait encore nous imposer
+								cette même situation sanitaire.<br />
+								<a class="button is-info" href="http://www.smartcitymag.fr/smartcitytour/19/arras-nouvelle-date-1er-juin-2021"
+									>Voir l'article</a
+								>
+							</p>
+						</div>
+					</article>
+				</div>
+				<div class="tile is-parent container">
+					<img class="image" src="./img/sio/veilles/article.PNG" />
+				</div>
+			</div>
+			<div class="tile is-ancestor" data-aos="fade-right">
+				<div class="tile is-parent container">
+					<img class="image" src="./img/sio/veilles/article.PNG" />
+				</div>
+				<div class="tile is-parent is-8">
+					<article class="tile is-child box">
+						<p class="title">SMART CITY : L'innovation au coeur des villes intelligentes</p>
+						<div class="content">
+							<p>
+								Gfi Informatique s'investit dans la ville intelligente. Pour cause, la Smart City et ses technologies numériques offrent une
+								formidable opportunité d'améliorer la relation aux usagers autour de services publics toujours plus innovants et performants qui
+								répondent aux attentes des citoyens et des entreprises.<br />
+								<a class="button is-info" href="https://gfi.world/fr-fr/offres/solutions/niveau_offre/32-smart-cities">Voir l'article</a>
+							</p>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="tile is-ancestor" data-aos="fade-left">
+				<div class="tile is-parent is-8">
+					<article class="tile is-child box">
+						<p class="title">La ville intelligente (smart city)</p>
+						<div class="content">
+							<p>
+								Une ville intelligente est une municipalité qui utilise les technologies de l’information et de la communication (TIC) pour
+								accroître son efficacité opérationnelle, partager des informations avec le public et améliorer à la fois la qualité des services
+								gouvernementaux et le bien-être des citoyens.<br />
+								<a class="button is-info" href="https://actualiteinformatique.fr/internet-of-things-iot/la-ville-intelligente-smart-city"
+									>Voir l'article</a
+								>
+							</p>
+						</div>
+					</article>
+				</div>
+				<div class="tile is-parent container">
+					<img class="image" src="./img/sio/veilles/techno/img8.png" />
+				</div>
+			</div>
+			<div class="tile is-ancestor" data-aos="fade-right">
+				<div class="tile is-parent container">
+					<img class="image" src="./img/sio/veilles/article.PNG" />
+				</div>
+				<div class="tile is-parent is-8">
+					<article class="tile is-child box">
+						<p class="title">Étude m2ocity « Ville de demain 2014 »</p>
+						<div class="content">
+							<p>
+								Classement des villes francaises en 2013<br />
+								<a class="button is-info" href="https://ingridnc.files.wordpress.com/2014/02/etude-ville-de-demain-2014.pdf ">Voir l'article</a>
+							</p>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="tile is-ancestor" data-aos="fade-down-left">
+				<div class="tile is-parent is-8">
+					<article class="tile is-child box">
+						<p class="title">Smart City Index 2020</p>
+						<div class="content">
+							<p>
+								Classement des villes connectées dans le monde en 2020 par IMD<br />
+								<a class="button is-info" href="https://www.imd.org/globalassets/wcc/docs/smart_city/smartcityindex_2020.pdf">Voir l'article</a>
+							</p>
+						</div>
+					</article>
+				</div>
+				<div class="tile is-parent container">
+					<img class="image" src="./img/sio/veilles/article.PNG" />
+				</div>
+			</div>
+		</div>
+		<div class="container section containerJuridique">
+			<article class="message" data-aos="fade-left">
+				<div class="message-body title is-6">LES CONTRATS DE PRODUCTION ET DE FOURNITURE DE SERVICE INFORMATIQUE</div>
+			</article>
+
+			<div class="tile is-ancestor" data-aos="fade-left">
+				<div class="tile is-parent container">
+					<img class="image" src="./img/sio/veilles/juridique/mapaye.png" />
+				</div>
+				<div class="tile is-parent is-8">
+					<article class="tile is-child box">
+						<p class="title">Affaire Mapaye / SEEM</p>
+						<div class="content">
+							<p>
+								La société Mapaye, éditeur d’un site internet de gestion de paie à distance des employeurs a accepté, le 19 juin 2012, un devis
+								de 3 900€ de la société d’exploitation des établissements Maquinay (SEEM) portant sur l’audit de son site internet,
+								l’amélioration de son référencement et le suivi et les statistiques.<br />
+								Les conditions générales de vente jointes au devis stipulaient une obligation de résultat à la charge du prestataire pour
+								l’amélioration du référencement du site internet du client.<br />
+								<a
+									class="button is-info"
+									href="https://www.lemondedudroit.fr/decryptages/10634-contrats-informatiques-panorama-de-jurisprudence-2014.html"
+									>Voir l'article</a
+								>
+							</p>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="tile is-ancestor" data-aos="fade-right">
+				<div class="tile is-parent is-8">
+					<article class="tile is-child box">
+						<p class="title">Affaire RISC/ CRESS</p>
+						<div class="content">
+							<p>
+								Dans cette affaire, la société RISC, en liquidation judiciaire, avait conclu avec l’association CRESS et la société civile
+								professionnelle CUBIC des contrats d’abonnement et de prestations incluant la fourniture d’un matériel informatique et l’accès à
+								un service collaboratif de sécurité informatique, le matériel étant loué auprès de la société PARFIP FRANCE.<br />
+								Après la livraison et l’installation conforme, l’association CRESS et la SCP Cubic se sont plaint de dysfonctionnements
+								persistants du processus de sauvegarde des données et ont fait assigner la société RISC et la société PARFIP FRANCE aux fins de
+								résolution des contrats et restitution des sommes versées.<br />
+								<a
+									class="button is-info"
+									href="https://www.lemondedudroit.fr/decryptages/10634-contrats-informatiques-panorama-de-jurisprudence-2014.html"
+									>Voir l'article</a
+								>
+							</p>
+						</div>
+					</article>
+				</div>
+				<div class="tile is-parent container">
+					<img class="image" src="./img/sio/veilles/juridique/risk.jpg" />
+				</div>
+			</div>
+			<div class="tile is-ancestor" data-aos="fade-left">
+				<div class="tile is-parent container">
+					<img class="image" src="./img/sio/veilles/juridique/art3.png" />
+				</div>
+				<div class="tile is-parent is-8">
+					<article class="tile is-child box">
+						<p class="title">UN AN DE DROIT DES CONTRATS INFORMATIQUES (2018/2019)</p>
+						<div class="content">
+							<p>
+								<a class="button is-info" href="https://www.seban-associes.avocat.fr/un-an-de-droit-des-contrats-informatiques/"
+									>Voir l'article</a
+								>
+							</p>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="tile is-ancestor" data-aos="fade-right">
+				<div class="tile is-parent is-8">
+					<article class="tile is-child box">
+						<p class="title">CONTENTIEUX LIÉS AUX CONTRATS INFORMATIQUES</p>
+						<div class="content">
+							<p>
+								Un prestataire informatique a conclu avec son client trois contrats : un contrat fournissant un certain nombre de licences, un
+								autre ayant pour objet le support et la maintenance des produits, et un dernier ayant pour objet la fourniture d’un serveur et
+								d’autres prestations de maintenance.<br />
+
+								Le client, après avoir constaté des dysfonctionnements et, selon lui, une incapacité du support et de la maintenance à résoudre
+								ces difficultés, a cessé de régler les factures dues au prestataire, lequel a alors saisi le tribunal de commerce de Lyon pour
+								en obtenir le paiement.<br />
+								<a
+									class="button is-info"
+									href="https://www.cloix-mendesgil.com/articles/droit-de-linformatique-et-des-nouvelles-technologies-droit-des-contrats/2020/fevrier-1"
+									>Voir l'article</a
+								>
+							</p>
+						</div>
+					</article>
+				</div>
+				<div class="tile is-parent container">
+					<img class="image" src="./img/sio/veilles/article.PNG" />
+				</div>
+			</div>
+			<div class="tile is-ancestor" data-aos="fade-left">
+				<div class="tile is-parent container">
+					<img class="image" src="./img/sio/veilles/article.PNG" />
+				</div>
+				<div class="tile is-parent is-8">
+					<article class="tile is-child box">
+						<p class="title">Flux RSS pour le thème : "contrat informatique"</p>
+						<div class="content">
+							<p>
+								Ce site internet contient des cas de jurisprudence sur le sujet dans la période 2018/2019.<br />
+								<a class="button is-info" href="http://www.cyberdroit.fr/themes/contrat-informatique/">Voir l'article</a>
+							</p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-own">
+			<p>&copy; 17 / 08 / 2021</p>
+		</div>
+
+		<script>
+			hljs.initHighlightingOnLoad();
+			AOS.init();
+		</script>
+
+		<script type="text/javascript" src="./js/all.js"></script>
+		<script type="text/javascript" src="./js/veillesSio.js"></script>
+	</body>
+</html>
