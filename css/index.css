@@ -29,7 +29,7 @@ strong {
 }
 .information .title {
 	margin-bottom: 50px;
-	font-size: 50px;
+
 	letter-spacing: 5px;
 	text-align: left;
 }
@@ -124,7 +124,7 @@ strong {
 
 @media all and (max-width: 500px) {
 	.bg {
-		clip-path: circle(33% at 120% 100%);
+		clip-path: circle(32% at 120% 100%);
 	}
 
 	.information .subtitle {
@@ -133,6 +133,10 @@ strong {
 	.information {
 		width: 80%;
 		padding: 7px;
+	}
+	.socials {
+		bottom: 13px;
+		right: 13px;
 	}
 }
 @media all and (max-width: 430px) {
@@ -152,7 +156,7 @@ strong {
 }
 @media all and (max-height: 680px) {
 	.imgResponsive {
-		width: 280px;
+		width: 300px;
 	}
 	.fab {
 		font-size: 27px;
@@ -163,7 +167,7 @@ strong {
 	}
 
 	.information .subtitle {
-		font-size: 20px;
+		font-size: 15px;
 	}
 }
 @media all and (max-height: 600px) {
@@ -177,6 +181,9 @@ strong {
 	}
 	.socials {
 		right: 12px;
+	}
+	.imgResponsive {
+		width: 250px;
 	}
 }
 @media all and (max-height: 500px) {
