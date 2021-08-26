@@ -70,6 +70,16 @@ strong {
 	justify-content: flex-start;
 	margin-top: 10px;
 }
+.button-container .button {
+	width: fit-content !important;
+}
+.button-container a:not(:first-child) {
+	margin-left: 10px !important;
+}
+
+.fa-question-circle {
+	margin-right: 5px;
+}
 
 .socials {
 	display: flex;
@@ -119,6 +129,13 @@ strong {
 	}
 	.fab {
 		margin: 5px;
+	}
+	.button-container {
+		flex-direction: column;
+	}
+	.button-container a:not(:first-child) {
+		margin-left: 0;
+		margin-top: 10px;
 	}
 }
 

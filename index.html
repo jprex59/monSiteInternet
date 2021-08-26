@@ -59,7 +59,7 @@
 
 					<div class="navbar-item">
 						<div class="buttons">
-							<a href="#contact" class="button is-info">
+							<a href="#contact" class="button is-info is-rounded">
 								<strong>Contact</strong>
 							</a>
 						</div>
@@ -68,6 +68,23 @@
 			</div>
 		</nav>
 		<div id="presentation-container" class="presentation-container">
+			<div class="modal" id="Modal_1">
+				<div class="modal-background"></div>
+				<div class="modal-card responsive-card">
+					<article class="message is-info">
+						<div class="message-header">
+							<p><i class="far fa-question-circle"></i>Pourquoi l'informatique</p>
+							<button class="delete" aria-label="delete" onclick="closeModal(1)"></button>
+						</div>
+						<div class="message-body">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec
+							nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac
+							<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi
+							magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+						</div>
+					</article>
+				</div>
+			</div>
 			<div class="socials">
 				<a class="medias" href="https://www.linkedin.com/in/jean-paaris/"><i class="fab fa-linkedin"></i></a>
 				<a class="medias" href="https://www.instagram.com/jean59paris/"><i class="fab fa-instagram"></i></a>
@@ -80,7 +97,12 @@
 				</p>
 
 				<div class="button-container">
-					<a href="./DOC/JEAN PARIS CV INFORMATIQUE 2021.pdf" class="button is-info">Mon CV</a>
+					<button class="button is-info is-light is-rounded" onclick="openModal(1)">
+						<i class="far fa-question-circle"></i>Pourquoi l'informatique
+					</button>
+					<a href="./DOC/JEAN PARIS CV INFORMATIQUE 2021.pdf" onclick="window.open(this.href); return false;" class="button is-info is-rounded"
+						><i class="far fa-id-card"></i>Mon CV</a
+					>
 				</div>
 			</div>
 			<div class="presentation">

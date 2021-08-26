@@ -14,3 +14,9 @@ window.addEventListener("load", () => {
 		.staggerFrom(medias, 1, { right: -200, ease: "power2.out" }, 0.5, "-=1");
 	TL.play();
 });
+function openModal(indexModal) {
+	document.getElementById("Modal_" + indexModal).style.display = "flex";
+}
+function closeModal(indexModal) {
+	document.getElementById("Modal_" + indexModal).style.display = "none";
+}

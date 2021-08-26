@@ -86,6 +86,13 @@ body {
 	border-bottom: 1px solid #ffffff42 !important;
 }
 
+.button i {
+	margin-right: 7px;
+}
+
+.modal-card-body a {
+	margin-top: 5px;
+}
 @media all and (max-width: 1023px) {
 	.button.is-info.is-inverted {
 		background-color: #3298dc !important;
