@@ -61,7 +61,7 @@ strong {
 	height: 100%;
 	background: #3196d9;
 	clip-path: circle(40% at 120% 100%);
-	z-index: -1;
+	z-index: 1;
 }
 
 .button-container {
@@ -139,6 +139,62 @@ strong {
 	}
 }
 
+/***balles***/
+.balles {
+	z-index: -1;
+	position: absolute;
+	border-radius: 50%;
+	filter: blur(1.5px);
+}
+.balle1 {
+	animation: bounceTop 5s ease-in-out infinite;
+	width: 40px;
+	height: 40px;
+	top: 15%;
+	left: 10%;
+	opacity: 0.4;
+	background-color: #1d72aa;
+}
+.balle2 {
+	background-color: #3298dc;
+	position: absolute;
+	bottom: 5%;
+	right: 20%;
+	width: 70px;
+	height: 70px;
+	opacity: 0.7;
+	animation: bounceBottom 4s ease-in-out infinite;
+}
+.balle3 {
+	background-color: #6bb4e4;
+	position: absolute;
+	top: 15%;
+	right: 5%;
+	width: 50px;
+	height: 50px;
+	opacity: 0.7;
+	animation: bounceTopRight 6s ease-in-out infinite;
+}
+
+@keyframes bounceTop {
+	0%,
+	100% {
+		transform: scale(0.6);
+	}
+	50% {
+		transform: translateY(-5px);
+	}
+}
+@keyframes bounceBottom {
+	50% {
+		transform: translateY(-30px);
+	}
+}
+@keyframes bounceTopRight {
+	50% {
+		transform: translate(-10px, -30px);
+	}
+}
 @media all and (max-width: 500px) {
 	.bg {
 		clip-path: circle(32% at 120% 100%);
@@ -185,6 +241,10 @@ strong {
 
 	.information .subtitle {
 		font-size: 15px;
+	}
+	.balle2 {
+		width: 30px;
+		height: 30px;
 	}
 }
 @media all and (max-height: 600px) {
