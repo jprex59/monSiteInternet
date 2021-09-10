@@ -145,6 +145,7 @@ strong {
 	position: absolute;
 	border-radius: 50%;
 	filter: blur(1.5px);
+	transition: all 0.5s;
 }
 .balle1 {
 	animation: bounceTop 5s ease-in-out infinite;
@@ -242,10 +243,6 @@ strong {
 	.information .subtitle {
 		font-size: 15px;
 	}
-	.balle2 {
-		width: 30px;
-		height: 30px;
-	}
 }
 @media all and (max-height: 600px) {
 	.information .title {
@@ -326,9 +323,17 @@ strong {
 	top: 60%;
 	left: 35%;
 }
+
 @media all and (max-width: 770px) {
 	#experience {
 		position: initial;
+	}
+}
+@media all and (max-width: 600px) {
+	.balle2 {
+		width: 30px;
+		height: 30px;
+		right: 35%;
 	}
 }
 @media all and (max-width: 360px) {
