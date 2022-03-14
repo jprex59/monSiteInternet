@@ -2,86 +2,13 @@
 	z-index: 0 !important;
 }
 
-.imgVerticale {
-	display: none;
-}
-
-@media all and (max-width: 950px) {
-	.imgVerticale {
-		display: block;
-	}
-	.imgHorizontale {
-		display: none;
-	}
-}
-
 .container-img {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
 /**/
-pre {
-	background-color: rgba(0, 0, 0, 0);
-}
-.hljs {
-	padding: 0.6rem 2rem;
-	background: black;
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	border-radius: 5px;
-	transition: all 0.2s;
-	font-size: 14px;
-}
-
-.hljs:hover {
-	border-color: #ff4754;
-}
-.PowerShell_Height {
-	max-height: 550px;
-}
-.exo_container_python {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	padding: 1em;
-}
-@media all and (max-width: 1540px) {
-	.exo_Python {
-		width: 48%;
-		margin-bottom: 1em;
-	}
-	.exo_container_python {
-		padding: 0;
-	}
-}
-@media all and (max-width: 967px) {
-	.exo_container_python {
-		justify-content: left;
-	}
-}
-@media all and (max-width: 965px) {
-	.exo_Python {
-		width: 47%;
-	}
-	.exo_container_python {
-		justify-content: space-between;
-	}
-}
-@media all and (max-width: 950px) {
-	.PowerShell_Height {
-		font-size: 10px;
-	}
-}
-@media all and (max-width: 690px) {
-	.exo_Python {
-		width: 100%;
-	}
-	.exo_container_python {
-		justify-content: space-between;
-	}
-}
-
-/***********Stages****************/
+/***********Alternance****************/
 
 /*-------------Modal---------------*/
 .container_company {
@@ -113,21 +40,21 @@ pre {
 }
 
 .company {
-	background-image: url("../img/sio/pharmagestbio.PNG");
+	background-image: url("../img/IG/Scapartois/leclerc.png");
 	background-position: center;
 	background-size: 210px;
 	background-repeat: no-repeat;
 }
 
 .group {
-	background-image: url("../img/sio/groupe.png");
+	background-image: url("../img/sio/service.png");
 	background-position: center;
 	background-size: 190px;
 	background-repeat: no-repeat;
 }
 
 .service {
-	background-image: url("../img/sio/service.png");
+	background-image: url("../img/IG/Scapartois/scapartois.png");
 	background-position: center;
 	background-size: 230px;
 	background-repeat: no-repeat;
@@ -145,13 +72,13 @@ pre {
 	padding: 15px;
 	border-radius: 5px;
 	transition: all 0.5s;
-	background-color: #3298dc9c;
+	background-color: #fff;
 	box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
 }
 
 .modal_a:hover {
 	background-size: 280px;
-	background-color: #3298dc;
+	background-color: #0a71b577;
 }
 .modal_a h4 {
 	text-transform: uppercase;
@@ -189,11 +116,6 @@ pre {
 	}
 }
 
-@media all and (max-width: 1380px) {
-	.button_modal {
-		width: 500px;
-	}
-}
 @media all and (max-width: 1100px) {
 	.button_modal {
 		width: 450px;
@@ -220,26 +142,6 @@ pre {
 	height: 0;
 }
 
-.divider_own {
-	width: 100%;
-	height: 2px;
-	background-color: #e7edf4;
-	color: #ffffff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.divider_own strong {
-	color: #b2b7bd !important;
-	background-color: #fff;
-	padding: 10px;
-}
-
-#title_top {
-	margin-bottom: 25px;
-	margin-top: 25px;
-}
 .container_card {
 	display: flex;
 	justify-content: center;
@@ -371,4 +273,38 @@ pre {
 	width: 230px;
 	background-color: #19d6ba;
 	color: #fff;
+}
+
+/***********skills************/
+
+#title_top {
+	margin-bottom: 25px;
+	margin-top: 25px;
+}
+
+.card-content .content {
+	font-weight: bolder;
+}
+
+/*****skills****/
+/*
+.containerInformatique,
+.containerJuridique {
+	display: none;
+}
+
+.open {
+	display: block !important;
+}
+*/
+.tabs li.is-active a {
+	color: #3298dc;
+}
+
+.columns {
+	margin-bottom: 20px !important;
+}
+
+.columns .is-half {
+	text-align: justify;
 }

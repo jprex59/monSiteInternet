@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top" lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+		<link rel="stylesheet" href="./css/scapartois.css" />
+		<link rel="stylesheet" href="./css/all.css" />
+		<link rel="stylesheet" href="./css/bulma-tooltip.css" />
+		<link rel="stylesheet" href="./css/bulma-pageloader.min.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/b8f4ab5226.js" crossorigin="anonymous"></script>
+		<link rel="icon" href="./img/logo/logo.png" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/atom-one-dark.min.css" type="text/css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<title>Licence IG</title>
+	</head>
+	<body>
+		<div class="pageloader"><span class="title">Chargement....</span></div>
+		<a href="#" class="up"><i class="fas fa-caret-up"></i></a>
+		<nav class="navbar is-fixed-top is-info" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<!---faire changer le nom en fonction du titre de la ssection-->
+				<a class="navbar-item title is-4" id="SectionName" href="index.html">Mon Portfolio</a>
+
+				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+
+			<div id="navbarBasicExample" class="navbar-menu">
+				<div class="navbar-start"></div>
+
+				<div class="navbar-end">
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link"> BTS SIO </a>
+						<div class="navbar-dropdown">
+							<a href="./sio.html" class="navbar-item"> Projets et stages </a>
+
+							<hr class="navbar-divider" />
+							<a href="./veillesSio.html" class="navbar-item"> Veille technologique et veille juridique </a>
+						</div>
+					</div>
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link"> Licence IG </a>
+						<div class="navbar-dropdown">
+							<a href="./ig.html" class="navbar-item"> Programme </a>
+							<hr class="navbar-divider" />
+							<a href="./scapartois.html" class="navbar-item"> Alternance </a>
+						</div>
+					</div>
+
+					<a href="projets.html" class="navbar-item"> Projets </a>
+					<a href="https://github.com/jprex59" class="navbar-item github"><i class="fab fa-github"></i></a>
+
+					<div class="navbar-item">
+						<div class="buttons">
+							<a href="index.html#contact" class="button is-info is-inverted is-rounded">
+								<strong>Contact</strong>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<section class="hero is-info">
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<p class="title">Alternance</p>
+					<p class="subtitle">2021 - 2022</p>
+				</div>
+			</div>
+		</section>
+
+		<div class="container is-fluid section">
+			<article class="message is-dark box" data-aos="zoom-in">
+				<div class="message-body">
+					<p class="title is-4">Alternance dans le cadre de la licence informatique générale</p>
+					<strong>Groupe</strong> : E.LECLERC <br />
+					<strong>Entreprise</strong> : Scapartois (Centrale régionale)<br />
+					<strong>Durée</strong> : 1 an de Août 2021 à Septembre 2022 <br />
+					<strong>Poste</strong> : Technicien à la sécurité informatique
+				</div>
+			</article>
+		</div>
+
+		<div class="container_company" id="company" data-aos="fade-up-right">
+			<a
+				onclick="openModal(1)"
+				class="modal_a button_modal company has-tooltip-arrow has-tooltip-primary has-tooltip-active"
+				data-tooltip="Cliquez pour accéder aux informations !"
+				href="#demo"
+				><h4><i class="fas fa-bookmark"></i> E.Leclerc</h4></a
+			>
+			<a onclick="openModal(2)" class="modal_a button_modal service" href="#demo1"
+				><h4><i class="fas fa-bookmark"></i> Scapartois</h4></a
+			>
+			<a onclick="openModal(3)" class="modal_a button_modal group" href="#demo2"
+				><h4><i class="fas fa-bookmark"></i> Le Service informatique</h4></a
+			>
+
+			<!--
+			<div class="modal">
+				<div class="modal-background"></div>
+				<div class="modal-card">
+					<header class="modal-card-head">
+						<p class="modal-card-title">Modal title</p>
+						<button class="delete" aria-label="close"></button>
+					</header>
+					<section class="modal-card-body">Content</section>
+					<footer class="modal-card-foot">
+						<button class="button is-success">Save changes</button>
+						<button class="button">Cancel</button>
+					</footer>
+				</div>
+			</div>--->
+		</div>
+
+		<div class="modal" id="Modal_1">
+			<div class="modal-background"></div>
+			<div class="modal-card responsive-card">
+				<header class="modal-card-head">
+					<p class="modal-card-title"><i class="far fa-bookmark"></i> Le Groupe E.Leclerc</p>
+					<button class="delete" aria-label="close" onclick="closeModal(1)"></button>
+				</header>
+				<section class="modal-card-body">
+					<p>
+						L’enseigne Leclerc est la <strong>1er chaine de grande distribution en France</strong> et regroupe <strong>133 000 salariés</strong> qui
+						font avancer le mouvement. En tant que membres du Mouvement E. Leclerc, ces chefs d’entreprise adhèrent à la coopérative des centres E.
+						Leclerc et sont ainsi appelés <strong>« adhérents »</strong>. Ils reçoivent donc le droit d’utiliser la marque E. Leclerc pour
+						l’exploitation de leur magasin<br /><br />
+						Le Mouvement compte aujourd’hui <strong>592 adhérents</strong> en France avec
+						<strong>2 541 enseignes spécialisées E. Leclerc</strong> et <strong>721 magasins</strong>.
+						<strong>85 magasins à l’international</strong>. Le <strong>CA de 2020</strong> est de <strong>48.20 milliards d'euros TTC</strong
+						><br /><br />
+						Les E. Leclerc sont approvisionnés par des <strong>centrales d'achat réparties par zones géographiques</strong>, j'ai effectué mon
+						alternance à la <strong>scapartois</strong>, <strong>centrale d'achat de la région Hauts de France</strong>.<br />
+					</p>
+					<a href="https://www.recrutement.leclerc/le-mouvement/" class="button is-info is-rounded" onclick="window.open(this.href); return false;"
+						>Mouvement E.leclerc</a
+					>
+				</section>
+				<footer class="modal-card-foot"></footer>
+			</div>
+		</div>
+
+		<div class="modal" id="Modal_2">
+			<div class="modal-background"></div>
+			<div class="modal-card responsive-card">
+				<header class="modal-card-head">
+					<p class="modal-card-title"><i class="far fa-bookmark"></i> L'Entreprise</p>
+					<button class="delete" aria-label="close" onclick="closeModal(2)"></button>
+				</header>
+				<section class="modal-card-body">
+					<p>
+						La Scapartois s’articule autour de plusieurs services :<br /><br />
+						<strong
+							>Logistique • Commerce • Comptabilité • Contrôle de gestion • Informatique • Ressources humaines • Qualité • Marketing •
+							Communication et Automatisation</strong
+						><br /><br />
+						Cet ensemble de services constitue le cœur de la Scapartois : en moyenne cela représente à ce jour
+						<strong>475 à 500 salariés</strong> sur le site avec un <strong>CA de 2020 d’environs 1.2 milliards d’euros</strong> lui donnant la
+						place de <strong>2e entreprise du pas de calais</strong>
+					</p>
+					<br />
+					<a href="https://www.scapartois.leclerc/notre-societe/" class="button is-info is-rounded" onclick="window.open(this.href); return false;"
+						>Site de la Scapartois</a
+					>
+				</section>
+				<footer class="modal-card-foot"></footer>
+			</div>
+		</div>
+
+		<div class="modal" id="Modal_3">
+			<div class="modal-background"></div>
+			<div class="modal-card responsive-card">
+				<header class="modal-card-head">
+					<p class="modal-card-title"><i class="far fa-bookmark"></i> Le Service informatique</p>
+					<button class="delete" aria-label="close" onclick="closeModal(3)"></button>
+				</header>
+				<section class="modal-card-body">
+					<p>
+						Le <strong>pôle exploitation</strong>, qui s’occupe principalement de la partie <strong>logistique entrepôt</strong> .<br /><br />
+						Le <strong>pôle infrastructure</strong> s’occupe du <strong>bon fonctionnement de l’infrastructure systèmes et réseaux</strong> et de la
+						mise en place des <strong>projets</strong> qui y sont associés. Il comporte également un
+						<strong>support utilisateurs de niveau 2</strong>.<br /><br />
+						Le <strong>pôle projet</strong>, qui <strong>gère les principaux projets liés à l’IT</strong>.
+					</p>
+				</section>
+				<footer class="modal-card-foot"></footer>
+			</div>
+		</div>
+
+		<iframe
+			class="section"
+			id="localisation"
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2549.206344746016!2d2.814053315671956!3d50.28807597945319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dd484f2712fac7%3A0x3966096330c36bbc!2sSCAPARTOIS%20Soci%C3%A9t%C3%A9%20Coop%C3%A9rative%20Approvisionnement%20de%20la%20R%C3%A9gion%20de%20l&#39;Artois!5e0!3m2!1sfr!2sfr!4v1639495733643!5m2!1sfr!2sfr"
+			width="100%"
+			height="450"
+			style="border: 0"
+			allowfullscreen=""
+			loading="lazy"
+		></iframe>
+		<div class="divider_own" id="title_top"><strong>Expériences</strong></div>
+
+		<div class="container section">
+			<div class="columns box">
+				<div class="column">SOC</div>
+				<div class="column">Mission principale</div>
+				<div class="column is-two-thirds">
+					Travailler sur les plus importantes vulnérabilités, animer un groupe de travail et des visioconférences régionales, tester les correctifs,
+					faire de la documentation, publier le patch à la Scapartois et accompagner les magasins dans leur diffusion
+				</div>
+			</div>
+			<div class="columns box">
+				<div class="column">Interface graphique avec Data studio</div>
+				<div class="column">Mission principale</div>
+				<div class="column is-two-thirds">
+					Mise en place d’un Dashboard avec Data studio qui interprète, à l’aide de statistiques, les exportations issues du SOC
+				</div>
+			</div>
+
+			<div class="columns box" style="margin-bottom: 60px !important">
+				<div class="column">Antivirus</div>
+				<div class="column">Mission principale</div>
+				<div class="column is-two-thirds">Renouvellement de l'antivirus et surveillance des actifs</div>
+			</div>
+
+			<div class="columns box">
+				<div class="column">Gestion de la vulnérabilité log4shell</div>
+
+				<div class="column is-two-thirds">
+					Comprendre la faille, les enjeux et les risques; Participer à des webinars Orange cyberdefense; aider à la mise en place des correctifs;
+					communiquer avec les magasins et enrichir la documentation relationnelle
+				</div>
+			</div>
+
+			<div class="columns box">
+				<div class="column">Relationel avec les prestataires</div>
+
+				<div class="column is-two-thirds">Mise en place de solutions en collaboration avec des prestataires</div>
+			</div>
+			<div class="columns box">
+				<div class="column">Veille technologique</div>
+
+				<div class="column is-two-thirds">
+					Recherche de nouveaux outils logiciels/ technologies : gestionnaire de mot de passe mutualisé, visioconférence..
+				</div>
+			</div>
+			<div class="columns box">
+				<div class="column">PRTG</div>
+
+				<div class="column is-two-thirds">Formation de base sur l'outil : ajout et configuration des sondes d'un équipement</div>
+			</div>
+
+			<div class="columns box">
+				<div class="column">Google Workspace</div>
+
+				<div class="column is-two-thirds">Formations avancées de la suite Google Workspace</div>
+			</div>
+		</div>
+		<div class="footer-own">
+			<p>&copy; 14 / 03 / 2022</p>
+		</div>
+
+		<script>
+			hljs.initHighlightingOnLoad();
+			AOS.init();
+		</script>
+		<script type="text/javascript" src="./js/all.js"></script>
+		<script type="text/javascript" src="./js/sio.js"></script>
+	</body>
+</html>

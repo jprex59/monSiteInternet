@@ -14,6 +14,11 @@ body {
 #SectionName {
 	margin-bottom: 0 !important;
 }
+
+.centered {
+	display: flex !important;
+	justify-content: center !important;
+}
 .fa-github {
 	color: black !important;
 	font-size: 25px !important;
@@ -93,6 +98,22 @@ body {
 .modal-card-body a {
 	margin-top: 5px;
 }
+/***divider***/
+.divider_own {
+	width: 100%;
+	height: 2px;
+	background-color: #e7edf4;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.divider_own strong {
+	color: #cbd0d6;
+	background-color: #fff;
+	padding: 10px;
+}
 @media all and (max-width: 1023px) {
 	.button.is-info.is-inverted {
 		background-color: #3298dc !important;
@@ -105,7 +126,7 @@ body {
 		padding: 0 !important;
 	}
 	.navbar-menu.is-active {
-		height: 250px !important;
+		height: 375px !important;
 		padding: 0.5rem 0 !important;
 	}
 }
@@ -113,4 +134,8 @@ body {
 	.has-text-justified {
 		font-size: 14px !important;
 	}
+}
+
+.navbar {
+	z-index: 39 !important;
 }
